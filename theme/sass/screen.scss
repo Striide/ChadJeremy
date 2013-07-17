@@ -1,0 +1,151 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$red_txt_color: rgb(229,19,47);
+
+$grey_txt_color: rgb(53,51,48);
+
+$grey_lines_color: rgb(54,47,39);
+
+$grey_bg_color: rgb(53,51,48);
+
+$grey_thumb_bg_color: rgb(238,238,238);
+
+/* MOBILE */
+$menu_font_size: 52px;
+$menu_padding_x: 30px;
+$menu_item_height: 90px;
+$content_heading_size: 52px;
+$content_blockquote_size: 36px;
+$content_small_size: 24px;
+
+$article_margin_left_content: 30px;
+$article_padding_top: 100px;
+$article_padding_x: 30px;
+$article_heading_padding_top: 50px;
+$article_heading_padding_bottom: 65px;
+$article_sub_padding_bottom: 50px;
+$article_min_height: 2000px;
+
+/* DESKTOP */
+$document_width: 1264px; /* contains popovers/overlays */
+$page_width: 1000px;
+$header_margin_bottom: 50px;
+$header_height: 60px;
+$header_padding_y: 20px;
+$header_font_size: 9px; /* address */
+$gutter_left: 132px;
+$overlay_width: 1132px;
+$overlay_padding_top: 45px;
+$overlay_padding_left: 132px;
+$overlay_left_column: 300px;
+$overlay_sub_size: 24px;
+$overlay_p_size: 14px;
+
+$menu_width: 220px;
+$menu_font_size: 24px;
+$menu_padding_x: 30px;
+$menu_item_height: 30px;
+$twitter_font_size: 12px;
+
+$article_margin_left_content: 280px;
+$article_margin_left: 30px;
+
+$content_heading_size: 30px;
+$content_blockquote_size: 14px;
+$content_small_size: 14px;
+
+$article_width: 750px;
+$article_padding_top: 100px;
+$article_padding_x: 30px;
+$article_heading_padding_top: 35px;
+$article_heading_padding_bottom: 35px;
+$article_sub_padding_bottom: 25px;
+$article_h2_padding_top: 15px;
+$article_h2_size: 14px; /* bold */
+$article_p_size: 12px;
+$article_min_height: 650px;
+
+/* chrome */
+body
+{
+  font-family: Georgia;
+}
+h1
+{
+  font-family: Helvetica;
+}
+p small
+{
+  font-size: $content_small_size;
+}
+article .clients ul li,
+article .awards ul li
+{
+  font-size: $content_small_size;
+}
+article address
+{
+  font-size: $content_blockquote_size;
+}
+
+/* TB reset/overrides */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.nav-list > a:visited,
+.nav-list > a.visited,
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+  color: $red_txt_color;
+  text-decoration: line-through;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus
+{
+  text-shadow: none;
+  background-color: transparent;
+}
+/* /TB reset/overrides */
+
+/* RESPONSIVE */
+/* Large desktop */
+@media (min-width: 1200px)
+{
+
+}
+
+@media (min-width: 979px)
+{
+  body {
+    padding-top: 60px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+  body {
+    padding-top: 0px;
+  }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  }
