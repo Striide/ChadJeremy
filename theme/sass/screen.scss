@@ -19,24 +19,17 @@ $grey_thumb_bg_color: rgb(238,238,238);
 $menu_font_size: 52px;
 $menu_padding_x: 30px;
 $menu_item_height: 90px;
-$content_heading_size: 52px;
-$content_blockquote_size: 36px;
-$content_small_size: 24px;
 
 $article_margin_left_content: 30px;
 $article_padding_top: 100px;
 $article_padding_x: 30px;
-$article_heading_padding_top: 50px;
-$article_heading_padding_bottom: 65px;
-$article_sub_padding_bottom: 50px;
-$article_min_height: 2000px;
 
 /* DESKTOP */
 $document_width: 1264px; /* contains popovers/overlays */
 $page_width: 1000px;
 $header_margin_bottom: 50px;
 $header_height: 60px;
-$header_padding_y: 20px;
+$header_padding_y: 10px;
 $header_font_size: 9px; /* address */
 $gutter_left: 132px;
 $overlay_width: 1132px;
@@ -55,10 +48,6 @@ $twitter_font_size: 12px;
 $article_margin_left_content: 280px;
 $article_margin_left: 30px;
 
-$content_heading_size: 30px;
-$content_blockquote_size: 14px;
-$content_small_size: 14px;
-
 $article_width: 750px;
 $article_padding_top: 100px;
 $article_padding_x: 30px;
@@ -74,23 +63,88 @@ $article_min_height: 650px;
 body
 {
   font-family: Georgia;
+  color: $grey_txt_color;
+}
+.navbar address
+{
+  font-size: $header_font_size;
+  color: #FFFFFF;
+  line-height: 12px;
+  text-align: right;
+  padding-top: 10px;
+}
+.navbar a,
+.navbar a:hover,
+.navbar a:active
+{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.navbar-inverse .navbar-inner
+{
+  background-image: none;
+  background-color: $grey_bg_color;
+  padding: $header_padding_y 0;
+  margin-bottom: $header_margin_bottom;
+}
+.navbar .btn-navbar
+{
+  background-image: none;
+  background-color: $grey_bg_color;
+
+  border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-image: none;
+  background-color: $grey_bg_color;
+}
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active {
+  background-image: none;
+  background-color: $grey_bg_color;
+}
+.navbar .brand
+{
+  padding: 0;
+}
+.sidebar-nav
+{
+  padding: 9px 0;
+}
+.page-unit
+{
+  min-height: 200px; /* default, dynamically changes based on viewport height */
 }
 h1
 {
   font-family: Helvetica;
+  color: $red_txt_color;
+  font-size: 30px;
+}
+p
+{
+  font-size: 14px;
 }
 p small
 {
-  font-size: $content_small_size;
+  font-size: 14px;
 }
 article .clients ul li,
 article .awards ul li
 {
-  font-size: $content_small_size;
+  font-size: 14px;
 }
 article address
 {
-  font-size: $content_blockquote_size;
+  font-size: 24px;
 }
 
 /* TB reset/overrides */
@@ -125,27 +179,92 @@ article address
 
 }
 
-@media (min-width: 979px)
-{
-  body {
-    padding-top: 60px;
+@media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .navbar .brand
+  {
+    margin-left: -10px;
   }
 
 }
 
-@media (min-width: 768px) and (max-width: 979px)
+@media (min-width: 768px)
 {
+  .navbar .btn-navbar
+  {
+    display: none;
+  }
   body {
     padding-top: 0px;
   }
-
+  .navbar-fixed-top
+  {
+    position: fixed;
+  }
+  .page-unit h1,
+	.container .sidebar-nav
+	{
+	  padding-top: $header_height + $header_margin_bottom;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px)
+{
+  .navbar .container
+  {
+    width: 724px;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {  }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {  }
+@media (max-width: 767px) {
+  .sidebar-nav
+  {
+    display: none;
+  }
+  .btn-navbar
+  {
+    display: block;
+  }
+  .page-unit
+  {
+    padding-left: $article_padding_x;
+    padding-right: $article_padding_x;
+  }
+  .navbar .btn-navbar
+  {
+    margin-right: $article_padding_x;
+  }
+  .navbar .brand
+  {
+    margin-left: $article_padding_x;
+  }
+  .page-content
+  {
+    h1
+    {
+      font-size: 52px;
+      padding-top: 50px;
+      padding-bottom: 65px;
+    }
+    p
+    {
+      font-size: 36px;
+      paddng-bottom: 50px;
+    }
+    li
+    {
+      font-size: 24px;
+    }
+  }
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {  }

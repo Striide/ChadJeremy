@@ -73,41 +73,117 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* address */
 /* bold */
 /* chrome */
-/* line 75, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 body {
   font-family: Georgia;
+  color: #353330;
+}
+
+/* line 69, ../sass/screen.scss */
+.navbar address {
+  font-size: 9px;
+  color: #FFFFFF;
+  line-height: 12px;
+  text-align: right;
+  padding-top: 10px;
 }
 
 /* line 79, ../sass/screen.scss */
-h1 {
-  font-family: Helvetica;
+.navbar a,
+.navbar a:hover,
+.navbar a:active {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
+.navbar-inverse .navbar-inner {
+  background-image: none;
+  background-color: #353330;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+/* line 92, ../sass/screen.scss */
+.navbar .btn-navbar {
+  background-image: none;
+  background-color: #353330;
+  border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+/* line 104, ../sass/screen.scss */
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-image: none;
+  background-color: #353330;
+}
+
+/* line 110, ../sass/screen.scss */
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active {
+  background-image: none;
+  background-color: #353330;
+}
+
+/* line 115, ../sass/screen.scss */
+.navbar .brand {
+  padding: 0;
+}
+
+/* line 119, ../sass/screen.scss */
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+/* line 123, ../sass/screen.scss */
+.page-unit {
+  min-height: 200px;
+  /* default, dynamically changes based on viewport height */
+}
+
+/* line 127, ../sass/screen.scss */
+h1 {
+  font-family: Helvetica;
+  color: #e5132f;
+  font-size: 30px;
+}
+
+/* line 133, ../sass/screen.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 137, ../sass/screen.scss */
 p small {
   font-size: 14px;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 article .clients ul li,
 article .awards ul li {
   font-size: 14px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 article address {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 /* TB reset/overrides */
-/* line 98, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
   background-color: transparent;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .nav-list > a:visited,
 .nav-list > a.visited,
 .nav-list > .active > a,
@@ -119,7 +195,7 @@ article address {
   background-color: transparent;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
@@ -130,19 +206,91 @@ article address {
 /* /TB reset/overrides */
 /* RESPONSIVE */
 /* Large desktop */
-@media (min-width: 979px) {
-  /* line 130, ../sass/screen.scss */
+@media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  /* line 184, ../sass/screen.scss */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* line 190, ../sass/screen.scss */
+  .navbar .brand {
+    margin-left: -10px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 199, ../sass/screen.scss */
+  .navbar .btn-navbar {
+    display: none;
+  }
+
+  /* line 202, ../sass/screen.scss */
   body {
-    padding-top: 60px;
-    color: green;
+    padding-top: 0px;
+  }
+
+  /* line 206, ../sass/screen.scss */
+  .navbar-fixed-top {
+    position: fixed;
+  }
+
+  /* line 211, ../sass/screen.scss */
+  .page-unit h1,
+  .container .sidebar-nav {
+    padding-top: 110px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 139, ../sass/screen.scss */
-  body {
-    padding-top: 0px;
+  /* line 218, ../sass/screen.scss */
+  .navbar .container {
+    width: 724px;
   }
 }
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* line 229, ../sass/screen.scss */
+  .sidebar-nav {
+    display: none;
+  }
+
+  /* line 233, ../sass/screen.scss */
+  .btn-navbar {
+    display: block;
+  }
+
+  /* line 237, ../sass/screen.scss */
+  .page-unit {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* line 242, ../sass/screen.scss */
+  .navbar .btn-navbar {
+    margin-right: 30px;
+  }
+
+  /* line 246, ../sass/screen.scss */
+  .navbar .brand {
+    margin-left: 30px;
+  }
+
+  /* line 252, ../sass/screen.scss */
+  .page-content h1 {
+    font-size: 52px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  /* line 258, ../sass/screen.scss */
+  .page-content p {
+    font-size: 36px;
+    paddng-bottom: 50px;
+  }
+  /* line 263, ../sass/screen.scss */
+  .page-content li {
+    font-size: 24px;
+  }
+}
 /* Landscape phones and down */
