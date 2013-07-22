@@ -73,13 +73,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* address */
 /* bold */
 /* chrome */
-/* line 64, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 body {
   font-family: Georgia;
   color: #353330;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .navbar address {
   font-size: 9px;
   color: #FFFFFF;
@@ -88,7 +88,7 @@ body {
   padding-top: 10px;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .navbar a,
 .navbar a:hover,
 .navbar a:active {
@@ -96,15 +96,16 @@ body {
   text-decoration: underline;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .navbar-inverse .navbar-inner {
   background-image: none;
   background-color: #353330;
-  padding: 10px 0;
-  margin-bottom: 50px;
+  padding: 20px 0;
+  margin-bottom: 0;
+  /* margin-bottom: $header_margin_bottom; */
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .navbar .btn-navbar {
   background-image: none;
   background-color: #353330;
@@ -112,7 +113,7 @@ body {
   border: 1px solid #FFFFFF;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar:focus,
 .navbar .btn-navbar:active,
@@ -124,66 +125,73 @@ body {
   background-color: #353330;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
   background-image: none;
   background-color: #353330;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .navbar .brand {
   padding: 0;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .sidebar-nav {
   padding: 9px 0;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .page-unit {
   min-height: 200px;
   /* default, dynamically changes based on viewport height */
+  margin-bottom: 50px;
+}
+/* line 123, ../sass/screen.scss */
+.page-unit .inner-container {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #362f27;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 h1 {
   font-family: Helvetica;
   color: #e5132f;
   font-size: 30px;
+  font-weight: bold;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 p {
   font-size: 14px;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 p small {
   font-size: 14px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 article .clients ul li,
 article .awards ul li {
   font-size: 14px;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 article address {
   font-size: 24px;
 }
 
 /* TB reset/overrides */
-/* line 152, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
   background-color: transparent;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .nav-list > a:visited,
 .nav-list > a.visited,
 .nav-list > .active > a,
@@ -195,7 +203,7 @@ article address {
   background-color: transparent;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
@@ -208,42 +216,42 @@ article address {
 /* Large desktop */
 @media (max-width: 980px) {
   /* Enable use of floated navbar text */
-  /* line 184, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .navbar-text.pull-right {
     float: none;
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 190, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .navbar .brand {
     margin-left: -10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 199, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   .navbar .btn-navbar {
     display: none;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   body {
     padding-top: 0px;
   }
 
-  /* line 206, ../sass/screen.scss */
+  /* line 210, ../sass/screen.scss */
   .navbar-fixed-top {
     position: fixed;
   }
 
-  /* line 211, ../sass/screen.scss */
-  .page-unit h1,
+  /* line 215, ../sass/screen.scss */
+  .page-unit,
   .container .sidebar-nav {
     padding-top: 110px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 218, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .navbar .container {
     width: 724px;
   }
@@ -251,46 +259,76 @@ article address {
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 229, ../sass/screen.scss */
+  /* line 233, ../sass/screen.scss */
   .sidebar-nav {
     display: none;
   }
 
-  /* line 233, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .btn-navbar {
     display: block;
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 242, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   .navbar .btn-navbar {
     margin-right: 30px;
   }
 
-  /* line 246, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .navbar .brand {
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
-  /* line 252, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   .page-content h1 {
     font-size: 52px;
     padding-top: 50px;
     padding-bottom: 65px;
   }
-  /* line 258, ../sass/screen.scss */
-  .page-content p {
+  /* line 262, ../sass/screen.scss */
+  .page-content p, .page-content address {
     font-size: 36px;
     paddng-bottom: 50px;
   }
-  /* line 263, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   .page-content li {
     font-size: 24px;
+  }
+  /* line 271, ../sass/screen.scss */
+  .page-content .page-unit {
+    padding: 0 30px;
+  }
+
+  /* line 278, ../sass/screen.scss */
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    font-size: 52px;
+    font-weight: normal;
+    color: #e5132f;
+    line-height: 60px;
+    padding: 20px 30px;
+  }
+
+  /* line 286, ../sass/screen.scss */
+  .nav-collapse .nav > li {
+    border-bottom: 1px solid #362f27;
+  }
+
+  /* line 290, ../sass/screen.scss */
+  .nav-collapse .nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* line 295, ../sass/screen.scss */
+  .nav-collapse {
+    margin-bottom: 50px;
   }
 }
 /* Landscape phones and down */

@@ -16,10 +16,6 @@ $grey_bg_color: rgb(53,51,48);
 $grey_thumb_bg_color: rgb(238,238,238);
 
 /* MOBILE */
-$menu_font_size: 52px;
-$menu_padding_x: 30px;
-$menu_item_height: 90px;
-
 $article_margin_left_content: 30px;
 $article_padding_top: 100px;
 $article_padding_x: 30px;
@@ -29,7 +25,7 @@ $document_width: 1264px; /* contains popovers/overlays */
 $page_width: 1000px;
 $header_margin_bottom: 50px;
 $header_height: 60px;
-$header_padding_y: 10px;
+$header_padding_y: 20px;
 $header_font_size: 9px; /* address */
 $gutter_left: 132px;
 $overlay_width: 1132px;
@@ -86,7 +82,8 @@ body
   background-image: none;
   background-color: $grey_bg_color;
   padding: $header_padding_y 0;
-  margin-bottom: $header_margin_bottom;
+  margin-bottom: 0;
+  /* margin-bottom: $header_margin_bottom; */
 }
 .navbar .btn-navbar
 {
@@ -122,12 +119,19 @@ body
 .page-unit
 {
   min-height: 200px; /* default, dynamically changes based on viewport height */
+  .inner-container
+  {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $grey_lines_color;
+  }
+  margin-bottom: 50px;
 }
 h1
 {
   font-family: Helvetica;
   color: $red_txt_color;
   font-size: 30px;
+  font-weight: bold;
 }
 p
 {
@@ -206,7 +210,7 @@ article address
   {
     position: fixed;
   }
-  .page-unit h1,
+  .page-unit,
 	.container .sidebar-nav
 	{
 	  padding-top: $header_height + $header_margin_bottom;
@@ -244,7 +248,7 @@ article address
   }
   .navbar .brand
   {
-    margin-left: $article_padding_x;
+    margin-left: $article_padding_x + 20px;
   }
   .page-content
   {
@@ -254,7 +258,7 @@ article address
       padding-top: 50px;
       padding-bottom: 65px;
     }
-    p
+    p, address
     {
       font-size: 36px;
       paddng-bottom: 50px;
@@ -263,7 +267,35 @@ article address
     {
       font-size: 24px;
     }
+    .page-unit
+    {
+      padding: 0 30px;
+    }
   }
+
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a
+  {
+    font-size: 52px;
+    font-weight: normal;
+    color: $red_txt_color;
+    line-height: 60px;
+    padding: 20px $article_padding_x
+  }
+  .nav-collapse .nav > li
+  {
+    border-bottom: 1px solid $grey_lines_color;
+  }
+  .nav-collapse .nav
+  {
+    padding-left: $article_padding_x;
+    padding-right: $article_padding_x;
+  }
+  .nav-collapse
+  {
+    margin-bottom: 50px;
+  }
+
 }
 
 /* Landscape phones and down */

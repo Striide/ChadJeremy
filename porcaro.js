@@ -10,7 +10,7 @@
     _create: function(){
       var wgt = this;
 
-      fixHeights($(".page-unit"));
+      fixHeights($(".page-unit .inner-container"));
 
       window.addEventListener("resize",function()
       {
@@ -19,7 +19,7 @@
           clearTimeout(window.resizingporcaro);
         }
         window.resizingporcaro = setTimeout(function(){
-          fixHeights($(".page-unit"));
+          fixHeights($(".page-unit .inner-container"));
         },50);
       });
     }
