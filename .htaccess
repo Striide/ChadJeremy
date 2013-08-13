@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /porcaro
+
+RedirectMatch 301 /portfolio /porcaro/#portfolio
+RedirectMatch 301 /about /porcaro
+RedirectMatch 301 /services /porcaro/#services
+RedirectMatch 301 /clients /porcaro/#clients
