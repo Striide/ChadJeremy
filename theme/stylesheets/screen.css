@@ -287,46 +287,55 @@ article address {
 
   /* line 256, ../sass/screen.scss */
   .page-content h1 {
-    font-size: 52px;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    font-size: 36px;
+    /* was 52px */
+    padding-top: 40px;
+    /* was 50px */
+    padding-bottom: 45px;
+    /* was 65px */
   }
   /* line 262, ../sass/screen.scss */
   .page-content p, .page-content address {
-    font-size: 36px;
+    font-size: 28px;
+    /* as 36px */
+    line-height: 30px;
     paddng-bottom: 50px;
   }
-  /* line 267, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .page-content li {
-    font-size: 24px;
+    font-size: 18px;
+    /* was 24px */
+    line-height: 22px;
   }
-  /* line 271, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   .page-content .page-unit {
     padding: 0 30px;
   }
 
-  /* line 278, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
-    font-size: 52px;
+    font-size: 36px;
+    /* 52px from PSD was too big, according to feeback from Sandra; Jul 29 */
     font-weight: normal;
     color: #e5132f;
-    line-height: 60px;
-    padding: 20px 30px;
+    line-height: 42px;
+    padding: 15px 30px;
+    /*(15px used to be 20)*/
   }
 
-  /* line 286, ../sass/screen.scss */
+  /* line 288, ../sass/screen.scss */
   .nav-collapse .nav > li {
     border-bottom: 1px solid #362f27;
   }
 
-  /* line 290, ../sass/screen.scss */
+  /* line 292, ../sass/screen.scss */
   .nav-collapse .nav {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 295, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   .nav-collapse {
     margin-bottom: 50px;
   }

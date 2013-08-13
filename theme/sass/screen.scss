@@ -254,18 +254,20 @@ article address
   {
     h1
     {
-      font-size: 52px;
-      padding-top: 50px;
-      padding-bottom: 65px;
+      font-size: 36px; /* was 52px */
+      padding-top: 40px; /* was 50px */
+      padding-bottom: 45px; /* was 65px */
     }
     p, address
     {
-      font-size: 36px;
+      font-size: 28px; /* as 36px */
+			line-height: 30px;
       paddng-bottom: 50px;
     }
     li
     {
-      font-size: 24px;
+      font-size: 18px; /* was 24px */
+			line-height: 22px;
     }
     .page-unit
     {
@@ -276,11 +278,11 @@ article address
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a
   {
-    font-size: 52px;
+    font-size: 36px; /* 52px from PSD was too big, according to feeback from Sandra; Jul 29 */
     font-weight: normal;
     color: $red_txt_color;
-    line-height: 60px;
-    padding: 20px $article_padding_x
+    line-height: 42px;
+    padding: 15px $article_padding_x; /*(15px used to be 20)*/
   }
   .nav-collapse .nav > li
   {
