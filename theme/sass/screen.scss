@@ -76,6 +76,11 @@ body
   color: #FFFFFF;
   text-decoration: underline;
 }
+.navbar a:hover,
+.navbar a:active
+{
+	text-decoration: line-through;
+}
 
 .navbar-inverse .navbar-inner
 {
@@ -130,25 +135,28 @@ h1
 {
   font-family: Helvetica;
   color: $red_txt_color;
-  font-size: 30px;
+  font-size: 30pt; /* should be 30px */
+	line-height: 36pt; /* should be 36px */
   font-weight: bold;
 }
 p
 {
-  font-size: 14px;
+  font-size: 14pt; /* should be 14px */
+	line-height: 16pt; /* should be 16px */
 }
 p small
 {
-  font-size: 14px;
+  font-size: 14pt; /* should be 14px */
 }
 article .clients ul li,
 article .awards ul li
 {
-  font-size: 14px;
+  font-size: 12pt; /* should be 12px */
+	line-height: 18pt; /* should be 18px */
 }
 article address
 {
-  font-size: 24px;
+  font-size: 14pt; /* should be 14px */
 }
 
 /* TB reset/overrides */
@@ -197,6 +205,95 @@ article address
 
 }
 
+@media (min-width: 980px) {
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: 940px;
+	}
+	.span12 {
+		width: 940px;
+	}
+	.span11 {
+		width: 860px;
+	}
+	.span10 {
+		width: 780px;
+	}
+	.span9 {
+		width: 700px;
+	}
+	.span8 {
+		width: 620px;
+	}
+	.span7 {
+		width: 540px;
+	}
+	.span6 {
+		width: 460px;
+	}
+	.span5 {
+		width: 380px;
+	}
+	.span4 {
+		width: 300px;
+	}
+	.span3 {
+		width: 220px;
+	}
+	.span2 {
+		width: 140px;
+	}
+	.span1 {
+		width: 60px;
+	}
+	.offset12 {
+		margin-left: 980px;
+	}
+	.offset11 {
+		margin-left: 900px;
+	}
+	.offset10 {
+		margin-left: 820px;
+	}
+	.offset9 {
+		margin-left: 740px;
+	}
+	.offset8 {
+		margin-left: 660px;
+	}
+	.offset7 {
+		margin-left: 580px;
+	}
+	.offset6 {
+		margin-left: 500px;
+	}
+	.offset5 {
+		margin-left: 420px;
+	}
+	.offset4 {
+		margin-left: 340px;
+	}
+	.offset3 {
+		margin-left: 260px;
+	}
+	.offset2 {
+		margin-left: 180px;
+	}
+	.offset1 {
+		margin-left: 100px;
+	}
+	.row
+	{
+		margin-left: -20px;
+	}
+	[class*="span"]
+	{
+		margin-left: 20px;
+	}
+}
+
 @media (min-width: 768px)
 {
   .navbar .btn-navbar
@@ -206,14 +303,32 @@ article address
   body {
     padding-top: 0px;
   }
+	h1
+	{
+		padding: 36px 0;
+	}
   .navbar-fixed-top
   {
     position: fixed;
   }
+	.nav-list > li > a
+	{
+		font-size: 28pt; /* should be not defined */
+		line-height: 30pt;  /* should be not defined */
+	}
+	.nav-list > li > a:hover,
+	.nav-list > li > a:active
+	{
+		text-decoration: line-through;
+	}
   .page-unit,
 	.container .sidebar-nav
 	{
 	  padding-top: $header_height + $header_margin_bottom;
+	}
+	.page-unit .section
+	{
+		padding-left: 280px;
 	}
 }
 @media (min-width: 768px) and (max-width: 979px)
@@ -254,20 +369,21 @@ article address
   {
     h1
     {
-      font-size: 36px; /* was 52px */
+      font-size: 17pt; /*, should be 36px, was 52px */
+			line-height: 17pt; /* should be 36px */
       padding-top: 40px; /* was 50px */
       padding-bottom: 45px; /* was 65px */
     }
     p, address
     {
-      font-size: 28px; /* as 36px */
-			line-height: 30px;
+      font-size: 12pt; /* should be 28px, as 36px */
+			line-height: 14.4pt; /* should be 30px */
       paddng-bottom: 50px;
     }
     li
     {
-      font-size: 18px; /* was 24px */
-			line-height: 22px;
+      font-size: 8pt; /*should be 18px,  was 24px */
+			line-height: 9.6pt; /* should be 22px */
     }
     .page-unit
     {
@@ -278,10 +394,10 @@ article address
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a
   {
-    font-size: 36px; /* 52px from PSD was too big, according to feeback from Sandra; Jul 29 */
+    font-size: 17pt; /*should be 36px,  52px from PSD was too big, according to feeback from Sandra; Jul 29 */
     font-weight: normal;
     color: $red_txt_color;
-    line-height: 42px;
+    line-height: 28.5pt; /* should be 42px */
     padding: 15px $article_padding_x; /*(15px used to be 20)*/
   }
   .nav-collapse .nav > li
