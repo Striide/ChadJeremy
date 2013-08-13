@@ -21,10 +21,217 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <style>
+      .anim30 {
+        -webkit-transition-duration: 0.30s;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-duration: 0.30s;
+        -moz-transition-timing-function: ease-in-out;
+      }
+
+
+      .portfolio-contents-content {
+        padding-top:50px;
+        border-top: thin solid #000000;
+        border-bottom:thin solid #000000;
+        margin-bottom:50px;
+        margin-top:50px;
+      }
+
+      #portfolio_wrapper {
+          max-width:750px;
+      }
+
+      #portfolios {
+          padding-top:50px; 
+      }
+
+      #portfolios ul {
+          list-style-type: none;
+          margin:0px;
+      }
+
+      @media screen and (min-width: 300px) and (orientation:portrait) {
+        .portfolio-contents-header {
+          margin-left:0px;
+          margin-right:0px;
+          padding-bottom:50px;
+       
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          min-width:300px;
+          max-width:330px;
+          padding:0px;
+          text-align:left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:125px;
+          width:125px;
+          display:inline-block;
+          margin-right:15px;
+          margin-left:15px;
+          margin-bottom:50px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:135px;
+          font-size:11px;
+        }
+      }
+
+      @media screen and (min-width: 300px) and (orientation:landscape)  {
+        .portfolio-contents-header {
+          margin-left:0px;
+          margin-right:0px;
+          padding-bottom:50px;
+        }
+      
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          min-width:300px;
+          max-width:330px;
+          padding:0px;
+          text-align:left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:125px;
+          width:125px;
+          display:inline-block;
+          margin-right:15px;
+          margin-left:15px;
+          margin-bottom:50px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:135px;
+          font-size:11px;
+        }
+      }
+
+      @media screen and (min-width: 775px)  {
+        .portfolio-contents-header {
+          margin-left:150px;
+          margin-right:55px;
+          padding-bottom:50px;      
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          display:inline-block;
+          max-width:400px;
+          padding:0px;
+          text-align: left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:150px;
+          width:150px;
+          display:inline-block;
+          margin-right:20px;
+          margin-left:20px;
+          margin-bottom:70px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+      }
+
+      @media screen and (min-width: 980px) {
+      
+        .portfolio-contents-header {
+          margin-left:280px;
+          margin-right:100px;
+          padding-bottom:75px; 
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          display:inline-block;
+          min-width:600px;
+          padding:0px;
+          text-align: left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:150px;
+          width:150px;
+          display:inline-block;
+          margin-right:20px;
+          margin-left:20px;
+          margin-bottom:70px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+ 
+    }
+    </style>
+
   </head>
 
   <body data-spy="scroll" data-target=".sidebar-nav" ___data-offset="60">
-
+<div id="top" style="height:0px;overflow:hidden;visibility:hidden;">&nbsp;</div>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -59,12 +266,12 @@
 
           <div class="sidebar-nav affix">
             <ul id="main_nav" class="nav nav-list">
-              <li><a href="#overview">Company Overview</a></li>
-              <li><a href="#portfolio">Design Portfolio</a></li>
-              <li><a href="#services">Our Services</a></li>
-              <li><a href="#awards">Industry Awards</a></li>
-              <li><a href="#clients">Client List</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:scroller('overview');">Company Overview</a></li>
+              <li><a href="javascript:scroller('portfolio');">Design Portfolio</a></li>
+              <li><a href="javascript:scroller('services');">Our Services</a></li>
+              <li><a href="javascript:scroller('awards');">Industry Awards</a></li>
+              <li><a href="javascript:scroller('clients');">Client List</a></li>
+              <li><a href="javascript:scroller('contact');" >Contact</a></li>
             </ul>
 
 
@@ -78,7 +285,7 @@
 
 
         </div><!--/span-->
-        <div class="span9">
+        <div id="homepage" class="span9 anim30">
 
           <div class="page-unit" id="overview">
             <div class="inner-container">
@@ -94,35 +301,12 @@
               </p>
               <p>
                 <br>
-                <a data-toggle="modal" href="approach.html" data-target="#approach_modal">Our Approach</a><br>
-                <a data-toggle="modal" href="people.html" data-target="#people_modal">Our People</a>
+                <a href="#">Our Approach</a><br>
+                <a href="#">Our People</a>
               </p>
               </div>
             </div>
           </div>
-
-
-<div id="approach_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-  </div>
-  <div class="modal-body-wrap">
-    <div class="modal-body">
-    <p>people...</p>
-    </div>
-  </div>
-</div>
-
-<div id="people_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-  </div>
-  <div class="modal-body-wrap">
-    <div class="modal-body">
-    <p>people...</p>
-    </div>
-  </div>
-</div>
 
           <div class="page-unit" id="portfolio">
             <div class="inner-container">
@@ -138,7 +322,7 @@
               </p>
               <p>
                 <br>
-                <a href="portfolio.html">View Work</a>
+                <a href="javascript:;"  onclick="show_portfolio();">View Work</a>
               </p>
               </div>
             </div>
@@ -251,6 +435,145 @@
 
 
         </div><!--/span-->
+
+
+
+
+<!-- Le Portoflio ################################################# -->
+       
+        <div id="le_portfolio" class="span9 anim30" >
+
+
+      <div id="portfolio_wrapper" class="page-unit">
+
+        <div id="portfolio_stage" class="portfolio-contents anim30">&nbsp;</div>
+
+        <div id="portfolio_contents" class="portfolio-contents" style="visibility:hidden;height:0px;z-index:-1;overflow:hidden;">
+
+      <!--BC Ferries ####################################################-->
+          <div id="portfolio_contents_bc_ferries_sailsafe" >
+            <div class="portfolio-contents-header">
+              <h1>BC Ferries</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--Children of the Street #########################################-->
+          <div id="portfolio_contents_children_of_the_street" >
+            <div class="portfolio-contents-header">
+              <h1>Children of the Street</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--Couverdon ####################################################-->   
+          <div id="portfolio_contents_couverdon" >
+            <div class="portfolio-contents-header">
+              <h1>Couverdon</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--D-Wave Systems ####################################################-->    
+          <div id="portfolio_contents_d-wave_systems" >
+            <div class="portfolio-contents-header">
+              <h1>D-Wave Systems</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--Legend Power ####################################################-->    
+          <div id="portfolio_contents_legend_power" >
+            <div class="portfolio-contents-header">
+              <h1>Legend Power</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--Minefinders ####################################################-->   
+          <div id="portfolio_contents_minefinders" >
+            <div class="portfolio-contents-header">
+              <h1>Minefinders</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div>
+          </div>
+
+      <!--New Gold ####################################################-->    
+          <div id="portfolio_contents_new_gold" >
+          <div class="portfolio-contents-header">
+              <h1>New Gold</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <img src="sample.jpg" />
+
+            </div></div>
+
+      <!-- END Portfolio Contents -->
+
+
+        </div>
+
+        <div id="portfolios" class="portfolios">
+          <center>
+          <div class="portfolios-inner">
+            <ul>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries_sailsafe');">BC Ferries - Sailsafe</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street');">Children of the Street</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_d-wave_systems');">D-Wave Systems</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_legend_power');">Legend Power</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a></li>
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a></li>
+            </ul>
+          </div>
+
+        </center>
+
+        </div>
+
+        
+      </div>
+
+
+
+
+        </div> <!--portfolio /span-->
+
+
+
+
       </div><!--/row-->
 
     </div><!--/.fluid-container-->
@@ -287,12 +610,68 @@
 
         // this copies the site menu contents into the adaptive menu, so the adaptive menu works
         $("body").adaptivemenu();
-
-        $('#approach_modal').modal(options);
-        $('#people_modal').modal(options);
       });
     </script>
 
+
+ <script>
+    
+    // portfolio scripts
+      function hide_portfolio() {
+        if( document.getElementById('le_portfolio').style.display=='block'){
+            document.getElementById('le_portfolio').style.opacity = 0;
+            setTimeout(function() {
+              document.getElementById('le_portfolio').style.display = 'none';
+              document.getElementById('portfolio_stage').innerHTML = '';
+              document.getElementById('homepage').style.opacity = 0;
+
+              setTimeout(function() {
+                document.getElementById('homepage').style.display = 'block';
+                document.getElementById('homepage').style.opacity = 1;
+              }, 300);
+              
+            }, 300);
+          }   
+      }
+
+      function show_portfolio() {
+        document.getElementById('homepage').style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById('homepage').style.display = 'none';
+          document.getElementById('le_portfolio').style.display = 'block';
+          document.getElementById('portfolio_stage').style.opacity = 0;
+          setTimeout(function() {
+            document.getElementById('le_portfolio').style.opacity = 1;
+          }, 500);
+        }, 300);
+            
+        $('.nav').click(function () { hide_portfolio() });
+        $('.brand').click(function () { hide_portfolio() });
+      }
+
+
+      function show_portfolio_target(target) {
+        $('body,html').animate({scrollTop: 0}, 500);
+          document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
+          document.getElementById('portfolio_stage').style.opacity =1;
+      }
+
+      function scroller(target) {
+        var target_location = $('#' + target).position();
+        var current_location = $('body').scrollTop();
+        
+        var speed = target_location.top - current_location;
+        if (speed < 0 ) {
+           speed = speed * -1;
+        }
+
+        if (speed > 1350) {
+          speed = 1350;
+        }
+      
+        $('body','html').animate({scrollTop: target_location.top}, speed);
+      }
+    </script>
   </body>
 </html>
 
