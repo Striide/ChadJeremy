@@ -170,39 +170,39 @@ a:focus {
 h1 {
   font-family: Helvetica;
   color: #e5132f;
-  font-size: 30pt;
+  font-size: 30px;
   /* should be 30px */
-  line-height: 36pt;
+  line-height: 36px;
   /* should be 36px */
   font-weight: bold;
 }
 
 /* line 148, ../sass/screen.scss */
 p {
-  font-size: 14pt;
+  font-size: 14px;
   /* should be 14px */
-  line-height: 16pt;
+  line-height: 16px;
   /* should be 16px */
 }
 
 /* line 153, ../sass/screen.scss */
 p small {
-  font-size: 14pt;
+  font-size: 14px;
   /* should be 14px */
 }
 
 /* line 158, ../sass/screen.scss */
 article .clients ul li,
 article .awards ul li {
-  font-size: 12pt;
+  font-size: 12px;
   /* should be 12px */
-  line-height: 18pt;
+  line-height: 18px;
   /* should be 18px */
 }
 
 /* line 163, ../sass/screen.scss */
 article address {
-  font-size: 14pt;
+  font-size: 14px;
   /* should be 14px */
 }
 
@@ -391,73 +391,94 @@ article address {
   }
 }
 @media (min-width: 768px) {
-  /* line 307, ../sass/screen.scss */
+  /* line 305, ../sass/screen.scss */
+  .navbar .brand {
+    margin-left: 15px;
+  }
+
+  /* line 311, ../sass/screen.scss */
   .sidebar-nav .twitter {
     margin-top: 50px;
+    width: 180px;
   }
-  /* line 310, ../sass/screen.scss */
+  /* line 315, ../sass/screen.scss */
   .sidebar-nav .twitter li {
     opacity: 0.5;
     margin-top: 25px;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 14px;
     font-style: italic;
   }
-  /* line 317, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   .sidebar-nav .twitter li:hover {
     opacity: 1;
   }
-  /* line 321, ../sass/screen.scss */
+  /* line 327, ../sass/screen.scss */
   .sidebar-nav .twitter li span.time {
     display: block;
   }
 
-  /* line 328, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   .navbar .btn-navbar {
     display: none;
   }
 
-  /* line 331, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   body {
     padding-top: 0px;
   }
 
-  /* line 335, ../sass/screen.scss */
+  /* line 341, ../sass/screen.scss */
   h1 {
     padding: 36px 0;
   }
 
-  /* line 339, ../sass/screen.scss */
+  /* hack to make contact padding-top correct, and scrolspy still working */
+  /* line 346, ../sass/screen.scss */
+  #clients {
+    margin-bottom: 0;
+  }
+
+  /* line 350, ../sass/screen.scss */
   .navbar-fixed-top {
     position: fixed;
   }
 
-  /* line 343, ../sass/screen.scss */
-  .nav-list > li > a {
-    font-size: 28pt;
-    /* should be not defined */
-    line-height: 30pt;
-    /* should be not defined */
+  /* line 354, ../sass/screen.scss */
+  .nav-list {
+    padding-right: 0;
+    /* hack for strange behaviour when scrolling to top */
   }
 
-  /* line 349, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
+  .nav-list > li > a {
+    font-size: 24px;
+    /* should be not defined */
+    line-height: 30px;
+    /* should be not defined */
+    padding-right: 0;
+    /* hack for strange behaviour when scrolling to top */
+  }
+
+  /* line 365, ../sass/screen.scss */
   .nav-list > li > a:hover,
   .nav-list > li > a:active {
     text-decoration: line-through;
   }
 
-  /* line 354, ../sass/screen.scss */
+  /* line 370, ../sass/screen.scss */
   .page-unit,
   .container .sidebar-nav {
     padding-top: 110px;
   }
 
-  /* line 358, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .page-unit .section {
     padding-left: 280px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 365, ../sass/screen.scss */
+  /* line 381, ../sass/screen.scss */
   .navbar .container {
     width: 724px;
   }
@@ -465,33 +486,33 @@ article address {
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 376, ../sass/screen.scss */
+  /* line 392, ../sass/screen.scss */
   .sidebar-nav {
     display: none;
   }
 
-  /* line 380, ../sass/screen.scss */
+  /* line 396, ../sass/screen.scss */
   .btn-navbar {
     display: block;
   }
 
-  /* line 384, ../sass/screen.scss */
+  /* line 400, ../sass/screen.scss */
   .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 389, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .navbar .btn-navbar {
     margin-right: 30px;
   }
 
-  /* line 393, ../sass/screen.scss */
+  /* line 409, ../sass/screen.scss */
   .navbar .brand {
     margin-left: 50px;
   }
 
-  /* line 399, ../sass/screen.scss */
+  /* line 415, ../sass/screen.scss */
   .page-content h1 {
     font-size: 17pt;
     /*, should be 36px, was 52px */
@@ -502,7 +523,7 @@ article address {
     padding-bottom: 30px;
     /* was 65px */
   }
-  /* line 406, ../sass/screen.scss */
+  /* line 422, ../sass/screen.scss */
   .page-content p, .page-content address {
     font-size: 12pt;
     /* should be 28px, as 36px */
@@ -510,19 +531,19 @@ article address {
     /* should be 30px */
     paddng-bottom: 50px;
   }
-  /* line 412, ../sass/screen.scss */
+  /* line 428, ../sass/screen.scss */
   .page-content li {
     font-size: 8pt;
     /*should be 18px,  was 24px */
     line-height: 9.6pt;
     /* should be 22px */
   }
-  /* line 417, ../sass/screen.scss */
+  /* line 433, ../sass/screen.scss */
   .page-content .page-unit {
     padding: 0 30px;
   }
 
-  /* line 424, ../sass/screen.scss */
+  /* line 440, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     font-size: 17pt;
@@ -535,18 +556,18 @@ article address {
     /*(15px used to be 20)*/
   }
 
-  /* line 432, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .nav-collapse .nav > li {
     border-bottom: 1px solid #362f27;
   }
 
-  /* line 436, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   .nav-collapse .nav {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 441, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   .nav-collapse {
     margin-bottom: 50px;
   }

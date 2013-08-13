@@ -140,28 +140,28 @@ h1
 {
   font-family: Helvetica;
   color: $red_txt_color;
-  font-size: 30pt; /* should be 30px */
-	line-height: 36pt; /* should be 36px */
+  font-size: 30px; /* should be 30px */
+	line-height: 36px; /* should be 36px */
   font-weight: bold;
 }
 p
 {
-  font-size: 14pt; /* should be 14px */
-	line-height: 16pt; /* should be 16px */
+  font-size: 14px; /* should be 14px */
+	line-height: 16px; /* should be 16px */
 }
 p small
 {
-  font-size: 14pt; /* should be 14px */
+  font-size: 14px; /* should be 14px */
 }
 article .clients ul li,
 article .awards ul li
 {
-  font-size: 12pt; /* should be 12px */
-	line-height: 18pt; /* should be 18px */
+  font-size: 12px; /* should be 12px */
+	line-height: 18px; /* should be 18px */
 }
 article address
 {
-  font-size: 14pt; /* should be 14px */
+  font-size: 14px; /* should be 14px */
 }
 
 /* TB reset/overrides */
@@ -301,16 +301,22 @@ article address
 
 @media (min-width: 768px)
 {
+	.navbar .brand
+	{
+		margin-left: 15px;
+	}
 	.sidebar-nav
 	{
 		.twitter
 		{
 			margin-top: 50px;
+			width: 180px;
 			li
 			{
 				opacity: 0.5;
 				margin-top: 25px;
-				font-size: 16px;
+				font-size: 12px;
+				line-height: 14px;
 				font-style: italic;
 
 				&:hover
@@ -335,14 +341,24 @@ article address
 	{
 		padding: 36px 0;
 	}
+	/* hack to make contact padding-top correct, and scrolspy still working */
+	#clients
+	{
+		margin-bottom: 0;
+	}
   .navbar-fixed-top
   {
     position: fixed;
   }
+	.nav-list
+	{
+		padding-right: 0; /* hack for strange behaviour when scrolling to top */
+	}
 	.nav-list > li > a
 	{
-		font-size: 28pt; /* should be not defined */
-		line-height: 30pt;  /* should be not defined */
+		font-size: 24px; /* should be not defined */
+		line-height: 30px;  /* should be not defined */
+		padding-right: 0; /* hack for strange behaviour when scrolling to top */
 	}
 	.nav-list > li > a:hover,
 	.nav-list > li > a:active
