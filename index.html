@@ -57,8 +57,8 @@
           </div>
           <!--/.nav-collapse -->
 
-          <div class="sidebar-nav">
-            <ul id="main_nav" class="nav nav-list affix">
+          <div class="sidebar-nav affix">
+            <ul id="main_nav" class="nav nav-list">
               <li><a href="#overview">Company Overview</a></li>
               <li><a href="#portfolio">Design Portfolio</a></li>
               <li><a href="#services">Our Services</a></li>
@@ -66,7 +66,17 @@
               <li><a href="#clients">Client List</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
+
+
+            <div class="twitter hidden-tablet hidden-mobile span3">
+              <p>
+                <a href="http://twitter.com/porcarocomm">@porcarocomm</a>
+              </p>
+              <div id="twitter_feeds"></div>
+            </div>
           </div><!--/.well -->
+
+
         </div><!--/span-->
         <div class="span9">
 
@@ -229,6 +239,9 @@
     <script src="jquery.js"></script>
     <script src="jquery-ui-1.9.1.custom/js/jquery-ui-1.9.1.custom.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="twitter.js"></script>
+
+
     <script src="porcaro.js"></script>
     <script>
       // hiding mobile nav bar
@@ -242,7 +255,7 @@
       $(function(){
         // side bar
         setTimeout(function () {
-          $('#main_nav').affix()
+          $('.sidebar-nav').affix()
         }, 100);
 
         $('.sidebar-nav').scrollspy();

@@ -82,6 +82,11 @@ body
 	text-decoration: line-through;
 }
 
+a:hover,
+a:focus {
+  color: $red_txt_color;
+}
+
 .navbar-inverse .navbar-inner
 {
   background-image: none;
@@ -296,6 +301,29 @@ article address
 
 @media (min-width: 768px)
 {
+	.sidebar-nav
+	{
+		.twitter
+		{
+			margin-top: 50px;
+			li
+			{
+				opacity: 0.5;
+				margin-top: 25px;
+				font-size: 16px;
+				font-style: italic;
+
+				&:hover
+				{
+					opacity: 1;
+				}
+				span.time
+				{
+					display: block;
+				}
+			}
+		}
+	}
   .navbar .btn-navbar
   {
     display: none;
@@ -371,8 +399,8 @@ article address
     {
       font-size: 17pt; /*, should be 36px, was 52px */
 			line-height: 17pt; /* should be 36px */
-      padding-top: 40px; /* was 50px */
-      padding-bottom: 45px; /* was 65px */
+      padding-top: 30px; /* was 50px */
+      padding-bottom: 30px; /* was 65px */
     }
     p, address
     {
