@@ -44,7 +44,7 @@
       }
 
       #portfolios {
-          padding-top:50px; 
+          padding-top:50px;
       }
 
       #portfolios ul {
@@ -57,7 +57,7 @@
           margin-left:0px;
           margin-right:0px;
           padding-bottom:50px;
-       
+
         }
 
         .portfolio-contents-header h1 {
@@ -102,7 +102,7 @@
           margin-right:0px;
           padding-bottom:50px;
         }
-      
+
         .portfolio-contents-header h1 {
           color:#ed1a3a;
           margin-bottom:25px;
@@ -143,7 +143,7 @@
         .portfolio-contents-header {
           margin-left:150px;
           margin-right:55px;
-          padding-bottom:50px;      
+          padding-bottom:50px;
         }
 
         .portfolio-contents-header h1 {
@@ -183,11 +183,11 @@
       }
 
       @media screen and (min-width: 980px) {
-      
+
         .portfolio-contents-header {
           margin-left:280px;
           margin-right:100px;
-          padding-bottom:75px; 
+          padding-bottom:75px;
         }
 
         .portfolio-contents-header h1 {
@@ -224,7 +224,7 @@
           top:155px;
           font-size:14px;
         }
- 
+
     }
     </style>
 
@@ -301,8 +301,8 @@
               </p>
               <p>
                 <br>
-                <a href="#">Our Approach</a><br>
-                <a href="#">Our People</a>
+                <a data-toggle="modal" href="approach.html" data-target="#approach_modal">Our Approach</a><br>
+                <a data-toggle="modal" href="people.html" data-target="#people_modal">Our People</a>
               </p>
               </div>
             </div>
@@ -440,7 +440,7 @@
 
 
 <!-- Le Portoflio ################################################# -->
-       
+
         <div id="le_portfolio" class="span9 anim30" >
 
 
@@ -476,7 +476,7 @@
             </div>
           </div>
 
-      <!--Couverdon ####################################################-->   
+      <!--Couverdon ####################################################-->
           <div id="portfolio_contents_couverdon" >
             <div class="portfolio-contents-header">
               <h1>Couverdon</h1>
@@ -489,7 +489,7 @@
             </div>
           </div>
 
-      <!--D-Wave Systems ####################################################-->    
+      <!--D-Wave Systems ####################################################-->
           <div id="portfolio_contents_d-wave_systems" >
             <div class="portfolio-contents-header">
               <h1>D-Wave Systems</h1>
@@ -502,7 +502,7 @@
             </div>
           </div>
 
-      <!--Legend Power ####################################################-->    
+      <!--Legend Power ####################################################-->
           <div id="portfolio_contents_legend_power" >
             <div class="portfolio-contents-header">
               <h1>Legend Power</h1>
@@ -515,7 +515,7 @@
             </div>
           </div>
 
-      <!--Minefinders ####################################################-->   
+      <!--Minefinders ####################################################-->
           <div id="portfolio_contents_minefinders" >
             <div class="portfolio-contents-header">
               <h1>Minefinders</h1>
@@ -528,7 +528,7 @@
             </div>
           </div>
 
-      <!--New Gold ####################################################-->    
+      <!--New Gold ####################################################-->
           <div id="portfolio_contents_new_gold" >
           <div class="portfolio-contents-header">
               <h1>New Gold</h1>
@@ -563,7 +563,7 @@
 
         </div>
 
-        
+
       </div>
 
 
@@ -577,6 +577,29 @@
       </div><!--/row-->
 
     </div><!--/.fluid-container-->
+
+<div id="approach_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body-wrap">
+    <div class="modal-body">
+    <p>people...</p>
+    </div>
+  </div>
+</div>
+
+<div id="people_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body-wrap">
+    <div class="modal-body">
+    <p>people...</p>
+    </div>
+  </div>
+</div>
+
 
     <!-- Le javascript
     ================================================== -->
@@ -615,7 +638,7 @@
 
 
  <script>
-    
+
     // portfolio scripts
       function hide_portfolio() {
         if( document.getElementById('le_portfolio').style.display=='block'){
@@ -629,9 +652,9 @@
                 document.getElementById('homepage').style.display = 'block';
                 document.getElementById('homepage').style.opacity = 1;
               }, 300);
-              
+
             }, 300);
-          }   
+          }
       }
 
       function show_portfolio() {
@@ -644,7 +667,7 @@
             document.getElementById('le_portfolio').style.opacity = 1;
           }, 500);
         }, 300);
-            
+
         $('.nav').click(function () { hide_portfolio() });
         $('.brand').click(function () { hide_portfolio() });
       }
@@ -659,7 +682,7 @@
       function scroller(target) {
         var target_location = $('#' + target).position();
         var current_location = $('body').scrollTop();
-        
+
         var speed = target_location.top - current_location;
         if (speed < 0 ) {
            speed = speed * -1;
@@ -668,7 +691,7 @@
         if (speed > 1350) {
           speed = 1350;
         }
-      
+
         $('body','html').animate({scrollTop: target_location.top}, speed);
       }
     </script>
