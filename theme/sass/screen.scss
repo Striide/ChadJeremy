@@ -6,6 +6,7 @@
 @import "compass/reset";
 
 $red_txt_color: rgb(229,19,47);
+$red_bg_color: #e7132f;
 
 $grey_txt_color: rgb(53,51,48);
 
@@ -187,6 +188,94 @@ article address
   text-shadow: none;
   background-color: transparent;
 }
+#people_modal
+{
+	border-radius: 0px;
+	border: none;
+
+	&.fade.in
+	{
+		top: 10%;
+	}
+	.modal-body
+	{
+		padding-left: 25px;
+		padding-top: 5px;
+	}
+	.modal-header
+	{
+		border-bottom: none;
+	}
+
+	.people-left {
+		float: left;
+		width: 48%;
+	}
+	.people-right
+	{
+		padding-top: 105px;
+		float: left;
+		width: 48%;
+		margin-left: 20px;
+	}
+	.people-vcard
+	{
+		background-color: #f0f1f1;
+		padding: 35px 25px;
+		margin-bottom: 20px;
+		h3
+		{
+			font-size: 18px;
+			line-heigh: 20px;
+			color: $red_txt_color;
+			margin-bottom: 15px;
+		}
+		p
+		{
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}
+#approach_modal
+{
+	.modal-header
+	{
+		padding: 5px;
+		border-bottom: none;
+		.close
+		{
+			text-shadow: none;
+			color: $red_txt_color;
+		}
+	}
+	border-radius: 0px;
+	background-color: $red_bg_color;
+	border: none;
+	color: #FFF;
+	&.fade.in
+	{
+		top: 15%;
+	}
+	.modal-body-wrap
+	{
+		padding: 30px;
+		.modal-body
+		{
+			padding: 0;
+			p
+			{
+				margin-bottom: 20px;
+			}
+		}
+		background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
+	}
+}
+.modal-backdrop
+{
+	background-color: #FFF;
+}
+
 /* /TB reset/overrides */
 
 /* RESPONSIVE */
@@ -208,9 +297,125 @@ article address
     margin-left: -10px;
   }
 
+	.sidebar-nav
+	{
+
+	}
+
+	#people_modal
+	{
+		.people-left {
+			float: none;
+			width: auto;
+		}
+		.people-right
+		{
+			padding-top: 0px;
+			float: none;
+			width: auto;
+			margin-left: 0px;
+		}
+	}
 }
 
-@media (min-width: 980px) {
+@media (min-width: 980px)
+{
+	#people_modal
+	{
+		width: 1200px;
+		margin-left: -600px;
+		border-radius: 0px;
+		border: none;
+
+		&.fade.in
+		{
+			top: 10%;
+		}
+		.modal-body
+		{
+			padding-left: 25px;
+			padding-top: 5px;
+		}
+
+		.modal-header
+		{
+			border-bottom: none;
+		}
+
+		.people-left {
+			float: left;
+			width: 48%;
+		}
+		.people-right
+		{
+			padding-top: 145px;
+			float: left;
+			width: 48%;
+			margin-left: 35px;
+		}
+		.people-vcard
+		{
+			background-color: #f0f1f1;
+			padding: 45px 35px;
+			margin-bottom: 35px;
+			h3
+			{
+				font-size: 18px;
+				line-heigh: 20px;
+				color: $red_txt_color;
+				margin-bottom: 15px;
+			}
+			p
+			{
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+	}
+
+	#approach_modal
+	{
+		.modal-header
+		{
+			.close
+			{
+				margin-right: -55px;
+			}
+		}
+		width: 990px;
+		margin-left: -520px;
+		.modal-body-wrap
+		{
+			padding-left: 130px;
+			padding-top: 45px;
+			padding-bottom: 45px;
+			.modal-body
+			{
+				width: 300px;
+				padding: 0;
+				max-height: 85%;
+			}
+			background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
+		}
+	}
+
+	#people_modal
+	{
+		.modal-header
+		{
+			.close
+			{
+				margin-right: -55px;
+			}
+		}
+		.modal-body-wrap
+		{
+			.modal-body
+			{
+				max-height: 85%;
+			}
+		}
+	}
 	.container,
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
@@ -299,6 +504,24 @@ article address
 	}
 }
 
+@media (max-width: 979px)
+{
+	#approach_modal
+	{
+		.modal-header
+		{
+			.close
+			{
+				color: #FFF;
+			}
+		}
+		.modal-body-wrap
+		{
+			background: none;
+		}
+	}
+}
+
 @media (min-width: 768px)
 {
 	.navbar .brand
@@ -384,10 +607,35 @@ article address
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {  }
+@media (min-width: 768px) and (max-width: 979px) {
+	.nav-list > li > a
+	{
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 767px)
+{
+	#approach_modal
+	{
+		.modal-header
+		{
+			.close
+			{
+
+			}
+		}
+		.modal-body-wrap
+		{
+			.modal-body
+			{
+				padding: 0;
+			}
+		}
+	}
+
   .sidebar-nav
   {
     display: none;
@@ -460,5 +708,40 @@ article address
 
 }
 
+@media (min-width: 481px)
+{
+
+	#people_modal
+	{
+		.people-vcard
+		{
+			&.barb
+			{
+				padding-left: 230px;
+				background: #f0f1f1 url("../../assets/moreira.png") bottom left no-repeat;
+			}
+			&.sandra
+			{
+				padding-left: 230px;
+				background: #f0f1f1 url("../../assets/fong.png") bottom left no-repeat;
+			}
+			&.cecil
+			{
+				padding-right: 230px;
+				background: #f0f1f1 url("../../assets/balfour.png") bottom right no-repeat;
+			}
+			&.coronado
+			{
+				padding-left: 230px;
+				background: #f0f1f1 url("../../assets/diaz.png") bottom left no-repeat;
+			}
+			&.everett
+			{
+				padding-right: 230px;
+				background: #f0f1f1 url("../../assets/ranni.png") bottom right no-repeat;
+			}
+		}
+	}
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {  }

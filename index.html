@@ -94,12 +94,35 @@
               </p>
               <p>
                 <br>
-                <a href="#">Our Approach</a><br>
-                <a href="#">Our People</a>
+                <a data-toggle="modal" href="approach.html" data-target="#approach_modal">Our Approach</a><br>
+                <a data-toggle="modal" href="people.html" data-target="#people_modal">Our People</a>
               </p>
               </div>
             </div>
           </div>
+
+
+<div id="approach_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body-wrap">
+    <div class="modal-body">
+    <p>people...</p>
+    </div>
+  </div>
+</div>
+
+<div id="people_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body-wrap">
+    <div class="modal-body">
+    <p>people...</p>
+    </div>
+  </div>
+</div>
 
           <div class="page-unit" id="portfolio">
             <div class="inner-container">
@@ -264,6 +287,9 @@
 
         // this copies the site menu contents into the adaptive menu, so the adaptive menu works
         $("body").adaptivemenu();
+
+        $('#approach_modal').modal(options);
+        $('#people_modal').modal(options);
       });
     </script>
 
