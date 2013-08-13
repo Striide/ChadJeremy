@@ -282,7 +282,12 @@ article address
 /* Large desktop */
 @media (min-width: 1200px)
 {
+	#people_modal
+	{
+		width: 1200px;
+		margin-left: -600px;
 
+	}
 }
 
 @media (max-width: 980px) {
@@ -322,8 +327,9 @@ article address
 {
 	#people_modal
 	{
-		width: 1200px;
-		margin-left: -600px;
+		width: 980px;
+		margin-left: -490px;
+
 		border-radius: 0px;
 		border: none;
 
@@ -399,23 +405,6 @@ article address
 		}
 	}
 
-	#people_modal
-	{
-		.modal-header
-		{
-			.close
-			{
-				margin-right: -55px;
-			}
-		}
-		.modal-body-wrap
-		{
-			.modal-body
-			{
-				max-height: 85%;
-			}
-		}
-	}
 	.container,
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
@@ -503,9 +492,22 @@ article address
 		margin-left: 20px;
 	}
 }
+@media (min-width: 1200px)
+{
+	#people_modal
+	{
+		width: 1200px;
+		margin-left: -600px;
+	}
+}
+
 
 @media (max-width: 979px)
 {
+	#people_modal
+	{
+
+	}
 	#approach_modal
 	{
 		.modal-header
