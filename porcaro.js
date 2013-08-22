@@ -6,7 +6,8 @@
     }
   });
 
-  $.widget("porcaro.animatedScroll", {
+  $.widget("porcaro.scrollmenu", {
+    options: { height_fix: 30 },
     _create: function()
     {
       that = this;
@@ -20,18 +21,8 @@
     scroller: function (target)
     {
       var target_location = $(target).position();
-      var current_location = $('body').scrollTop();
 
-      var speed = target_location.top - current_location;
-      if (speed < 0 ) {
-         speed = speed * -1;
-      }
-
-      if (speed > 1350) {
-        speed = 1350;
-      }
-
-      $('body','html').animate({scrollTop: target_location.top}, speed);
+      $('body').animate({scrollTop: target_location.top - this.options.height_fix}, 1000);
     }
   });
 

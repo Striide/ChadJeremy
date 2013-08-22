@@ -146,7 +146,9 @@ a:focus {
     padding-bottom: 50px;
     border-bottom: 1px solid $grey_lines_color;
   }
-  margin-bottom: 50px;
+  /* no longer used, fixing the scroller/spy
+	margin-bottom: 50px;
+	*/
 }
 h1
 {
@@ -612,14 +614,21 @@ article address
 	{
 		text-decoration: line-through;
 	}
-  #homepage,
+  #homepage
+	{
+		padding-top: $header_margin_bottom - 30px;
+	}
 	#sidebar
 	{
-	  padding-top: $header_height + $header_margin_bottom;
+		padding-top: $header_height + $header_margin_bottom;
 	}
 	.page-unit .section
 	{
 		padding-left: 280px;
+	}
+	.page-unit
+	{
+		padding-top: $header_height + 30px;
 	}
 }
 @media (min-width: 768px) and (max-width: 979px)
