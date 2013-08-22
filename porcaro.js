@@ -7,7 +7,7 @@
   });
 
   $.widget("porcaro.scrollmenu", {
-    options: { height_fix: 30 },
+    options: { height_fix: 110 },
     _create: function()
     {
       that = this;
