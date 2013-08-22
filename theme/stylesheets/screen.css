@@ -164,7 +164,7 @@ a:focus {
 
 /* line 138, ../sass/screen.scss */
 .sidebar-nav {
-  padding: 9px 0;
+  padding: 0 0 9px 0;
 }
 
 /* line 142, ../sass/screen.scss */
@@ -684,8 +684,8 @@ article address {
   }
 
   /* line 617, ../sass/screen.scss */
-  .page-unit,
-  .container .sidebar-nav {
+  #homepage,
+  #sidebar {
     padding-top: 110px;
   }
 
