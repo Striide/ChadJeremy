@@ -57,7 +57,19 @@ h[a]+'" class="twitter_fav_icon">Favorite</a></p>');c.push(b);a++}if(null==w){e=
 // Similar as previous, except this time we pass a custom function to render the
 // tweets ourself! Useful if you need to know exactly when data has returned or
 // if you need full control over the output.
-twitterFetcher.fetch('367174350199205890', '', 2, true, false, true, dateFormatter, false, handleTweets);
+
+// TODO: porcaro will need to supply this
+//var twitter_widget_id = '367174350199205890'; // this one is for Chad's account
+var twitter_widget_id = null;
+
+if (twitter_widget_id != null)
+{
+  twitterFetcher.fetch(twitter_widget_id, '', 2, true, false, true, dateFormatter, false, handleTweets);
+}
+else
+{
+  document.getElementById("twitter_feed_container").style.display = "none";
+}
 
 function handleTweets(tweets){
     var x = tweets.length;
