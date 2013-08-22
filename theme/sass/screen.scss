@@ -152,28 +152,28 @@ h1
 {
   font-family: Helvetica;
   color: $red_txt_color;
-  font-size: 30px; /* should be 30px */
-	line-height: 36px; /* should be 36px */
+  font-size: 30px;
+	line-height: 36px;
   font-weight: bold;
 }
 p
 {
-  font-size: 14px; /* should be 14px */
-	line-height: 16px; /* should be 16px */
+  font-size: 14px;
+	line-height: 18px;
 }
 p small
 {
-  font-size: 14px; /* should be 14px */
+  font-size: 14px;
 }
 article .clients ul li,
 article .awards ul li
 {
-  font-size: 12px; /* should be 12px */
-	line-height: 18px; /* should be 18px */
+  font-size: 12px;
+	line-height: 18px;
 }
 article address
 {
-  font-size: 14px; /* should be 14px */
+  font-size: 14px;
 }
 
 /* TB reset/overrides */

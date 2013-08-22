@@ -184,39 +184,31 @@ h1 {
   font-family: Helvetica;
   color: #e7132f;
   font-size: 30px;
-  /* should be 30px */
   line-height: 36px;
-  /* should be 36px */
   font-weight: bold;
 }
 
 /* line 160, ../sass/screen.scss */
 p {
   font-size: 14px;
-  /* should be 14px */
-  line-height: 16px;
-  /* should be 16px */
+  line-height: 18px;
 }
 
 /* line 165, ../sass/screen.scss */
 p small {
   font-size: 14px;
-  /* should be 14px */
 }
 
 /* line 170, ../sass/screen.scss */
 article .clients ul li,
 article .awards ul li {
   font-size: 12px;
-  /* should be 12px */
   line-height: 18px;
-  /* should be 18px */
 }
 
 /* line 175, ../sass/screen.scss */
 article address {
   font-size: 14px;
-  /* should be 14px */
 }
 
 /* TB reset/overrides */
