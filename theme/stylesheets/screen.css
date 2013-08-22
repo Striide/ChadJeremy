@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 61, ../sass/screen.scss */
 body {
   font-family: Georgia;
-  color: #353330;
+  color: #3b3b3b;
 }
 
 /* line 66, ../sass/screen.scss */
@@ -105,7 +105,7 @@ body {
 /* line 87, ../sass/screen.scss */
 a:hover,
 a:focus {
-  color: #e5132f;
+  color: #e7132f;
 }
 
 /* line 92, ../sass/screen.scss */
@@ -168,13 +168,13 @@ a:focus {
 /* line 139, ../sass/screen.scss */
 .page-unit .inner-container {
   padding-bottom: 50px;
-  border-bottom: 1px solid #362f27;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 /* line 146, ../sass/screen.scss */
 h1 {
   font-family: Helvetica;
-  color: #e5132f;
+  color: #e7132f;
   font-size: 30px;
   /* should be 30px */
   line-height: 36px;
@@ -225,7 +225,7 @@ article address {
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {
-  color: #e5132f;
+  color: #e7132f;
   text-decoration: line-through;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: transparent;
@@ -279,7 +279,7 @@ article address {
 #people_modal .people-vcard h3 {
   font-size: 18px;
   line-heigh: 20px;
-  color: #e5132f;
+  color: #e7132f;
   margin-bottom: 15px;
 }
 /* line 239, ../sass/screen.scss */
@@ -303,7 +303,7 @@ article address {
 /* line 252, ../sass/screen.scss */
 #approach_modal .modal-header .close {
   text-shadow: none;
-  color: #e5132f;
+  color: #e7132f;
 }
 /* line 262, ../sass/screen.scss */
 #approach_modal.fade.in {
@@ -408,7 +408,7 @@ article address {
   #people_modal .people-vcard h3 {
     font-size: 18px;
     line-heigh: 20px;
-    color: #e5132f;
+    color: #e7132f;
     margin-bottom: 15px;
   }
   /* line 380, ../sass/screen.scss */
@@ -761,7 +761,7 @@ article address {
     font-size: 17pt;
     /*should be 36px,  52px from PSD was too big, according to feeback from Sandra; Jul 29 */
     font-weight: normal;
-    color: #e5132f;
+    color: #e7132f;
     line-height: 28.5pt;
     /* should be 42px */
     padding: 15px 30px;
@@ -770,7 +770,7 @@ article address {
 
   /* line 699, ../sass/screen.scss */
   .nav-collapse .nav > li {
-    border-bottom: 1px solid #362f27;
+    border-bottom: 1px solid #3b3b3b;
   }
 
   /* line 703, ../sass/screen.scss */
