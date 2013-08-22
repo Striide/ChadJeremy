@@ -6,6 +6,35 @@
     }
   });
 
+  $.widget("porcaro.animatedScroll", {
+    _create: function()
+    {
+      that = this;
+      $(this.element).click(function(evt)
+      {
+        id = $(this).attr("href");
+        that.scroller(id);
+        evt.stopPropagation();
+      });
+    },
+    scroller: function (target)
+    {
+      var target_location = $(target).position();
+      var current_location = $('body').scrollTop();
+
+      var speed = target_location.top - current_location;
+      if (speed < 0 ) {
+         speed = speed * -1;
+      }
+
+      if (speed > 1350) {
+        speed = 1350;
+      }
+
+      $('body','html').animate({scrollTop: target_location.top}, speed);
+    }
+  });
+
   $.widget("porcaro.fixheight", {
     _create: function(){
       var wgt = this;

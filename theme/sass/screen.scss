@@ -86,7 +86,13 @@ body
 {
 	text-decoration: line-through;
 }
-
+a,
+a:active,
+a:hover,
+a:visited
+{
+  outline: 0;
+}
 a:hover,
 a:focus {
   color: $red_txt_color;

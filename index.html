@@ -264,12 +264,12 @@
 
           <div class="sidebar-nav affix">
             <ul id="main_nav" class="nav nav-list">
-              <li><a href="javascript:scroller('overview');">A Brand Agency</a></li>
-              <li><a href="javascript:scroller('portfolio');">Our Work</a></li>
-              <li><a href="javascript:scroller('services');">What We Do</a></li>
-              <li><a href="javascript:scroller('awards');">Awards & Recognition</a></li>
-              <li><a href="javascript:scroller('clients');">Our Clients</a></li>
-              <li><a href="javascript:scroller('contact');" >Porcaro</a></li>
+              <li><a href="#overview">A Brand Agency</a></li>
+              <li><a href="#portfolio">Our Work</a></li>
+              <li><a href="#services">What We Do</a></li>
+              <li><a href="#awards">Awards & Recognition</a></li>
+              <li><a href="#clients">Our Clients</a></li>
+              <li><a href="#contact" >Porcaro</a></li>
             </ul>
 
 
@@ -618,7 +618,11 @@
       });
     </script>
     <script>
-      $(function(){
+      $(function()
+      {
+        // silly FF bug where outlines wont die
+        $("a").css("outline",0);
+
         // side bar
         setTimeout(function () {
           $('.sidebar-nav').affix()
@@ -631,6 +635,9 @@
 
         // this copies the site menu contents into the adaptive menu, so the adaptive menu works
         $("body").adaptivemenu();
+
+        // enable animated scroll
+        $("#main_nav li a").animatedScroll();
       });
     </script>
 
@@ -675,22 +682,6 @@
         $('body,html').animate({scrollTop: 0}, 500);
           document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
           document.getElementById('portfolio_stage').style.opacity =1;
-      }
-
-      function scroller(target) {
-        var target_location = $('#' + target).position();
-        var current_location = $('body').scrollTop();
-
-        var speed = target_location.top - current_location;
-        if (speed < 0 ) {
-           speed = speed * -1;
-        }
-
-        if (speed > 1350) {
-          speed = 1350;
-        }
-
-        $('body','html').animate({scrollTop: target_location.top}, speed);
       }
     </script>
   </body>
