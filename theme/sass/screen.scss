@@ -150,6 +150,14 @@ a:focus {
   /* no longer used, fixing the scroller/spy
 	margin-bottom: 50px;
 	*/
+	ul
+	{
+		li
+		{
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
 }
 h1
 {
@@ -159,6 +167,14 @@ h1
 	line-height: 36px;
   font-weight: bold;
 	letter-spacing: -1px;
+}
+h2
+{
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Helvetica";
+	margin-top: 40px;
+	margin-bottom: 4px;
 }
 p
 {
@@ -639,7 +655,7 @@ article address
   }
 	h1
 	{
-		padding: 36px 0;
+		padding: 30px 0;
 	}
 	/* hack to make contact padding-top correct, and scrolspy still working */
 	#clients
