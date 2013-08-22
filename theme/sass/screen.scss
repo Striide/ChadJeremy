@@ -136,7 +136,7 @@ a:focus {
 }
 .sidebar-nav
 {
-  padding: 9px 0;
+  padding: 0 0 9px 0;
 }
 .page-unit
 {
@@ -612,8 +612,8 @@ article address
 	{
 		text-decoration: line-through;
 	}
-  .page-unit,
-	.container .sidebar-nav
+  #homepage,
+	#sidebar
 	{
 	  padding-top: $header_height + $header_margin_bottom;
 	}
