@@ -172,6 +172,11 @@ p a
 {
 	line-height: 21px;
 }
+blockguote p
+{
+	font-size: 24px;
+	font-weight: normal;
+}
 article .clients ul li,
 article .awards ul li
 {
@@ -210,7 +215,13 @@ article address
 {
 	border-radius: 0px;
 	border: none;
-
+	.close
+	{
+		text-shadow: none;
+		color: $red_txt_color;
+		opacity: 1;
+		font-size: 24px;
+	}
 	&.fade.in
 	{
 		top: 10%;
@@ -265,6 +276,8 @@ article address
 		{
 			text-shadow: none;
 			color: $red_txt_color;
+			opacity: 1;
+			font-size: 24px;
 		}
 	}
 	border-radius: 0px;
@@ -308,9 +321,21 @@ article address
 {
 	#people_modal
 	{
-		width: 1200px;
-		margin-left: -600px;
+		width: 1264px;
+		margin-left: -634px;
+		.modal-body
+		{
+			max-height: none;
+		}
+	}
 
+	#approach_modal {
+		width: 1132px;
+		margin-left: -633px;
+	}
+	#approach_modal .modal-body-wrap
+	{
+		background: transparent url(../../assets/fist.png) right 35% no-repeat;
 	}
 }
 
@@ -343,13 +368,27 @@ article address
 	}
 }
 
-@media (min-width: 980px)
+@media (min-width: 980px) and (max-width: 1200px)
 {
 	#people_modal
 	{
 		width: 980px;
 		margin-left: -490px;
-
+	}
+	#approach_modal
+	{
+		width: 990px;
+		margin-left: -520px;
+		.modal-body-wrap
+		{
+			background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
+		}
+	}
+}
+@media (min-width: 980px)
+{
+	#people_modal
+	{
 		border-radius: 0px;
 		border: none;
 
@@ -406,10 +445,9 @@ article address
 			.close
 			{
 				margin-right: -55px;
+				margin-top: -10px;
 			}
 		}
-		width: 990px;
-		margin-left: -520px;
 		.modal-body-wrap
 		{
 			padding-left: 130px;
@@ -421,7 +459,6 @@ article address
 				padding: 0;
 				max-height: 85%;
 			}
-			background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
 		}
 	}
 
@@ -429,10 +466,10 @@ article address
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
 	.navbar-fixed-bottom .container {
-		width: 950px;
+		width: 1000px;
 	}
 	.span12 {
-		width: 950px;
+		width: 1000px;
 	}
 	.span11 {
 		width: 860px;
@@ -514,22 +551,27 @@ article address
 	#homepage
 	{
 		margin-left: 30px;
+		width: 750px;
+	}
+	#sidebar
+	{
+		width: 220px;
+		margin-left: 0;
+		.sidebar-nav
+		{
+			width: 220px;
+		}
 	}
 	#main_nav
 	{
 		padding-left: 0;
 		padding-right: 0;
 	}
-}
-@media (min-width: 1200px)
-{
-	#people_modal
+	#main_row
 	{
-		width: 1200px;
-		margin-left: -600px;
+		margin-left: 0;
 	}
 }
-
 
 @media (max-width: 979px)
 {
