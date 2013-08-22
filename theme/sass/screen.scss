@@ -62,6 +62,10 @@ body
   font-family: Georgia;
   color: $grey_txt_color;
 }
+.navbar .brand
+{
+	padding: 0;
+}
 .navbar address
 {
   font-size: $header_font_size;
@@ -123,10 +127,6 @@ a:focus {
 .navbar .btn-navbar.active {
   background-image: none;
   background-color: $grey_bg_color;
-}
-.navbar .brand
-{
-  padding: 0;
 }
 .sidebar-nav
 {
@@ -302,10 +302,6 @@ article address
     padding-left: 5px;
     padding-right: 5px;
   }
-  .navbar .brand
-  {
-    margin-left: -10px;
-  }
 
 	.sidebar-nav
 	{
@@ -414,10 +410,10 @@ article address
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
 	.navbar-fixed-bottom .container {
-		width: 940px;
+		width: 950px;
 	}
 	.span12 {
-		width: 940px;
+		width: 950px;
 	}
 	.span11 {
 		width: 860px;
@@ -496,6 +492,15 @@ article address
 	{
 		margin-left: 20px;
 	}
+	#homepage
+	{
+		margin-left: 30px;
+	}
+	#main_nav
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 @media (min-width: 1200px)
 {
@@ -533,7 +538,7 @@ article address
 {
 	.navbar .brand
 	{
-		margin-left: 15px;
+		margin-left: 0;
 	}
 	.sidebar-nav
 	{
@@ -625,6 +630,10 @@ article address
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px)
 {
+	.navbar .brand
+	{
+		margin-left: 50px;
+	}
 	#approach_modal
 	{
 		.modal-header
@@ -655,10 +664,6 @@ article address
   {
     padding-left: $article_padding_x;
     padding-right: $article_padding_x;
-  }
-  .navbar .brand
-  {
-    margin-left: $article_padding_x + 20px;
   }
   .page-content
   {
