@@ -282,6 +282,12 @@ article address
 		background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
 	}
 }
+/* hack for contact header to make sure alignment is right with menu */
+#contact h1
+{
+	padding-top: 0;
+}
+
 .modal-backdrop
 {
 	background-color: #FFF;
