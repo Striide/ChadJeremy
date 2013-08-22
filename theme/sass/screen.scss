@@ -12,7 +12,7 @@ $grey_txt_color: rgb(53,51,48);
 
 $grey_lines_color: rgb(54,47,39);
 
-$grey_bg_color: rgb(53,51,48);
+$grey_bg_color: #3b3b3b;
 
 $grey_thumb_bg_color: rgb(238,238,238);
 
@@ -68,7 +68,7 @@ body
   color: #FFFFFF;
   line-height: 12px;
   text-align: right;
-  padding-top: 10px;
+  padding-top: 0;
 }
 .navbar a,
 .navbar a:hover,
@@ -94,7 +94,7 @@ a:focus {
   background-color: $grey_bg_color;
   padding: $header_padding_y 0;
   margin-bottom: 0;
-  /* margin-bottom: $header_margin_bottom; */
+	min-height: 10px; /* override TB */
 }
 .navbar .btn-navbar
 {
@@ -103,6 +103,11 @@ a:focus {
 
   border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
   border: 1px solid #FFFFFF;
+
+	margin-right: 40px;
+	margin-top: -6px;
+	padding: 10px;
+	margin-bottom: -6px;
 }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar:focus,
@@ -650,10 +655,6 @@ article address
   {
     padding-left: $article_padding_x;
     padding-right: $article_padding_x;
-  }
-  .navbar .btn-navbar
-  {
-    margin-right: $article_padding_x;
   }
   .navbar .brand
   {
