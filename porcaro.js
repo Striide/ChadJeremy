@@ -52,6 +52,7 @@
     {
       var target_location = $(target).position();
       var this_height_fix_passer = this.options.height_fix + 1;
+
       if(is_portfolio_currently_displayed()) {
         hide_portfolio();
         scroller_timeout = 700;
@@ -60,9 +61,11 @@
         scroller_timeout = 0;
       }
 
+
+
       setTimeout(function() {
         target_location = $(target).position();
-        $('body').animate({scrollTop:  target_location.top - this_height_fix_passer}, 200);
+        $('html,body').animate({scrollTop:  target_location.top - this_height_fix_passer}, 200);
       }, scroller_timeout);
         
 
