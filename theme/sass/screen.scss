@@ -466,7 +466,7 @@ article address
 		{
 			.close
 			{
-				margin-right: -55px;
+				margin-right: -45px;
 				margin-top: -10px;
 			}
 		}
@@ -699,16 +699,12 @@ article address
 		/* padding-top: $header_height + 30px; */
 	}
 }
-@media (min-width: 768px) and (max-width: 979px)
-{
-  .navbar .container
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar .container
   {
     width: 724px;
   }
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
 	.nav-list > li > a
 	{
 		font-size: 16px;
