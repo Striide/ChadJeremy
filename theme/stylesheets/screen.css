@@ -792,11 +792,22 @@ article address {
     font-size: 16px;
     line-height: 18px;
   }
+
+  /* line 718, ../sass/screen.scss */
+  .nav-list {
+    padding-left: 0;
+  }
+
+  /* line 722, ../sass/screen.scss */
+  .page-unit .section {
+    padding-left: 210px;
+    padding-right: 81px;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   /* because the navbar transition is a problem on small screens, when scrolling and hiding at the same time  */
-  /* line 724, ../sass/screen.scss */
+  /* line 734, ../sass/screen.scss */
   .no-transition {
     -webkit-transition: height 0.001s;
     -moz-transition: height 0.001s;
@@ -805,57 +816,57 @@ article address {
     transition: height 0.001s;
   }
 
-  /* line 732, ../sass/screen.scss */
+  /* line 742, ../sass/screen.scss */
   .navbar .brand {
     margin-left: 50px;
   }
 
-  /* line 737, ../sass/screen.scss */
+  /* line 747, ../sass/screen.scss */
   #main_row {
     padding-top: 60px;
   }
 
-  /* line 741, ../sass/screen.scss */
+  /* line 751, ../sass/screen.scss */
   .navbar-fixed-top {
     position: fixed;
   }
 
-  /* line 745, ../sass/screen.scss */
+  /* line 755, ../sass/screen.scss */
   #people_modal {
     left: 0;
     right: 0;
   }
-  /* line 747, ../sass/screen.scss */
+  /* line 757, ../sass/screen.scss */
   #people_modal.fade.in {
     top: 0;
   }
 
-  /* line 755, ../sass/screen.scss */
+  /* line 765, ../sass/screen.scss */
   #approach_modal {
     top: 0;
   }
-  /* line 767, ../sass/screen.scss */
+  /* line 777, ../sass/screen.scss */
   #approach_modal .modal-body-wrap .modal-body {
     padding: 0;
   }
 
-  /* line 774, ../sass/screen.scss */
+  /* line 784, ../sass/screen.scss */
   .sidebar-nav {
     display: none;
   }
 
-  /* line 778, ../sass/screen.scss */
+  /* line 788, ../sass/screen.scss */
   .btn-navbar {
     display: block;
   }
 
-  /* line 782, ../sass/screen.scss */
+  /* line 792, ../sass/screen.scss */
   .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 789, ../sass/screen.scss */
+  /* line 799, ../sass/screen.scss */
   .page-content h1 {
     font-size: 17pt;
     /*, should be 36px, was 52px */
@@ -866,7 +877,7 @@ article address {
     padding-bottom: 30px;
     /* was 65px */
   }
-  /* line 796, ../sass/screen.scss */
+  /* line 806, ../sass/screen.scss */
   .page-content p, .page-content address {
     font-size: 12pt;
     /* should be 28px, as 36px */
@@ -874,71 +885,75 @@ article address {
     /* should be 30px */
     paddng-bottom: 50px;
   }
-  /* line 802, ../sass/screen.scss */
+  /* line 812, ../sass/screen.scss */
   .page-content li {
     font-size: 8pt;
     /*should be 18px,  was 24px */
     line-height: 9.6pt;
     /* should be 22px */
   }
-  /* line 807, ../sass/screen.scss */
+  /* line 817, ../sass/screen.scss */
   .page-content .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 815, ../sass/screen.scss */
+  /* line 825, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
-    font-size: 17pt;
-    /*should be 36px,  52px from PSD was too big, according to feeback from Sandra; Jul 29 */
+    font-size: 52px;
     font-weight: normal;
     color: #e7132f;
-    line-height: 28.5pt;
-    /* should be 42px */
+    line-height: 90px;
     padding: 15px 30px;
     /*(15px used to be 20)*/
+    margin-bottom: 0;
+  }
+  /* line 833, ../sass/screen.scss */
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .dropdown-menu a:hover {
+    background: none;
   }
 
-  /* line 823, ../sass/screen.scss */
+  /* line 838, ../sass/screen.scss */
   .nav-collapse .nav > li {
     border-bottom: 1px solid #3b3b3b;
   }
 
-  /* line 827, ../sass/screen.scss */
+  /* line 842, ../sass/screen.scss */
   .nav-collapse .nav {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 832, ../sass/screen.scss */
+  /* line 847, ../sass/screen.scss */
   .nav-collapse {
     margin-bottom: 50px;
     margin-top: 20px;
   }
 }
 @media (min-width: 481px) {
-  /* line 846, ../sass/screen.scss */
+  /* line 861, ../sass/screen.scss */
   #people_modal .people-vcard.barb {
     padding-left: 230px;
     background: #f0f1f1 url("../../assets/moreira.png") bottom left no-repeat;
   }
-  /* line 851, ../sass/screen.scss */
+  /* line 866, ../sass/screen.scss */
   #people_modal .people-vcard.sandra {
     padding-left: 230px;
     background: #f0f1f1 url("../../assets/fong.png") bottom left no-repeat;
   }
-  /* line 856, ../sass/screen.scss */
+  /* line 871, ../sass/screen.scss */
   #people_modal .people-vcard.cecil {
     padding-right: 230px;
     background: #f0f1f1 url("../../assets/balfour.png") bottom right no-repeat;
   }
-  /* line 861, ../sass/screen.scss */
+  /* line 876, ../sass/screen.scss */
   #people_modal .people-vcard.coronado {
     padding-left: 230px;
     background: #f0f1f1 url("../../assets/diaz.png") bottom left no-repeat;
   }
-  /* line 866, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   #people_modal .people-vcard.everett {
     padding-right: 230px;
     background: #f0f1f1 url("../../assets/ranni.png") bottom right no-repeat;

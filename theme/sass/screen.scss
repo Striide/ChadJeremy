@@ -714,6 +714,16 @@ article address
 		font-size: 16px;
 		line-height: 18px;
 	}
+	.nav-list
+	{
+		padding-left: 0;
+	}
+	.page-unit .section
+	{
+		padding-left: 210px;
+		padding-right: 81px;
+	}
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -813,11 +823,16 @@ article address
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a
   {
-    font-size: 17pt; /*should be 36px,  52px from PSD was too big, according to feeback from Sandra; Jul 29 */
+    font-size: 52px;
     font-weight: normal;
     color: $red_txt_color;
-    line-height: 28.5pt; /* should be 42px */
+    line-height: 90px;
     padding: 15px $article_padding_x; /*(15px used to be 20)*/
+		margin-bottom: 0;
+		&:hover
+		{
+			background: none;
+		}
   }
   .nav-collapse .nav > li
   {
