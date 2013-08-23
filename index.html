@@ -691,6 +691,13 @@
           document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
           document.getElementById('portfolio_stage').style.opacity =1;
       }
+      function is_portfolio_currently_displayed() {
+        if (document.getElementById('le_portfolio').style.display == 'block') {
+          return true;
+        } else {
+          return false;
+        }
+      }
     </script>
   </body>
 </html>
