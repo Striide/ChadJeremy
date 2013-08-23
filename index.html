@@ -36,6 +36,7 @@
       }
 
       #portfolio_wrapper {
+          margin-top:60px;
           max-width:750px;
       }
 
@@ -183,6 +184,7 @@
         .portfolio-contents-header {
           margin-left:280px;
           margin-right:100px;
+          padding-top:20px;
           padding-bottom:75px;
         }
 
@@ -678,6 +680,7 @@
           document.getElementById('portfolio_stage').style.opacity = 0;
           setTimeout(function() {
             document.getElementById('le_portfolio').style.opacity = 1;
+            $('body,html').animate({scrollTop: 0}, 300);
           }, 500);
         }, 300);
 
