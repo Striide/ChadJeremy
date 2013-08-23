@@ -255,7 +255,7 @@
       <div id="main_row" class="row">
         <div id="sidebar" class="span3">
 
-          <div class="nav-collapse collapse hidden-desktop hidden-tablet">
+          <div class="nav-collapse collapse hidden-desktop hidden-tablet no-transition">
             <ul class="nav" id="mobile_nav">
 
             </ul>
@@ -358,10 +358,6 @@
 <li>Presentations – PowerPoint & Flash</li>
 </ul>
 
-                <p>
-                  <br>
-                  <a href="#">Read More</a>
-                </p>
               </div>
             </div>
           </div>
@@ -631,6 +627,24 @@
 
         // enable animated scroll
         $("#main_nav li a").scrollmenu();
+
+        $(".navbar .btn-navbar").click(function(){
+          window.scrollTo(0,0);
+        });
+
+        $("#people_modal").on('shown',function(){
+          $("#main_row").hide(); // avoid mobile scroll issues
+        });
+        $("#approach_modal").on('shown',function(){
+          $("#main_row").hide(); // avoid mobile scroll issues
+        });
+
+        $("#people_modal").on('hidden',function(){
+          $("#main_row").show(); // avoid mobile scroll issues
+        });
+        $("#approach_modal").on('hidden',function(){
+          $("#main_row").show(); // avoid mobile scroll issues
+        });
       });
     </script>
 

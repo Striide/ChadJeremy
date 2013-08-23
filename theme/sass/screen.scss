@@ -114,7 +114,7 @@ a:focus {
   border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
   border: 1px solid #FFFFFF;
 
-	margin-right: 40px;
+	margin-right: 35px;
 	margin-top: -6px;
 	padding: 10px;
 	margin-bottom: -6px;
@@ -230,6 +230,7 @@ article address
 }
 #people_modal
 {
+	position: absolute;
 	border-radius: 0px;
 	border: none;
 	box-shadow: none;
@@ -243,12 +244,13 @@ article address
 	}
 	&.fade.in
 	{
-		top: 10%;
+		top: 0;
 	}
 	.modal-body
 	{
 		padding-left: 25px;
 		padding-top: 5px;
+		max-height: 1000px;
 	}
 	.modal-header
 	{
@@ -287,6 +289,7 @@ article address
 }
 #approach_modal
 {
+	position: absolute;
 	.modal-header
 	{
 		padding: 5px;
@@ -306,13 +309,15 @@ article address
 	color: #FFF;
 	&.fade.in
 	{
-		top: 15%;
+		top: 0;
 	}
 	.modal-body-wrap
 	{
 		padding: 30px;
 		.modal-body
 		{
+			max-height: 1000px;
+
 			padding: 0;
 			p
 			{
@@ -321,6 +326,12 @@ article address
 		}
 		background: transparent url(../../assets/fist_med.png) right 35% no-repeat;
 	}
+}
+.modal-backdrop,
+.modal-backdrop.fade.in
+{
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 /* hack for contact header to make sure alignment is right with menu */
 #contact h1
@@ -343,10 +354,6 @@ article address
 	{
 		width: 1264px;
 		margin-left: -634px;
-		.modal-body
-		{
-			max-height: none;
-		}
 	}
 
 	#approach_modal {
@@ -411,11 +418,6 @@ article address
 	{
 		border-radius: 0px;
 		border: none;
-
-		&.fade.in
-		{
-			top: 10%;
-		}
 		.modal-body
 		{
 			padding-left: 25px;
@@ -477,7 +479,6 @@ article address
 			{
 				width: 300px;
 				padding: 0;
-				max-height: 85%;
 			}
 		}
 	}
@@ -718,12 +719,41 @@ article address
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px)
 {
+	/* because the navbar transition is a problem on small screens, when scrolling and hiding at the same time  */
+	.no-transition
+	{
+		-webkit-transition: height 0.001s;
+		-moz-transition: height 0.001s;
+		-ms-transition: height 0.001s;
+		-o-transition: height 0.001s;
+		transition: height 0.001s;
+	}
 	.navbar .brand
 	{
 		margin-left: 50px;
 	}
+
+	#main_row
+	{
+		padding-top: 60px;
+	}
+	.navbar-fixed-top
+  {
+    position: fixed;
+  }
+	#people_modal
+	{
+		&.fade.in
+		{
+			top: 0;
+		}
+		left: 0;
+		right: 0;
+	}
+
 	#approach_modal
 	{
+		top: 0;
 		.modal-header
 		{
 			.close
@@ -801,13 +831,13 @@ article address
   .nav-collapse
   {
     margin-bottom: 50px;
+		margin-top: 20px;
   }
 
 }
 
 @media (min-width: 481px)
 {
-
 	#people_modal
 	{
 		.people-vcard

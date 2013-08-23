@@ -3,6 +3,34 @@
   $.widget("porcaro.adaptivemenu", {
     _create: function(){
       $("#mobile_nav").html($("#main_nav").html());
+
+      /*
+      this is a partial working version of the collapse
+      mobile menu collapsing AND having the page scroll to the right section...
+      doesn't work very well in mobile
+      */
+      // /*
+      $('#mobile_nav a').on('click', function()
+      {
+        window.triggered_target = $(this).attr("href");
+        $(".btn-navbar").click();
+      });
+
+      $("div.nav-collapse").on("hidden",function()
+      {
+        // unpleasant duplication from below
+        if (window.triggered_target)
+        {
+          setTimeout(function(){
+            var target = window.triggered_target;
+            var target_location = $(target).position();
+
+            $('body').animate({scrollTop: target_location.top - 110 + 1}, 200);
+            window.triggered_target = null;
+          },100);
+        }
+      });
+      // */
     }
   });
 
@@ -13,6 +41,7 @@
       that = this;
       $(this.element).click(function(evt)
       {
+        console.log('scrollclick');
         id = $(this).attr("href");
         that.scroller(id);
         evt.stopPropagation();
@@ -21,7 +50,9 @@
     },
     scroller: function (target)
     {
+
       var target_location = $(target).position();
+
       /*
       doesn't seem to work right
       var _scrollto = target_location.top - 109;
