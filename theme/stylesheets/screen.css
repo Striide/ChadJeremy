@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 61, ../sass/screen.scss */
 body {
   font-family: Georgia;
-  color: #3b3b3b;
+  color: #4b4b4b;
 }
 
 /* line 66, ../sass/screen.scss */
@@ -124,7 +124,7 @@ a:focus {
 /* line 102, ../sass/screen.scss */
 .navbar-inverse .navbar-inner {
   background-image: none;
-  background-color: #3b3b3b;
+  background-color: #4b4b4b;
   padding: 20px 0;
   margin-bottom: 0;
   min-height: 10px;
@@ -134,7 +134,7 @@ a:focus {
 /* line 110, ../sass/screen.scss */
 .navbar .btn-navbar {
   background-image: none;
-  background-color: #3b3b3b;
+  background-color: #4b4b4b;
   border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
   border: 1px solid #FFFFFF;
   margin-right: 35px;
@@ -152,14 +152,14 @@ a:focus {
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
   background-image: none;
-  background-color: #3b3b3b;
+  background-color: #4b4b4b;
 }
 
 /* line 133, ../sass/screen.scss */
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
   background-image: none;
-  background-color: #3b3b3b;
+  background-color: #4b4b4b;
 }
 
 /* line 138, ../sass/screen.scss */
@@ -177,9 +177,9 @@ a:focus {
 }
 /* line 145, ../sass/screen.scss */
 .page-unit .inner-container {
-  padding-bottom: 100px;
-  margin-bottom: 100px;
-  border-bottom: 1px solid #3b3b3b;
+  padding-bottom: 120px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #4b4b4b;
 }
 /* line 156, ../sass/screen.scss */
 .page-unit ul li {
@@ -209,7 +209,7 @@ h2 {
 /* line 180, ../sass/screen.scss */
 p {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 /* line 185, ../sass/screen.scss */
@@ -747,7 +747,7 @@ article address {
   .nav-list > li > a {
     font-size: 24px;
     /* should be not defined */
-    line-height: 30px;
+    line-height: 24px;
     /* should be not defined */
     padding-right: 0;
     /* hack for strange behaviour when scrolling to top */
@@ -772,6 +772,7 @@ article address {
   /* line 694, ../sass/screen.scss */
   .page-unit .section {
     padding-left: 280px;
+    padding-right: 100px;
   }
 
   /* line 698, ../sass/screen.scss */
@@ -916,7 +917,7 @@ article address {
 
   /* line 834, ../sass/screen.scss */
   .nav-collapse .nav > li {
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid #4b4b4b;
   }
 
   /* line 838, ../sass/screen.scss */
