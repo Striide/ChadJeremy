@@ -177,8 +177,8 @@ a:focus {
 }
 /* line 145, ../sass/screen.scss */
 .page-unit .inner-container {
-  padding-bottom: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 120px;
+  margin-bottom: 60px;
   border-bottom: 1px solid #4b4b4b;
 }
 /* line 156, ../sass/screen.scss */
@@ -209,7 +209,7 @@ h2 {
 /* line 180, ../sass/screen.scss */
 p {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 /* line 185, ../sass/screen.scss */
@@ -754,7 +754,7 @@ article .awards ul li {
   .nav-list > li > a {
     font-size: 24px;
     /* should be not defined */
-    line-height: 30px;
+    line-height: 24px;
     /* should be not defined */
     padding-right: 0;
     /* hack for strange behaviour when scrolling to top */
@@ -779,32 +779,33 @@ article .awards ul li {
   /* line 700, ../sass/screen.scss */
   .page-unit .section {
     padding-left: 280px;
+    padding-right: 100px;
   }
 
-  /* line 704, ../sass/screen.scss */
+  /* line 705, ../sass/screen.scss */
   .page-unit {
     /* padding-top: $header_height + 30px; */
   }
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 711, ../sass/screen.scss */
+  /* line 712, ../sass/screen.scss */
   .navbar .container {
     width: 724px;
   }
 
-  /* line 715, ../sass/screen.scss */
+  /* line 716, ../sass/screen.scss */
   .nav-list > li > a {
     font-size: 16px;
     line-height: 18px;
   }
 
-  /* line 720, ../sass/screen.scss */
+  /* line 721, ../sass/screen.scss */
   .nav-list {
     padding-left: 0;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 725, ../sass/screen.scss */
   .page-unit .section {
     padding-left: 210px;
     padding-right: 81px;
@@ -813,7 +814,7 @@ article .awards ul li {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   /* because the navbar transition is a problem on small screens, when scrolling and hiding at the same time  */
-  /* line 736, ../sass/screen.scss */
+  /* line 737, ../sass/screen.scss */
   .no-transition {
     -webkit-transition: height 0.001s;
     -moz-transition: height 0.001s;
@@ -822,57 +823,57 @@ article .awards ul li {
     transition: height 0.001s;
   }
 
-  /* line 744, ../sass/screen.scss */
+  /* line 745, ../sass/screen.scss */
   .navbar .brand {
     margin-left: 50px;
   }
 
-  /* line 749, ../sass/screen.scss */
+  /* line 750, ../sass/screen.scss */
   #main_row {
     padding-top: 60px;
   }
 
-  /* line 753, ../sass/screen.scss */
+  /* line 754, ../sass/screen.scss */
   .navbar-fixed-top {
     position: fixed;
   }
 
-  /* line 757, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   #people_modal {
     left: 0;
     right: 0;
   }
-  /* line 759, ../sass/screen.scss */
+  /* line 760, ../sass/screen.scss */
   #people_modal.fade.in {
     top: 0;
   }
 
-  /* line 767, ../sass/screen.scss */
+  /* line 768, ../sass/screen.scss */
   #approach_modal {
     top: 0;
   }
-  /* line 779, ../sass/screen.scss */
+  /* line 780, ../sass/screen.scss */
   #approach_modal .modal-body-wrap .modal-body {
     padding: 0;
   }
 
-  /* line 786, ../sass/screen.scss */
+  /* line 787, ../sass/screen.scss */
   .sidebar-nav {
     display: none;
   }
 
-  /* line 790, ../sass/screen.scss */
+  /* line 791, ../sass/screen.scss */
   .btn-navbar {
     display: block;
   }
 
-  /* line 794, ../sass/screen.scss */
+  /* line 795, ../sass/screen.scss */
   .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 801, ../sass/screen.scss */
+  /* line 802, ../sass/screen.scss */
   .page-content h1 {
     font-size: 17pt;
     /*, should be 36px, was 52px */
@@ -883,7 +884,7 @@ article .awards ul li {
     padding-bottom: 30px;
     /* was 65px */
   }
-  /* line 809, ../sass/screen.scss */
+  /* line 810, ../sass/screen.scss */
   .page-content p,
   .page-content address {
     font-size: 12pt;
@@ -891,20 +892,20 @@ article .awards ul li {
     line-height: 14.4pt;
     /* should be 30px */
   }
-  /* line 814, ../sass/screen.scss */
+  /* line 815, ../sass/screen.scss */
   .page-content li {
     font-size: 8pt;
     /*should be 18px,  was 24px */
     line-height: 9.6pt;
     /* should be 22px */
   }
-  /* line 819, ../sass/screen.scss */
+  /* line 820, ../sass/screen.scss */
   .page-content .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 827, ../sass/screen.scss */
+  /* line 828, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     font-size: 52px;
@@ -915,54 +916,54 @@ article .awards ul li {
     /*(15px used to be 20)*/
     margin-bottom: 0;
   }
-  /* line 835, ../sass/screen.scss */
+  /* line 836, ../sass/screen.scss */
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
     background: none;
   }
 
-  /* line 840, ../sass/screen.scss */
+  /* line 841, ../sass/screen.scss */
   .nav-collapse .nav > li {
     border-bottom: 1px solid #4b4b4b;
   }
 
-  /* line 844, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   .nav-collapse .nav {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  /* line 849, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   .nav-collapse {
     margin-bottom: 50px;
     margin-top: 20px;
   }
 }
 @media (min-width: 481px) {
-  /* line 863, ../sass/screen.scss */
+  /* line 864, ../sass/screen.scss */
   #people_modal .people-vcard.barb {
     padding-left: 230px;
-    background: #f0f1f1 url("../../assets/moreira.png") bottom left no-repeat;
+    background: #f0f1f1 url("../../assets/images/people/Staff-Barb.png") bottom left no-repeat;
   }
-  /* line 868, ../sass/screen.scss */
+  /* line 869, ../sass/screen.scss */
   #people_modal .people-vcard.sandra {
     padding-left: 230px;
-    background: #f0f1f1 url("../../assets/fong.png") bottom left no-repeat;
+    background: #f0f1f1 url("../../assets/images/people/Staff-Sandra.png") bottom left no-repeat;
   }
-  /* line 873, ../sass/screen.scss */
+  /* line 874, ../sass/screen.scss */
   #people_modal .people-vcard.cecil {
     padding-right: 230px;
-    background: #f0f1f1 url("../../assets/balfour.png") bottom right no-repeat;
+    background: #f0f1f1 url("../../assets/images/people/Staff-Cecilie.png") bottom right no-repeat;
   }
-  /* line 878, ../sass/screen.scss */
+  /* line 879, ../sass/screen.scss */
   #people_modal .people-vcard.coronado {
     padding-left: 230px;
-    background: #f0f1f1 url("../../assets/diaz.png") bottom left no-repeat;
+    background: #f0f1f1 url("../../assets/images/people/Staff-Coromoto.png") bottom left no-repeat;
   }
-  /* line 883, ../sass/screen.scss */
+  /* line 884, ../sass/screen.scss */
   #people_modal .people-vcard.everett {
     padding-right: 230px;
-    background: #f0f1f1 url("../../assets/ranni.png") bottom right no-repeat;
+    background: #f0f1f1 url("../../assets/images/people/Staff-Everett.png") bottom right no-repeat;
   }
 }
 /* Landscape phones and down */
