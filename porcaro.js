@@ -53,8 +53,8 @@
       var target_location = $(target).position();
       var this_height_fix_passer = this.options.height_fix + 1;
 
-      if(is_portfolio_currently_displayed()) {
-        hide_portfolio();
+      if(!is_homepage_currently_displayed()) {
+        hide_special_content_elements();
         scroller_timeout = 700;
         
       } else {

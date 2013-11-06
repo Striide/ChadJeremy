@@ -174,7 +174,7 @@ h2
 	font-size: 14px;
 	line-height:20px;
 	font-family: "Helvetica";
-	margin-top: 40px;
+	margin-top: 25px;
 	margin-bottom: 4px;
 }
 p
@@ -190,10 +190,12 @@ p a
 {
 	line-height: 24px;
 }
-blockguote p
+blockquote p
 {
 	font-size: 24px;
 	font-weight: normal;
+	line-height:30px;
+  	margin-bottom:25px
 }
 article .clients ul li,
 article .awards ul li

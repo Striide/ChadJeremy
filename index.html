@@ -302,8 +302,7 @@
                 solid, the deliverables will be relevant and distinct.
               </p>
               <p>
-                <br>
-                <a data-toggle="modal" href="approach.html" data-target="#approach_modal">Our Approach</a><br>
+                <a href="javascript:;" onclick="show_approach();">Our Approach</a><br>
                 <a data-toggle="modal" href="people.html" data-target="#people_modal">Our People</a>
               </p>
               </div>
@@ -320,7 +319,6 @@
                 As a boutique creative agency, Porcaro is a vigorous company devoted to originality and excellence in our work. We hope when you view our portfolio, you will see versatility and integrity in the designs&mdash;a reflection of our high creative standards and our focus to do whatʼs right for each client.
               </p>
               <p>
-                <br>
                 <a href="javascript:;"  onclick="show_portfolio();">View Work</a>
               </p>
               </div>
@@ -462,6 +460,71 @@
 
 
         </div><!--/span-->
+
+
+
+
+
+
+<!-- Our Approach ################################################# -->
+
+  <div id="our_approach" class="span9 anim30" style="display:none;" >
+      <div id="our_approach_wrapper" >
+        <div class="inner-container" style="padding-top:110px;">
+          <div style="margin-bottom:20px;">
+            <img src="assets/images/approach/OurApproach_brand_assembly.png" />
+          </div>
+
+          <div style="margin-bottom:50px;">
+            <div class="hidden-phone" style="display:inline-block;">
+              <img src="assets/images/approach/OurApproach_strategy_01.png" style="height:192px;width:163px;margin-right:20px;" />
+              <img src="assets/images/approach/OurApproach_concept_02.png" style="height:192px;width:163px;margin-right:20px;" />
+              <img src="assets/images/approach/OurApproach_design_03.png" style="height:192px;width:163px;margin-right:20px;" />
+              <img src="assets/images/approach/OurApproach_results_04.png" style="height:192px;width:163px;margin-right:20px;" />
+            </div>
+            <div class="visible-phone">
+              <!-- add this after -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3">
+              <div id="brand_assembly" style="color:#E7132F; font-size:14px; line-height:20px;">
+                Instructions
+                <ul>
+                  <li>1. Make sure to have all the building blocks needed.</li>
+                  <li>2. Test ideas. Find the right direction.</li>
+                  <li>3. Tweak, revise, refine. No small details left behind.</li>
+                  <li>4. Package and Deliver.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="span6">
+          
+              <blockquote>
+                <p>Any initiative Porcaro undertakes employs a true brand-building approach, - no matter how small -
+                or quick the exercise.</p>
+              </blockquote>
+
+              <p>This ensures we capitalize on every opportunity for our clients to deliver their story. Our ultimate goal: to guide and support our clients in their quest to build value and brand equity with all their stakeholders.</p>
+
+              <p>And while delivering a high standard of creative is clearly important,
+              account servicing is equally important to us. We combine big picture thinking with
+              methodical attention to details and take tremendous pride in our ability to give equal
+              attention to all aspects of any program. It’s our objective to ensure that our
+              clients enjoy the process as much as the final product when working with our team.</p>
+              <p>
+              With our in-house professionals and a network of best-in-class freelance specialists,
+              Porcaro gives you the very best thinking, account servicing and value available.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
 
 
 
@@ -670,22 +733,27 @@
  <script>
 
     // portfolio scripts
-      function hide_portfolio() {
-        if( document.getElementById('le_portfolio').style.display=='block'){
-            document.getElementById('le_portfolio').style.opacity = 0;
-            setTimeout(function() {
-              document.getElementById('le_portfolio').style.display = 'none';
-              document.getElementById('portfolio_stage').innerHTML = '';
-              document.getElementById('homepage').style.opacity = 0;
+      function hide_special_content_elements() {
+        var special_content_element = '';
+        if ( document.getElementById('le_portfolio').style.display=='block'){
+          special_content_element = 'le_portfolio';
+        } else if ( document.getElementById('our_approach').style.display=='block' ) {
+          special_content_element = 'our_approach';
+        }
+       
+        document.getElementById(special_content_element).style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById(special_content_element).style.display = 'none';
+          document.getElementById('portfolio_stage').innerHTML = ''; // clears stage to refresh portfolio
+          document.getElementById('homepage').style.opacity = 0;
 
-              setTimeout(function() {
-                document.getElementById('homepage').style.display = 'block';
-                document.getElementById('homepage').style.opacity = 1;
-              }, 300);
-
-            }, 300);
-          }
+          setTimeout(function() {
+            document.getElementById('homepage').style.display = 'block';
+            document.getElementById('homepage').style.opacity = 1;
+          }, 300);
+        }, 300);
       }
+      
 
       function show_portfolio() {
         document.getElementById('homepage').style.opacity = 0;
@@ -699,8 +767,7 @@
           }, 500);
         }, 300);
 
-        $('.nav').click(function () { hide_portfolio() });
-        $('.brand').click(function () { hide_portfolio() });
+    
       }
 
 
@@ -709,13 +776,34 @@
           document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
           document.getElementById('portfolio_stage').style.opacity =1;
       }
-      function is_portfolio_currently_displayed() {
-        if (document.getElementById('le_portfolio').style.display == 'block') {
+
+      function is_homepage_currently_displayed() {
+        if (document.getElementById('homepage').style.display == 'block') {
           return true;
         } else {
           return false;
         }
       }
+
+
+       // javascript based on show_portfolio to display approach content
+
+      function show_approach() {
+        document.getElementById('homepage').style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById('homepage').style.display = 'none';
+          document.getElementById('our_approach').style.display = 'block';
+          setTimeout(function() {
+            document.getElementById('our_approach').style.opacity = 1;
+            $('body,html').animate({scrollTop: 0}, 300);
+          }, 500);
+        }, 300);
+
+       
+      }
+
+        $('.nav').click(function () { hide_special_content_elements() });
+        $('.brand').click(function () { hide_special_content_elements() });
     </script>
   </body>
 </html>
