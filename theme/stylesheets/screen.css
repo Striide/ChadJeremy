@@ -86,9 +86,9 @@ body {
 
 /* line 70, ../sass/screen.scss */
 .navbar address {
-  font-size: 9px;
+  font-size: 11px;
   color: #FFFFFF;
-  line-height: 12px;
+  line-height: 13px;
   text-align: right;
   padding-top: 0;
 }

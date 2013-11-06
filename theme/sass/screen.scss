@@ -27,7 +27,7 @@ $page_width: 1000px;
 $header_margin_bottom: 50px;
 $header_height: 60px;
 $header_padding_y: 20px;
-$header_font_size: 9px; /* address */
+$header_font_size: 11px; /* address */
 $gutter_left: 132px;
 $overlay_width: 1132px;
 $overlay_padding_top: 45px;
@@ -70,7 +70,7 @@ body
 {
   font-size: $header_font_size;
   color: #FFFFFF;
-  line-height: 12px;
+  line-height: 13px;
   text-align: right;
   padding-top: 0;
 }
