@@ -814,6 +814,7 @@ article .awards ul li {
     padding-left: 250px;
     padding-right: 10px;
   }
+
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -878,7 +879,7 @@ article .awards ul li {
   }
 
   /* line 802, ../sass/screen.scss */
-  .page-content h1 {
+  .page-unit h1 {
     font-size: 17pt;
     /*, should be 36px, was 52px */
     line-height: 17pt;
@@ -891,34 +892,53 @@ article .awards ul li {
   /* line 810, ../sass/screen.scss */
   .page-content p,
   .page-content address {
-    font-size: 12pt;
+    font-size: 16px;
     /* should be 28px, as 36px */
-    line-height: 14.4pt;
+    line-height: 22px;
     /* should be 30px */
   }
+  .page-content ul {
+    margin-bottom:38px;
+  }
+
+  .page-content blockquote p {
+    font-size:30px;
+    line-height:36px;
+  }
+
   /* line 815, ../sass/screen.scss */
-  .page-content li {
-    font-size: 8pt;
+  .page-unit ul li {
+    font-size: 16px;
     /*should be 18px,  was 24px */
-    line-height: 9.6pt;
+    line-height: 22px;
     /* should be 22px */
+  }
+
+
+  .page-unit .inner-container {
+    padding-bottom:70px;
+    margin-bottom:44px;
   }
   /* line 820, ../sass/screen.scss */
   .page-content .page-unit {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .nav-collapse .nav {
+    margin-top: 39px;
+  }
 
   /* line 828, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
-    font-size: 52px;
+    font-size: 30px;
     font-weight: normal;
     color: #e7132f;
-    line-height: 90px;
-    padding: 15px 30px;
+    line-height: 44px;
+    padding: 0px;
     /*(15px used to be 20)*/
     margin-bottom: 0;
+
   }
   /* line 836, ../sass/screen.scss */
   .nav-collapse .nav > li > a:hover,
@@ -969,5 +989,6 @@ article .awards ul li {
     padding-right: 230px;
     background: #f0f1f1 url("../../assets/images/people/Staff-Everett.png") bottom right no-repeat;
   }
+
 }
 /* Landscape phones and down */

@@ -48,6 +48,9 @@
           list-style-type: none;
           margin:0px;
       }
+      #our_approach {
+          padding-top:110px;
+      }
 
       @media screen and (min-width: 300px) and (orientation:portrait) {
         .portfolio-contents-header {
@@ -91,7 +94,11 @@
           top:135px;
           font-size:11px;
         }
+        #our_approach {
+          padding-top:0px;
+        }
       }
+
 
       @media screen and (min-width: 300px) and (orientation:landscape)  {
         .portfolio-contents-header {
@@ -133,6 +140,9 @@
           position: relative;
           top:135px;
           font-size:11px;
+        }
+        #our_approach {
+          padding-top:0px;
         }
       }
 
@@ -178,6 +188,11 @@
           top:155px;
           font-size:14px;
         }
+        #our_approach {
+          padding-top:110px;
+        }
+
+
       }
 
       @media screen and (min-width: 980px) {
@@ -242,7 +257,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="brand hidden-phone" href="#"><img src="theme/images/logo.png" title="Porcaro Communications" alt="Porcaro Communications"></a>
-          <a class="brand visible-phone" href="#"><img src="theme/images/logo_mobile.png" title="Porcaro Communications" alt="Porcaro Communications"></a>
+          <a class="brand visible-phone" href="#"><img src="theme/images/logo.png" title="Porcaro Communications" alt="Porcaro Communications" style="height:23px;width:117px;"></a>
 
             <div class="pull-right hidden-phone">
               <address>
@@ -469,8 +484,8 @@
 <!-- Our Approach ################################################# -->
 
   <div id="our_approach" class="span9 anim30" style="display:none;" >
-      <div id="our_approach_wrapper" >
-        <div class="inner-container" style="padding-top:110px;">
+      <div class="page-unit" id="our_approach_wrapper">
+        <div class="inner-container" style="border-bottom:none;">
           <div style="margin-bottom:20px;">
             <img src="assets/images/approach/OurApproach_brand_assembly.png" />
           </div>
@@ -483,12 +498,19 @@
               <img src="assets/images/approach/OurApproach_results_04.png" style="height:192px;width:163px;margin-right:20px;" />
             </div>
             <div class="visible-phone">
-              <!-- add this after -->
+              <div>
+                <img src="assets/images/approach/OurApproach_strategy_01.png" style="width:45%;margin-right:10px;" />
+                <img src="assets/images/approach/OurApproach_concept_02.png" style="width:45%;" />
+              </div>
+              <div> 
+                <img src="assets/images/approach/OurApproach_design_03.png" style="width:45%;margin-right:10px;" />
+                <img src="assets/images/approach/OurApproach_results_04.png" style="width:45%;" />
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="span3">
-              <div id="brand_assembly" style="color:#E7132F; font-size:14px; line-height:20px;">
+              <div id="brand_assembly" style="color:#E7132F;">
                 Instructions
                 <ul>
                   <li>1. Make sure to have all the building blocks needed.</li>
