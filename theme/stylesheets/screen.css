@@ -177,8 +177,8 @@ a:focus {
 }
 /* line 145, ../sass/screen.scss */
 .page-unit .inner-container {
-  padding-bottom: 120px;
-  margin-bottom: 60px;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #4b4b4b;
 }
 /* line 156, ../sass/screen.scss */
