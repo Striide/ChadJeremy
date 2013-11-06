@@ -778,8 +778,8 @@ article .awards ul li {
 
   /* line 700, ../sass/screen.scss */
   .page-unit .section {
-    padding-left: 280px;
-    padding-right: 100px;
+    padding-left: 250px;
+    padding-right: 10px;
   }
 
   /* line 705, ../sass/screen.scss */
@@ -807,8 +807,8 @@ article .awards ul li {
 
   /* line 725, ../sass/screen.scss */
   .page-unit .section {
-    padding-left: 210px;
-    padding-right: 81px;
+    padding-left: 250px;
+    padding-right: 10px;
   }
 }
 /* Landscape phone to portrait tablet */
