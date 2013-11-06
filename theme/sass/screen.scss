@@ -172,6 +172,7 @@ h2
 {
 	font-weight: bold;
 	font-size: 14px;
+	line-height:20px;
 	font-family: "Helvetica";
 	margin-top: 40px;
 	margin-bottom: 4px;
@@ -657,7 +658,7 @@ article .awards ul li
   }
 	h1
 	{
-		padding: 30px 0;
+		padding: 50px 0 25px 0px;
 	}
 	/* hack to make contact padding-top correct, and scrolspy still working */
 	#clients
