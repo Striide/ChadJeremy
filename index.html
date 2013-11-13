@@ -28,7 +28,7 @@
 
 
       .portfolio-contents-content {
-        padding-top:50px;
+        padding-top:10px;
         border-top: thin solid #000000;
         border-bottom:thin solid #000000;
         margin-bottom:50px;
@@ -67,10 +67,14 @@
           font-size:28px;
         }
 
+
+
         .portfolio-contents p {
           font-size:15px;
           color:#666666;
         }
+
+
 
         .portfolios-inner {
           min-width:300px;
@@ -83,6 +87,8 @@
           background-color: #e6e7e9;
           height:125px;
           width:125px;
+          background-size:125px 125px;
+          background-repeat:no-repeat;
           display:inline-block;
           margin-right:15px;
           margin-left:15px;
@@ -130,6 +136,8 @@
           background-color: #e6e7e9;
           height:125px;
           width:125px;
+          background-size:125px 125px;
+          background-repeat:no-repeat;
           display:inline-block;
           margin-right:15px;
           margin-left:15px;
@@ -177,6 +185,8 @@
           background-color: #e6e7e9;
           height:150px;
           width:150px;
+          background-size:150px 150px;
+          background-repeat:no-repeat;
           display:inline-block;
           margin-right:20px;
           margin-left:20px;
@@ -198,21 +208,28 @@
       @media screen and (min-width: 980px) {
 
         .portfolio-contents-header {
-          margin-left:280px;
-          margin-right:100px;
-          padding-top:20px;
-          padding-bottom:75px;
+          margin-left:250px;
+          margin-right:10px;
+          padding-top:0px;
+          padding-bottom:30px;
         }
 
         .portfolio-contents-header h1 {
           color:#ed1a3a;
           margin-bottom:25px;
           font-family: sans-serif;
-          font-size:28px;
+          font-size:30px;
         }
 
+        .portfolio-contents-content-section {
+        padding-top:10px;
+        border-top: thin solid #000000;
+        
+      }
+
         .portfolio-contents p {
-          font-size:15px;
+          font-size:14px;
+          line-height:20px;
           color:#666666;
         }
 
@@ -227,6 +244,8 @@
           background-color: #e6e7e9;
           height:150px;
           width:150px;
+          background-size:150px 150px;
+          background-repeat:no-repeat;
           display:inline-block;
           margin-right:20px;
           margin-left:20px;
@@ -239,7 +258,64 @@
           font-size:14px;
         }
 
+
+        #portfolios_list_view {
+          margin-bottom:100px;
+        }
+        #portfolios_list_view ul li {
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+
+        .portfolio-contents-content img {margin-bottom:50px;}
+
     }
+
+      
+      #portfolio_grid_bc_ferries { background-image: url(assets/images/grid/Porcaro-SCG-BCFerries-1.jpg); }
+
+      #portfolio_grid_baja_mining { background-image: url(assets/images/grid/Porcaro-SCG-BajaMining-1.jpg); }
+
+      #portfolio_grid_baywest_management { background-image: url(assets/images/grid/Porcaro-SCG-Baywest-1.jpg); }
+
+      #portfolio_grid_canada_place{ background-image: url(assets/images/grid/Porcaro-SCG-CanadaPlace-1.jpg); }
+
+      #portfolio_grid_children_of_the_street_society { background-image: url(assets/images/grid/Porcaro-SCG-ChildrenStreet-1.jpg); }
+
+      #portfolio_grid_couverdon { background-image: url(assets/images/grid/Porcaro-SCG-Couverdon-1.jpg); }
+
+      #portfolio_grid_eldorado_gold { background-image: url(assets/images/grid/Porcaro-SCG-EldoradoGold-1.jpg); }
+
+      #portfolio_grid_finning_international { background-image: url(assets/images/grid/Porcaro-SCG-finning-1.jpg); }
+
+      #portfolio_grid_goldcorp { background-image: url(assets/images/grid/Porcaro-SCG-Goldcorp-1.jpg); }
+
+      #portfolio_grid_hsbc { background-image: url(assets/images/grid/Porcaro-SCG-HSBC-1.jpg); }
+
+      #portfolio_grid_kodak { background-image: url(assets/images/grid/Porcaro-SCG-Kodak-1.jpg); }
+
+      #portfolio_grid_minefinders { background-image: url(assets/images/grid/Porcaro-SCG-minefinders-1.jpg); }
+
+      #portfolio_grid_new_gold { background-image: url(assets/images/grid/Porcaro-SCG-NewGold-1.jpg); }
+
+      #portfolio_grid_novagold { background-image: url(assets/images/grid/Porcaro-SCG-NovaGold-1.jpg); }
+
+      #portfolio_grid_pacific_northern_gas { background-image: url(assets/images/grid/Porcaro-SCG-PacificNorthernGas-1.jpg); }
+
+      #portfolio_grid_premier_marine { background-image: url(assets/images/grid/Porcaro-SCG-PremierMarine-1.jpg); }
+
+      #portfolio_grid_silver_wheaton { background-image: url(assets/images/grid/Porcaro-SCG-SilverWheaton-1.jpg); }
+
+      #portfolio_grid_teck { background-image: url(assets/images/grid/Porcaro-SCG-Teck-1.jpg); }
+
+      #portfolio_grid_tourism_bc { background-image: url(assets/images/grid/Porcaro-SCG-TourismBC-1.jpg); }
+
     </style>
 
   </head>
@@ -684,111 +760,174 @@
       <div id="portfolio_wrapper" class="page-unit">
       <div id="portfolio_stage" class="portfolio-contents anim30">&nbsp;</div>
       <div id="portfolio_contents" class="portfolio-contents" style="visibility:hidden;height:0px;z-index:-1;overflow:hidden;">
+
+    <!--Baja Mining ####################################################-->
+          <div id="portfolio_contents_baja_mining" >
+            <div class="portfolio-contents-header">
+              <h1>Baja Mining</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <div>
+                <p>Logo</p>
+
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_logo_01.png" />
+              </div>
+
+              <div class="portfolio-contents-content-section">
+              <p>Presentation Folder</p>
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_02.jpg" />
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_03.jpg" />
+              </div>
+
+
+              <div class="portfolio-contents-content-section">
+                <p>Annual Report 2010</p>
+
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_04.jpg" />
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_05.jpg" />
+                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_06.jpg" />
+                
+                <div style="text-align:right;"><img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_07.jpg" /></div>
+
+              </div>
+            </div>
+          </div>
+
+
+
       <!--BC Ferries ####################################################-->
-          <div id="portfolio_contents_bc_ferries_sailsafe" >
+          <div id="portfolio_contents_bc_ferries" >
             <div class="portfolio-contents-header">
               <h1>BC Ferries</h1>
               <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
 
             </div>
             <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
+              <p>Sustainability Report 2007</p>
+
+              <img src="assets/images/portfolio_pieces/bc_ferries_1/bc_ferries_01.jpg" />
+              <img src="assets/images/portfolio_pieces/bc_ferries_1/bc_ferries_02.jpg" />
+              <img src="assets/images/portfolio_pieces/bc_ferries_1/bc_ferries_03.jpg" />
+              <img src="assets/images/portfolio_pieces/bc_ferries_1/bc_ferries_04.jpg" />
+              <div style="text-align:right;"><img src="assets/images/portfolio_pieces/bc_ferries_1/bc_ferries_05.jpg" /></div>
 
             </div>
           </div>
 
-      <!--Children of the Street #########################################-->
-          <div id="portfolio_contents_children_of_the_street" >
-            <div class="portfolio-contents-header">
-              <h1>Children of the Street</h1>
-              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-            </div>
-            <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
-
-            </div>
-          </div>
-
-      <!-- Couverdon #################################################### -->
-          <div id="portfolio_contents_couverdon" >
-            <div class="portfolio-contents-header">
-              <h1>Couverdon</h1>
-              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-            </div>
-            <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
-
-            </div>
-          </div>
-
-      <!-- D-Wave Systems #################################################### -->
-          <div id="portfolio_contents_d-wave_systems" >
-            <div class="portfolio-contents-header">
-              <h1>D-Wave Systems</h1>
-              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-            </div>
-            <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
-
-            </div>
-          </div>
-
-      <!-- Legend Power #################################################### -->
-          <div id="portfolio_contents_legend_power" >
-            <div class="portfolio-contents-header">
-              <h1>Legend Power</h1>
-              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-            </div>
-            <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
-
-            </div>
-          </div>
-
-      <!-- Minefinders #################################################### -->
-          <div id="portfolio_contents_minefinders" >
-            <div class="portfolio-contents-header">
-              <h1>Minefinders</h1>
-              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-            </div>
-            <div class="portfolio-contents-content">
-              <img src="sample.jpg" />
-
-            </div>
-          </div>
-      <!--New Gold #################################################### -->
-        <div id="portfolio_contents_new_gold" >
-          <div class="portfolio-contents-header">
-            <h1>New Gold</h1>
-            <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-          </div>
-          <div class="portfolio-contents-content">
-            <img src="sample.jpg" />
-          </div>
-        </div>
+     
       <!-- END Portfolio Contents -->
+
+
+
       </div>
+        <!-- GRID VIEW -->
+
 
         <div id="portfolios" class="portfolios">
           <center>
           <div class="portfolios-inner">
             <ul>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries_sailsafe');">BC Ferries - Sailsafe</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street');">Children of the Street</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_d-wave_systems');">D-Wave Systems</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_legend_power');">Legend Power</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a></li>
-              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a></li>
+              <li id="portfolio_grid_baja_mining"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baja_mining');">Baja Mining</a></li>
+
+              <li id="portfolio_grid_baywest_management"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baywest_management');">Baywest Management</a></li>
+
+              <li id="portfolio_grid_bc_ferries"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries');">BC Ferries</a></li>
+
+              <li id="portfolio_grid_canada_place"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_canada_place');">Canada Place</a><br /><br /></li>
+
+              <li id="portfolio_grid_children_of_the_street_society"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street_society');">Children of the Street Society</a></li>
+
+              <li id="portfolio_grid_couverdon"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a><br /><br /></li>
+
+              <li id="portfolio_grid_eldorado_gold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_eldorado_gold');">Eldorado Gold</a></li>
+
+              <li id="portfolio_grid_finning_international"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_finning_international');">Finning Internation</a></li>
+
+              <li id="portfolio_grid_goldcorp"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_goldcorp');">Goldcorp</a></li>
+
+              <li id="portfolio_grid_hsbc"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_hsbc');">HSBC</a></li>
+
+              <li id="portfolio_grid_kodak"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_kodak');">Kodak</a></li>
+
+              <li id="portfolio_grid_minefinders"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a></li>
+
+              <li id="portfolio_grid_new_gold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a></li>
+
+              <li id="portfolio_grid_novagold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_novagold');">Novagold</a></li>
+
+              <li id="portfolio_grid_pacific_northern_gas"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');">Pacific Northern Gas</a></li>
+
+              <li  id="portfolio_grid_premier_marine"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_premier_marine');">Premier Marine</a></li>
+
+              <li id="portfolio_grid_silver_wheaton"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');">Silver Wheaton</a></li>
+
+              <li id="portfolio_grid_teck"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck');">Teck</a></li>
+
+              <li id="portfolio_grid_tourism_bc"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_tourism_bc');">Tourism BC</a></li>
             </ul>
           </div>
         </center>
         </div>
+
+        <!-- LIST VIEW -->
+
+        <div id="portfolios_list_view" class="portfolios" style="display:none;">
+          
+          <div class="portfolios-inner">
+            <div style="width:180px; display:inline-block;padding-right:20px;">
+              <ul>
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baja_mining');">Baja Mining</a></li>
+
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baywest_management');">Baywest Management</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries');">BC Ferries</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_canada_place');">Canada Place</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street_society');">Children of the Street Society</a></li>
+
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a></li>
+            </ul>
+            </div>
+            <div style="width:180px; display:inline-block;padding-right:20px;">
+            <ul>
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_eldorado_gold');">Eldorado Gold</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_finning_international');">Finning Internation</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_goldcorp');">Goldcorp</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_hsbc');">HSBC</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_kodak');">Kodak</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a></li>
+            </ul>
+            </div>
+            <div style="width:180px; display:inline-block; vertical-align:top;">
+            <ul>
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_novagold');">Novagold</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');">Pacific Northern Gas</a></li>
+
+              <li  ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_premier_marine');">Premier Marine</a></li>
+
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');">Silver Wheaton</a></li>
+
+              <li ><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck');">Teck</a></li>
+
+              <li><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_tourism_bc');">Tourism BC</a></li>
+            </ul>
+            </div>
+          </div>
+       
+        </div>
+
+
       </div>
     </div> <!--portfolio /span-->
   </div><!--/row-->
@@ -907,9 +1046,14 @@
       
 
       function show_portfolio() {
+
         document.getElementById('homepage').style.opacity = 0;
         setTimeout(function() {
           document.getElementById('homepage').style.display = 'none';
+          if (document.getElementById('portfolios_list_view').style.display == 'block') {
+            document.getElementById('portfolios_list_view').style.display = 'none';
+            document.getElementById('portfolios').style.display = 'block';
+          }
           document.getElementById('le_portfolio').style.display = 'block';
           document.getElementById('portfolio_stage').style.opacity = 0;
           setTimeout(function() {
@@ -926,6 +1070,8 @@
         $('body,html').animate({scrollTop: 0}, 500);
           document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
           document.getElementById('portfolio_stage').style.opacity =1;
+           document.getElementById('portfolios').style.display = 'none';
+          document.getElementById('portfolios_list_view').style.display = 'block';
       }
 
       function is_homepage_currently_displayed() {
