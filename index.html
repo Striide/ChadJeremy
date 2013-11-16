@@ -292,7 +292,7 @@
 
       #portfolio_grid_eldorado_gold { background-image: url(assets/images/grid/Porcaro-SCG-EldoradoGold-1.jpg); }
 
-      #portfolio_grid_finning_international { background-image: url(assets/images/grid/Porcaro-SCG-finning-1.jpg); }
+      #portfolio_grid_finning_international { background-image: url(assets/images/grid/Porcaro-SCG-Finning-1.jpg); }
 
       #portfolio_grid_goldcorp { background-image: url(assets/images/grid/Porcaro-SCG-Goldcorp-1.jpg); }
 
@@ -300,7 +300,7 @@
 
       #portfolio_grid_kodak { background-image: url(assets/images/grid/Porcaro-SCG-Kodak-1.jpg); }
 
-      #portfolio_grid_minefinders { background-image: url(assets/images/grid/Porcaro-SCG-minefinders-1.jpg); }
+      #portfolio_grid_minefinders { background-image: url(assets/images/grid/Porcaro-SCG-Minefinders-1.jpg); }
 
       #portfolio_grid_new_gold { background-image: url(assets/images/grid/Porcaro-SCG-NewGold-1.jpg); }
 
@@ -455,9 +455,313 @@
             </div>
           </div>
 
+<style type="text/css">
+#recognition-form,
+#recognition-success
+{
+  position: absolute;
+  top: 65px;
+  left: 250px;
+}
+.recognition p
+{
+  font-size: 24px;
+  color: #e7132f;
+  margin: 0;
+  line-height: 0.9em;
+}
+.recognition p.congrats,
+.recognition p.best
+{
+  margin-bottom: 30px;
+}
+.recognition p small
+{
+  font-size: 18px;
+}
+.recognition input[type="text"] 
+{
+  border: none;
+  background: none;
+  border-bottom: 1px solid #4b4b4b;
+  font-size: 12px;
+  margin: 0 3px;
+  vertical-align: bottom;
+  color: rgb(165,165,165);
+  border-radius: 0;
+}
+.recognition input.congrats
+{
+  width: 230px;
+}
+.recognition input.message
+{
+  width: 263px;
+}
+.recognition input.from
+{
+  width: 175px;
+}
+
+.recognition div.action
+{
+  position: absolute;
+  right: 9px;
+}
+.recognition div.action div.from
+{
+  margin-bottom: 12px;
+}
+.recognition div.action div.from p
+{
+  margin-bottom: 10px;
+}
+.recognition button
+{
+  font-family: Georgia;
+  font-size: 12px;
+  color: #FFF;
+  border-radius: 5px;
+  background-color: #e7132f;
+  border: none;
+  padding: 8px;
+  float: right;
+}
+
+
+#recognition-success
+{
+  display: none;
+}
+#recognition-success p {
+  padding-top: 70px;
+  padding-left: 140px;
+}
+
+
+
+@media only screen 
+   and (min-device-width : 768px) 
+   and (max-device-width : 1024px) 
+   and (orientation : portrait) {
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 45px;
+	  left: 180px;
+	}
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 8px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 8px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+        
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 15px;
+	  left: 80px;
+          font-size: 10px;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 30px;
+          padding-left: 50px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 1em;
+	}
+	.recognition p small
+	{
+	  font-size: 0.8em;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 0.7em;
+	}
+	.recognition input.congrats
+	{
+	  width: 70px;
+	}
+	.recognition input.message
+	{
+	  width: 80px;
+	}
+	.recognition input.from
+	{
+	  width: 60px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 2px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 4px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 0px;
+          font-size: 0.8em;
+	}
+
+	.recognition button
+	{
+	  font-size: 0.7em;
+	  border-radius: 5px;
+	  padding: 3px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 40px;
+	  left: 170px;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 6px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 4px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+}
+
+
+</style>
           <div class="page-unit" id="awards">
-            <div class="inner-container">
+            <div class="inner-container" style="position:relative;">
               <img src="assets/images/index/porcaro_index_awards.jpg" class="feature">
+              <div class="recognition" id="recognition-form"><form data-action="./recognition.php">
+                <p class="congrats">Congratulations <input type="text" class="congrats" name="congrats" placeholder="Name">,</p>
+                <p class="best"><small>You're the best at</small> <input type="text" class="message" name="message" placeholder="Type a message">!</p>
+                <div class="action">
+	   	  <div class="from">
+                    <p>Yours truly,</p>
+	            <input type="text" name="from" placeholder="Your Name and press send" class="from">
+	          </div>
+
+                  <button>Send to the Team</button>
+                </div>
+                <div style="clear:both;"></div>
+		</form>
+              </div>
+              <div class="recognition" id="recognition-success">
+                <p>Thank You.</p>
+              </div>
 
               <div class="section">
 
@@ -1102,7 +1406,6 @@
             <div class="portfolio-contents-content-section">
             <p>Newsletter 2008</p>
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_10.jpg" />
-                <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_11.jpg" />
        
             </div>
  
@@ -1234,17 +1537,9 @@
 
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_03.jpg" />
 
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
               
               </div>
       
-            <div class="portfolio-contents-content-section">
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
-            </div>
             </div>
           </div>
 
@@ -1269,17 +1564,9 @@
 
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_03.jpg" />
 
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
               
               </div>
       
-            <div class="portfolio-contents-content-section">
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
-              <img src="assets/images/portfolio_pieces/silver_wheaton_3/silver_wheaton_03.jpg" />
-
-            </div>
             </div>
           </div>
 
@@ -1583,6 +1870,25 @@
         $('.nav').click(function () { hide_special_content_elements() });
         $('.brand').click(function () { hide_special_content_elements() });
     </script>
+
+<script>
+$(function(){
+  $("#recognition-form button").unbind("click").bind("click",function(e){
+    e.stopPropagation();
+    var form = $(this).closest("form");
+    $.ajax({
+      'data': $(form).serialize(),
+      'url': $(form).data('action'),
+      'method': 'POST'
+    }).success(function(){
+      $("#recognition-form").hide();
+      $("#recognition-success").show();
+    });
+    return false;
+  });
+});
+</script>
+
   </body>
 </html>
 
