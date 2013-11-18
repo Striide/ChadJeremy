@@ -1025,5 +1025,7 @@ article .awards ul li {
     background: #f0f1f1 url("../../assets/images/people/Staff-Everett.png") bottom right no-repeat;
   }
 
+  #le_portfolio h1 {padding-top:0px;}
+
 }
 /* Landscape phones and down */
