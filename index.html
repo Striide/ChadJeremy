@@ -141,7 +141,7 @@
       }
 
 
-      @media screen and (min-width: 300px) and (orientation:landscape)  {
+      @media screen and (min-width: 300px) and (orientation:landscape) {
         .desktop {display: none;}
         .tablet {display:none;}
         .mobile {display:block;}
@@ -634,8 +634,7 @@
 
 @media only screen 
    and (min-device-width : 768px) 
-   and (max-device-width : 1024px) 
-   and (orientation : portrait) {
+   and (max-device-width : 1024px)  {
 
 	#recognition-form,
 	#recognition-success
@@ -768,7 +767,8 @@ and (orientation : portrait) {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
-and (orientation : landscape) { 
+and (orientation : landscape )
+{ 
 
 	#recognition-form,
 	#recognition-success
@@ -830,6 +830,137 @@ and (orientation : landscape) {
 	  border-radius: 5px;
 	  padding: 6px;
 	}
+}
+
+@media screen and (min-width : 767px) and (max-width : 989px) 
+{ 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 45px;
+	  left: 180px;
+	}
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 8px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 8px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+        
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+}
+
+@media screen and (min-width: 560px) and (max-width : 767px) 
+{ 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 40px;
+	  left: 170px;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 6px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 4px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+
 }
 
 
