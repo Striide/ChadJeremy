@@ -51,6 +51,7 @@
       #our_approach {
           padding-top:110px;
       }
+      #our_people .inner-container {margin-bottom:0px;padding-bottom:70px;}
 
       @media screen and (min-width: 300px) and (orientation:portrait) {
         .desktop {display: none;}
@@ -73,8 +74,8 @@
 
         
         .page-unit h1 {
-          padding-top:0px;
-          padding-bottom:5px;
+          padding-top:39px;
+          padding-bottom:15px;
           line-height:26px;
         }
         .portfolio-contents-header p {
@@ -114,6 +115,7 @@
           margin-right:15px;
           margin-left:15px;
           margin-bottom:50px;
+          cursor:pointer;
         }
 
         #portfolios ul li a {
@@ -160,8 +162,8 @@
         }
 
         .page-unit h1 {
-          padding-top:0px;
-          padding-bottom:5px;
+          padding-top:36px;
+          padding-bottom:20px;
           line-height:26px;
         }
         .page-unit ul li {
@@ -230,13 +232,13 @@
         
 
         #portfolio_wrapper {
-          margin-top:100px;
+          margin-top:70px;
         }
 
         .portfolio-contents-header {
           margin-left:150px;
           margin-right:55px;
-          padding-top:0px;
+          padding-top:15px;
           padding-bottom:50px;
         }
 
@@ -254,7 +256,7 @@
 
         .portfolios-inner {
           display:inline-block;
-          max-width:400px;
+          max-width:100%;
           padding:0px;
           text-align: left;
         }
@@ -270,8 +272,8 @@
           background-size:150px 150px;
           background-repeat:no-repeat;
           display:inline-block;
-          margin-right:20px;
-          margin-left:20px;
+          margin-right:10px;
+          margin-left:10px;
           margin-bottom:70px;
         }
 
@@ -281,7 +283,7 @@
           font-size:14px;
         }
         #our_approach {
-          padding-top:110px;
+          padding-top:80px;
         }
 
         
@@ -303,6 +305,7 @@
           margin-right:10px;
           padding-top:0px;
           padding-bottom:30px;
+          padding-top:20px;
         }
 
         .portfolio-contents-header h1 {
@@ -325,7 +328,7 @@
 
         .portfolios-inner {
           display:inline-block;
-          min-width:600px;
+          min-width:780px;
           padding:0px;
           text-align: left;
         }
@@ -484,7 +487,7 @@
                 will be the philosophical underpining of what Porcaro offers. When the thinking is
                 solid, the deliverables will be relevant and distinct.
               </p>
-              <p>
+              <p style="margin-bottom:0px;">
                 <a href="javascript:;" onclick="show_approach();">Our Approach</a><br>
                 <a href="javascript:;" onclick="show_people();">Our People</a>
               </p>
@@ -501,7 +504,8 @@
               <p>
                 As a boutique creative agency, Porcaro is a vigorous company devoted to originality and excellence in our work. We hope when you view our portfolio, you will see versatility and integrity in the designs&mdash;a reflection of our high creative standards and our focus to do whatʼs right for each client.
               </p>
-              <p>
+              
+              <p style="margin-bottom:0px;">
                 <a href="javascript:;"  onclick="show_portfolio();">View Work</a>
               </p>
               </div>
@@ -582,6 +586,8 @@
   color: rgb(165,165,165);
   border-radius: 0;
 }
+input:focus {outline: none; }
+
 .recognition input.congrats
 {
   width: 230px;
@@ -983,7 +989,7 @@ and (orientation : landscape )
 		</form>
               </div>
               <div class="recognition" id="recognition-success">
-                <p>Thank You.</p>
+                <p>Thank You!</p>
               </div>
 
               <div class="section">
@@ -1061,7 +1067,7 @@ and (orientation : landscape )
             <div class="inner-container">
               <div class="section">
               <h1>Porcaro</h1>
-              <p>
+              
                  <address>
                   504 - 221 West Esplanade, <br>
                   North Vancouver, <br>
@@ -1071,7 +1077,7 @@ and (orientation : landscape )
                   fax: 604 986 8166 <br>
                   <a href="mailto:hr@porcaro.ca">hr@porcaro.ca</a>
                 </address>
-              </p>
+           
               </div>
             </div>
           </div>
@@ -1098,7 +1104,7 @@ and (orientation : landscape )
               <img src="assets/images/approach/OurApproach_strategy_01.png" style="height:192px;width:163px;margin-right:20px;" />
               <img src="assets/images/approach/OurApproach_concept_02.png" style="height:192px;width:163px;margin-right:20px;" />
               <img src="assets/images/approach/OurApproach_design_03.png" style="height:192px;width:163px;margin-right:20px;" />
-              <img src="assets/images/approach/OurApproach_results_04.png" style="height:192px;width:163px;margin-right:20px;" />
+              <img src="assets/images/approach/OurApproach_results_04.png" style="height:192px;width:163px;" />
             </div>
 
             <div class="tablet">
@@ -1123,8 +1129,8 @@ and (orientation : landscape )
           <div class="row">
             <div class="span3">
               <div id="brand_assembly" class="desktop" style="color:#E7132F;">
-                Instructions
                 <ul>
+                  <li>Instructions</li>
                   <li>1. Make sure to have all the building blocks needed.</li>
                   <li>2. Test ideas. Find the right direction.</li>
                   <li>3. Tweak, revise, refine. No small details left behind.</li>
@@ -1135,8 +1141,9 @@ and (orientation : landscape )
             </div>
             <div class="span6">
             <div id="brand_assembly" class="tablet mobile" style="color:#E7132F;margin-bottom:20px;">
-                Instructions
+                
                 <ul>
+                  <li>Instructions</li>
                   <li>1. Make sure to have all the building blocks needed.</li>
                   <li>2. Test ideas. Find the right direction.</li>
                   <li>3. Tweak, revise, refine. No small details left behind.</li>
@@ -1793,22 +1800,22 @@ and (orientation : landscape )
           <center>
           <div class="portfolios-inner">
             <ul>
-              <li id="portfolio_grid_baja_mining"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baja_mining');">Baja Mining</a><br /><br /></li>
-              <li id="portfolio_grid_baywest_management"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baywest_management');">Baywest Management</a><br /><br /></li>
-              <li id="portfolio_grid_bc_ferries"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries');">BC Ferries</a><br /><br /></li>
-              <li id="portfolio_grid_canada_place"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_canada_place');">Canada Place</a><br /><br /></li>
-              <li id="portfolio_grid_children_of_the_street_society"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street_society');">Children of the Street Society</a></li>
-              <li id="portfolio_grid_couverdon"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a><br /><br /></li>
-              <li id="portfolio_grid_eldorado_gold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_eldorado_gold');">Eldorado Gold</a><br /><br /></li>
-              <li id="portfolio_grid_finning_international"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_finning_international');">Finning Internation</a><br /><br /></li>
-              <li id="portfolio_grid_goldcorp"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_goldcorp');">Goldcorp</a><br /><br /></li>
-              <li id="portfolio_grid_minefinders"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a><br /><br /></li>
-              <li id="portfolio_grid_new_gold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a><br /><br /></li>
-              <li id="portfolio_grid_novagold"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_novagold');">Novagold</a><br /><br /></li>
-              <li id="portfolio_grid_pacific_northern_gas"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');">Pacific Northern Gas</a><br /><br /></li>
-              <li  id="portfolio_grid_premier_marine"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_premier_marine');">Premier Marine</a><br /><br /></li>
-              <li id="portfolio_grid_silver_wheaton"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');">Silver Wheaton</a><br /><br /></li>
-              <li id="portfolio_grid_teck"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck');">Teck</a><br /><br /></li>
+              <li id="portfolio_grid_baja_mining" onclick="show_portfolio_target('portfolio_contents_baja_mining');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baja_mining');">Baja Mining</a><br /><br /></li>
+              <li id="portfolio_grid_baywest_management" onclick="show_portfolio_target('portfolio_contents_baywest_management');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_baywest_management');">Baywest Management</a><br /><br /></li>
+              <li id="portfolio_grid_bc_ferries" onclick="show_portfolio_target('portfolio_contents_bc_ferries');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_bc_ferries');">BC Ferries</a><br /><br /></li>
+              <li id="portfolio_grid_canada_place" onclick="show_portfolio_target('portfolio_contents_canada_place');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_canada_place');">Canada Place</a><br /><br /></li>
+              <li id="portfolio_grid_children_of_the_street_society" onclick="show_portfolio_target('portfolio_contents_children_of_the_street_society');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_children_of_the_street_society');">Children of the Street Society</a></li>
+              <li id="portfolio_grid_couverdon" onclick="show_portfolio_target('portfolio_contents_couverdon');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_couverdon');">Couverdon</a><br /><br /></li>
+              <li id="portfolio_grid_eldorado_gold" onclick="show_portfolio_target('portfolio_contents_eldorado_gold');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_eldorado_gold');">Eldorado Gold</a><br /><br /></li>
+              <li id="portfolio_grid_finning_international" onclick="show_portfolio_target('portfolio_contents_finning_international');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_finning_international');">Finning Internation</a><br /><br /></li>
+              <li id="portfolio_grid_goldcorp" onclick="show_portfolio_target('portfolio_contents_goldcorp');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_goldcorp');">Goldcorp</a><br /><br /></li>
+              <li id="portfolio_grid_minefinders" onclick="show_portfolio_target('portfolio_contents_minefinders');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_minefinders');">Minefinders</a><br /><br /></li>
+              <li id="portfolio_grid_new_gold" onclick="show_portfolio_target('portfolio_contents_new_gold');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_new_gold');">New Gold</a><br /><br /></li>
+              <li id="portfolio_grid_novagold" onclick="show_portfolio_target('portfolio_contents_novagold');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_novagold');">Novagold</a><br /><br /></li>
+              <li id="portfolio_grid_pacific_northern_gas" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');">Pacific Northern Gas</a><br /><br /></li>
+              <li  id="portfolio_grid_premier_marine" onclick="show_portfolio_target('portfolio_contents_premier_marine');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_premier_marine');">Premier Marine</a><br /><br /></li>
+              <li id="portfolio_grid_silver_wheaton" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');">Silver Wheaton</a><br /><br /></li>
+              <li id="portfolio_grid_teck" onclick="show_portfolio_target('portfolio_contents_teck');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck');">Teck</a><br /><br /></li>
             
             </ul>
           </div>
