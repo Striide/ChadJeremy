@@ -35,7 +35,7 @@
   });
 
   $.widget("porcaro.scrollmenu", {
-    options: { height_fix: 110 },
+    options: { height_fix: 110 }, // todo: this should match the scrollspy number, which I think is 120
     _create: function()
     {
       that = this;

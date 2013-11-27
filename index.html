@@ -161,8 +161,8 @@
 #recognition-success
 {
   position: absolute;
-  top: 65px;
-  left: 250px;
+  top: 6%;
+  left: 35%;
 }
 .recognition p
 {
@@ -244,24 +244,24 @@ input:focus {outline: none; }
 
 
 @media only screen 
-   and (min-device-width : 768px) 
-   and (max-device-width : 1024px)  {
+   and (min-width : 768px) 
+   and (max-width : 1024px)  {
 
 	#recognition-form,
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 45px;
-	  left: 180px;
+	  top: 6%;
+	  left: 35%;
 	}
 
 	.recognition p
 	{
-	  font-size: 18px;
+	  font-size: 24px;
 	}
 	.recognition p small
 	{
-	  font-size: 14px;
+	  font-size: 20px;
 	}
 	.recognition input[type="text"] 
 	{
@@ -269,20 +269,20 @@ input:focus {outline: none; }
 	}
 	.recognition input.congrats
 	{
-	  width: 134px;
+	  width: 204px;
 	}
 	.recognition input.message
 	{
-	  width: 154px;
+	  width: 218px;
 	}
 	.recognition input.from
 	{
-	  width: 120px;
+	  width: 160px;
 	}
 	.recognition p.congrats,
 	.recognition p.best
 	{
-	  margin-bottom: 15px;
+	  margin-bottom: 25px;
 	}
 	.recognition div.action div.from
 	{
@@ -291,7 +291,7 @@ input:focus {outline: none; }
 	.recognition div.action div.from p
 	{
 	  margin-bottom: 8px;
-          font-size: 14px;
+          font-size: 20px;
 	}
 
 	.recognition button
@@ -308,16 +308,15 @@ input:focus {outline: none; }
 }
 
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait) {
+and (min-width : 320px) 
+and (max-width : 568px) {
 
 	#recognition-form,
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 15px;
-	  left: 80px;
+	  top: 4%; 
+	  left: 35%;
           font-size: 10px;
 	}
 
@@ -385,8 +384,8 @@ and (orientation : landscape )
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 40px;
-	  left: 170px;
+	  top: 5%;
+	  left: 35%;
 	}
 
  
@@ -450,8 +449,8 @@ and (orientation : landscape )
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 45px;
-	  left: 180px;
+	  top: 5%;
+	  left: 35%;
 	}
 
 	.recognition p
@@ -515,8 +514,8 @@ and (orientation : landscape )
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 40px;
-	  left: 170px;
+	  top: 6%;
+	  left: 35%;
 	}
 
  
@@ -1532,7 +1531,7 @@ and (orientation : landscape )
           $('.sidebar-nav').affix()
         }, 100);
 
-        $('.sidebar-nav').scrollspy();
+        $('#main_row').scrollspy();
 
         // this 'fixes' the min-heights of the "pages" to be the viewport height... dynamically per page height
         // porcaro doesn't want this, as per revision #1
