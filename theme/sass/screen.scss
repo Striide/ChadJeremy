@@ -959,3 +959,398 @@ article .awards ul li
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {  }
+
+
+      .anim30 {
+        -webkit-transition-duration: 0.30s;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-duration: 0.30s;
+        -moz-transition-timing-function: ease-in-out;
+      }
+
+
+      .portfolio-contents-content {
+        padding-top:10px;
+        border-top: thin solid #000000;
+        border-bottom:thin solid #000000;
+        margin-bottom:50px;
+        margin-top:50px;
+      }
+
+      #portfolio_wrapper {
+          margin-top:60px;
+          max-width:750px;
+      }
+
+      #portfolios {
+          padding-top:50px;
+      }
+
+      #portfolios ul {
+          list-style-type: none;
+          margin:0px;
+      }
+      #our_approach {
+          padding-top:110px;
+      }
+      #our_people .inner-container {margin-bottom:0px;padding-bottom:70px;}
+
+      @media screen and (min-width: 300px) and (orientation:portrait) {
+        .desktop {display: none;}
+        .tablet {display:none;}
+        .mobile {display:block;}
+
+        .portfolio-contents-header {
+          margin-left:0px;
+          margin-right:0px;
+          padding-bottom:50px;
+
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        
+        .page-unit h1 {
+          padding-top:39px;
+          padding-bottom:15px;
+          line-height:26px;
+        }
+        .portfolio-contents-header p {
+          margin-bottom:0px;
+        }
+        .portfolio-contents-content {
+          margin-top:0px;
+        }
+
+
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolio-contents-content-section {
+        padding-top:10px;
+        margin-top:10px;
+        border-top: thin solid #000000;
+        }
+
+        .portfolios-inner {
+          min-width:300px;
+          max-width:330px;
+          padding:0px;
+          text-align:left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:125px;
+          width:125px;
+          background-size:125px 125px;
+          background-repeat:no-repeat;
+          display:inline-block;
+          margin-right:15px;
+          margin-left:15px;
+          margin-bottom:50px;
+          cursor:pointer;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:130px;
+          font-size:11px;
+        }
+        .page-unit ul li {
+          line-height:18px;
+        }
+        #our_approach {
+          padding-top:0px;
+        }
+
+        #portfolio_wrapper {
+          margin-top:0px;
+        }
+
+        #main_row {
+          padding-top: 30px;
+        }
+        #portfolios {
+          padding-top:0px;
+        }
+      }
+
+
+      @media screen and (min-width: 300px) and (orientation:landscape) {
+        .desktop {display: none;}
+        .tablet {display:none;}
+        .mobile {display:block;}
+
+        .portfolio-contents-header {
+          margin-left:0px;
+          margin-right:0px;
+          padding-bottom:50px;
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .page-unit h1 {
+          padding-top:36px;
+          padding-bottom:20px;
+          line-height:26px;
+        }
+        .page-unit ul li {
+          line-height:18px;
+        }
+        .portfolio-contents-header p {
+          margin-bottom:0px;
+        }
+        .portfolio-contents-content {
+          margin-top:0px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          min-width:300px;
+          max-width:330px;
+          padding:0px;
+          text-align:left;
+        }
+        .portfolio-contents-content-section {
+        padding-top:10px;
+        margin-top:10px;
+        border-top: thin solid #000000;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:125px;
+          width:125px;
+          background-size:125px 125px;
+          background-repeat:no-repeat;
+          display:inline-block;
+          margin-right:15px;
+          margin-left:15px;
+          margin-bottom:50px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:130px;
+          font-size:11px;
+        }
+        #our_approach {
+          padding-top:0px;
+        }
+
+        #portfolio_wrapper {
+          margin-top:0px;
+        }
+        #main_row {
+          padding-top: 30px;
+        }
+        #portfolios {
+          padding-top:0px;
+        }
+      }
+
+      @media screen and (min-width: 775px)  {
+        .desktop {display: none;}
+        .mobile {display:none;}
+        .tablet, .tablet .mobile {display:block;}
+        
+
+        #portfolio_wrapper {
+          margin-top:70px;
+        }
+
+        .portfolio-contents-header {
+          margin-left:150px;
+          margin-right:55px;
+          padding-top:15px;
+          padding-bottom:50px;
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:28px;
+        }
+
+        .portfolio-contents p {
+          font-size:15px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          display:inline-block;
+          max-width:100%;
+          padding:0px;
+          text-align: left;
+        }
+        .portfolio-contents-content-section {
+        padding-top:10px;
+        border-top: thin solid #000000;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:150px;
+          width:150px;
+          background-size:150px 150px;
+          background-repeat:no-repeat;
+          display:inline-block;
+          margin-right:10px;
+          margin-left:10px;
+          margin-bottom:70px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+        #our_approach {
+          padding-top:80px;
+        }
+
+        
+
+
+      }
+
+      @media screen and (min-width: 980px) {
+        .desktop {display: block;}
+        .tablet {display:none;}
+        .mobile {display:none;}
+
+        .portfolio-contents {
+         /* margin-top:110px; */
+        }
+
+        .portfolio-contents-header {
+          margin-left:250px;
+          margin-right:10px;
+          padding-top:0px;
+          padding-bottom:30px;
+          padding-top:20px;
+        }
+
+        .portfolio-contents-header h1 {
+          color:#ed1a3a;
+          margin-bottom:25px;
+          font-family: sans-serif;
+          font-size:30px;
+        }
+
+        .portfolio-contents-content-section {
+        padding-top:10px;
+        border-top: thin solid #000000;
+        }
+
+        .portfolio-contents p {
+          font-size:14px;
+          line-height:20px;
+          color:#666666;
+        }
+
+        .portfolios-inner {
+          display:inline-block;
+          min-width:780px;
+          padding:0px;
+          text-align: left;
+        }
+
+        #portfolios ul li {
+          background-color: #e6e7e9;
+          height:150px;
+          width:150px;
+          background-size:150px 150px;
+          background-repeat:no-repeat;
+          display:inline-block;
+          margin-right:20px;
+          margin-left:20px;
+          margin-bottom:70px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+
+
+        #portfolios_list_view {
+          margin-bottom:100px;
+        }
+        #portfolios_list_view ul li {
+          margin-right:0px;
+          margin-left:0px;
+        }
+
+        #portfolios ul li a {
+          position: relative;
+          top:155px;
+          font-size:14px;
+        }
+
+        .portfolio-contents-content img {margin-bottom:50px;}
+
+      
+
+    }
+
+      
+      #portfolio_grid_bc_ferries { background-image: url(../../assets/images/grid/Porcaro-SCG-BCFerries-1.jpg); }
+
+      #portfolio_grid_baja_mining { background-image: url(../../assets/images/grid/Porcaro-SCG-BajaMining-1.jpg); }
+
+      #portfolio_grid_baywest_management { background-image: url(../../assets/images/grid/Porcaro-SCG-Baywest-1.jpg); }
+
+      #portfolio_grid_canada_place{ background-image: url(../../assets/images/grid/Porcaro-SCG-CanadaPlace-1.jpg); }
+
+      #portfolio_grid_children_of_the_street_society { background-image: url(../../assets/images/grid/Porcaro-SCG-ChildrenStreet-1.jpg); }
+
+      #portfolio_grid_couverdon { background-image: url(../../assets/images/grid/Porcaro-SCG-Couverdon-1.jpg); }
+
+      #portfolio_grid_eldorado_gold { background-image: url(../../assets/images/grid/Porcaro-SCG-EldoradoGold-1.jpg); }
+
+      #portfolio_grid_finning_international { background-image: url(../../assets/images/grid/Porcaro-SCG-Finning-1.jpg); }
+
+      #portfolio_grid_goldcorp { background-image: url(../../assets/images/grid/Porcaro-SCG-Goldcorp-1.jpg); }
+
+      #portfolio_grid_hsbc { background-image: url(../../assets/images/grid/Porcaro-SCG-HSBC-1.jpg); }
+
+      #portfolio_grid_kodak { background-image: url(../../assets/images/grid/Porcaro-SCG-Kodak-1.jpg); }
+
+      #portfolio_grid_minefinders { background-image: url(../../assets/images/grid/Porcaro-SCG-Minefinders-1.jpg); }
+
+      #portfolio_grid_new_gold { background-image: url(../../assets/images/grid/Porcaro-SCG-NewGold-1.jpg); }
+
+      #portfolio_grid_novagold { background-image: url(../../assets/images/grid/Porcaro-SCG-NovaGold-1.jpg); }
+
+      #portfolio_grid_pacific_northern_gas { background-image: url(../../assets/images/grid/Porcaro-SCG-PacificNorthernGas-1.jpg); }
+
+      #portfolio_grid_premier_marine { background-image: url(../../assets/images/grid/Porcaro-SCG-PremierMarine-1.jpg); }
+
+      #portfolio_grid_silver_wheaton { background-image: url(../../assets/images/grid/Porcaro-SCG-SilverWheaton-1.jpg); }
+
+      #portfolio_grid_teck { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-1.jpg); }
+
+      #portfolio_grid_tourism_bc { background-image: url(../../assets/images/grid/Porcaro-SCG-TourismBC-1.jpg); }
+
+
