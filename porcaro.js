@@ -41,7 +41,6 @@
       that = this;
       $(this.element).click(function(evt)
       {
-        console.log('scrollclick');
         id = $(this).attr("href");
         that.scroller(id);
         evt.stopPropagation();
@@ -139,4 +138,143 @@
       });
     });
   }
+
+  $("#recognition-form button").unbind("click").bind("click",function(e){
+    e.stopPropagation();
+    var form = $(this).closest("form");
+    $.ajax({
+      'data': $(form).serialize(),
+      'url': $(form).data('action'),
+      'method': 'POST'
+    }).success(function(){
+      $("#recognition-form").hide();
+      $("#recognition-success").show();
+    });
+    return false;
+  });
+
+
+
+
 })( jQuery );
+
+
+
+    // portfolio scripts
+      function hide_special_content_elements() {
+        var special_content_element = false;
+        if ( document.getElementById('le_portfolio').style.display=='block'){
+          special_content_element = 'le_portfolio';
+        } else if ( document.getElementById('our_approach').style.display=='block' ) {
+          special_content_element = 'our_approach';
+        } else if ( document.getElementById('our_people').style.display == 'block') {
+          special_content_element = 'our_people';
+        }
+       
+       if (special_content_element) {
+          document.getElementById(special_content_element).style.opacity = 0;
+          setTimeout(function() {
+            document.getElementById(special_content_element).style.display = 'none';
+            document.getElementById('portfolio_stage').innerHTML = ''; // clears stage to refresh portfolio
+            document.getElementById('homepage').style.opacity = 0;
+
+            setTimeout(function() {
+              document.getElementById('homepage').style.display = 'block';
+              document.getElementById('homepage').style.opacity = 1;
+            }, 300);
+          }, 300);
+        }
+      }
+      
+
+      function show_portfolio() {
+
+        document.getElementById('homepage').style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById('homepage').style.display = 'none';
+          if (document.getElementById('portfolios_list_view').style.display == 'block') {
+            document.getElementById('portfolios_list_view').style.display = 'none';
+            document.getElementById('portfolios').style.display = 'block';
+          }
+          document.getElementById('le_portfolio').style.display = 'block';
+          document.getElementById('portfolio_stage').style.opacity = 0;
+          setTimeout(function() {
+            document.getElementById('le_portfolio').style.opacity = 1;
+            $('body,html').animate({scrollTop: 0}, 300);
+          }, 500);
+        }, 300);
+
+    
+      }
+
+      function show_portfolio_list_mobile() {
+        document.getElementById('portfolios_list_view').style.display = 'none';
+        document.getElementById('portfolios').style.display = 'block';
+      }
+
+      function portfolio_navigation(direction) {
+        var target = null;
+        var target_id = null;
+        for (i=0; i<portfolio.length;i++) {
+          if (portfolio[i] == current_portfolio_item) {
+            target_id = i + direction; 
+            if (target_id > (portfolio.length-1)) {
+              target = portfolio[0];
+            } else if (target_id < 0) {
+              target = portfolio[portfolio.length-1];
+            } else {
+              target = portfolio[target_id];
+            }
+          }
+        }
+        show_portfolio_target(target);
+      }
+
+
+      function show_portfolio_target(target) {
+        current_portfolio_item = target;
+        $('body,html').animate({scrollTop: 0}, 500);
+          document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
+          document.getElementById('portfolio_stage').style.opacity =1;
+           document.getElementById('portfolios').style.display = 'none';
+          document.getElementById('portfolios_list_view').style.display = 'block';
+      }
+
+      function is_homepage_currently_displayed() {
+        if (document.getElementById('homepage').style.display == 'block') {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+
+       // javascript based on show_portfolio to display approach content
+
+      function show_approach() {
+        document.getElementById('homepage').style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById('homepage').style.display = 'none';
+          document.getElementById('our_approach').style.display = 'block';
+          setTimeout(function() {
+            document.getElementById('our_approach').style.opacity = 1;
+            $('body,html').animate({scrollTop: 0}, 300);
+          }, 500);
+        }, 300); 
+      }
+
+      function show_people() {
+        document.getElementById('homepage').style.opacity = 0;
+        setTimeout(function() {
+          document.getElementById('homepage').style.display = 'none';
+          document.getElementById('our_people').style.display = 'block';
+          setTimeout(function() {
+            document.getElementById('our_people').style.opacity = 1;
+            $('body,html').animate({scrollTop: 0}, 300);
+          }, 500);
+        }, 300); 
+      }
+
+        $('.nav').click(function () { hide_special_content_elements() });
+        $('.brand').click(function () { hide_special_content_elements() });
+   
