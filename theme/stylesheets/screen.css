@@ -1240,7 +1240,7 @@ article .awards ul li {
         }
       }
 
-      @media screen and (min-width: 775px)  {
+      @media screen and (min-width: 768px)  {
         .desktop {display: none;}
         .mobile {display:none;}
         .tablet, .tablet .mobile {display:block;}
@@ -1306,7 +1306,7 @@ article .awards ul li {
 
       }
 
-      @media screen and (min-width: 980px) {
+      @media screen and (min-width: 1200px) {
         .desktop {display: block;}
         .tablet {display:none;}
         .mobile {display:none;}
