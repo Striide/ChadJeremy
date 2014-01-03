@@ -955,7 +955,7 @@ article .awards ul li {
   /* line 828, ../sass/screen.scss */
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
     color: #e7132f;
     line-height: 44px;
