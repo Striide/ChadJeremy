@@ -42,12 +42,17 @@
       $(this.element).click(function(evt)
       {
         id = $(this).attr("href");
-        if (id === "#portfolio") {
+        if (id == "#portfolio") {
+            if (!is_homepage_currently_displayed()) {
+              hide_special_content_elements(true);
+            } 
+          
           show_portfolio();
         } else {
           that.scroller(id);
+          evt.stopPropagation();
         }
-        evt.stopPropagation();
+        
         return false;
       });
     },
@@ -165,7 +170,7 @@
 
 
     // portfolio scripts
-      function hide_special_content_elements() {
+      function hide_special_content_elements(hide_homepage) {
         var special_content_element = false;
         if ( document.getElementById('le_portfolio').style.display=='block'){
           special_content_element = 'le_portfolio';
@@ -181,11 +186,12 @@
             document.getElementById(special_content_element).style.display = 'none';
             document.getElementById('portfolio_stage').innerHTML = ''; // clears stage to refresh portfolio
             document.getElementById('homepage').style.opacity = 0;
-
-            setTimeout(function() {
-              document.getElementById('homepage').style.display = 'block';
-              document.getElementById('homepage').style.opacity = 1;
-            }, 300);
+            if (!hide_homepage) {
+              setTimeout(function() {
+                document.getElementById('homepage').style.display = 'block';
+                document.getElementById('homepage').style.opacity = 1;
+              }, 300);
+            }
           }, 300);
         }
       }
