@@ -42,7 +42,11 @@
       $(this.element).click(function(evt)
       {
         id = $(this).attr("href");
-        that.scroller(id);
+        if (id === "#portfolio") {
+          show_portfolio();
+        } else {
+          that.scroller(id);
+        }
         evt.stopPropagation();
         return false;
       });
