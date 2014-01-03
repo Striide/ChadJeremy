@@ -244,11 +244,17 @@
       function show_portfolio_target(target) {
         current_portfolio_item = target;
         $('body,html').animate({scrollTop: 0}, 500);
+        document.getElementById('portfolio_stage').style.opacity =1;
+        setTimeout(function() {
           document.getElementById('portfolio_stage').innerHTML = document.getElementById(target).innerHTML;
           document.getElementById('portfolio_stage').style.opacity =1;
-           document.getElementById('portfolios').style.display = 'none';
-          document.getElementById('portfolios_list_view').style.display = 'block';
+          document.getElementById('portfolios').style.display = 'none';
+        document.getElementById('portfolios_list_view').style.display = 'block';
+        }, 300);
+      
+        
       }
+
 
       function is_homepage_currently_displayed() {
         if (document.getElementById('homepage').style.display == 'block') {

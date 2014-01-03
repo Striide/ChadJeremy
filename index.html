@@ -1468,7 +1468,7 @@ and (orientation : landscape )
         </div>
 
         <div class="tablet mobile" style="margin-bottom:50px;">
-          <a href="javascript:;" onclick="show_portfolio_list_mobile();" style="position:relative;top:-7px;">View All Projects</a> 
+          <a href="javascript:;" onclick="document.getElementById('portfolio_stage').innerHTML='';show_portfolio_list_mobile();show_portfolio();" style="position:relative;top:-7px;">View All Projects</a> 
           <a href="javascript:;" onclick="portfolio_navigation(-1)" style="margin-left:15px;"><img src="assets/images/arrows/previousPageArrow.jpg" /></a>
           <a href="javascript:;" onclick="portfolio_navigation(1)" style="margin-left:40px;"><img src="assets/images/arrows/nextPageArrow.jpg" /></a>
         </div>
