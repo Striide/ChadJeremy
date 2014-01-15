@@ -10,7 +10,7 @@ if(! isPorcaro($_SERVER['HTTP_REFERER']) )
 	echo 0;
 }
 
-$to = 'chad.lindstrom@gmail.com';
+$to = 'congrats@porcaro.ca';
 
 $subject = "You're the best!";
 $name = $_REQUEST['congrats'];
