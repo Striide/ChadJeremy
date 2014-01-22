@@ -1358,6 +1358,7 @@ article .awards ul li {
           margin-right:20px;
           margin-left:20px;
           margin-bottom:70px;
+		  cursor:pointer;
         }
 
         #portfolios ul li a {
@@ -1425,5 +1426,7 @@ article .awards ul li {
       #portfolio_grid_teck { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-1.jpg); }
 
       #portfolio_grid_tourism_bc { background-image: url(../../assets/images/grid/Porcaro-SCG-TourismBC-1.jpg); }
+	  
+	  #portfolio_grid_teck2 { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-2.jpg); }
 
 

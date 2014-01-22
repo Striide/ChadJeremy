@@ -1257,9 +1257,7 @@ and (orientation : landscape )
                 <p>Annual Report 2008</p>
 
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_01.jpg" />
-
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_02.jpg" />
-
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_03.jpg" />
               
               </div>
@@ -1280,9 +1278,7 @@ and (orientation : landscape )
                 <p>Brochure</p>
 
               <img src="assets/images/portfolio_pieces/premier_1/premier_01.jpg" />
-
               <img src="assets/images/portfolio_pieces/premier_1/premier_02.jpg" />
-
               <img src="assets/images/portfolio_pieces/premier_1/premier_03.jpg" />
 
 
@@ -1304,11 +1300,10 @@ and (orientation : landscape )
               <div>
                 <p>Brochure</p>
 
-              <img src="assets/images/portfolio_pieces/premier_1/premier_01.jpg" />
-
-              <img src="assets/images/portfolio_pieces/premier_1/premier_02.jpg" />
-
-              <img src="assets/images/portfolio_pieces/premier_1/premier_03.jpg" />
+              <img src="assets/images/portfolio_pieces/eldorado_1/eldorado_01.jpg" />
+              <img src="assets/images/portfolio_pieces/eldorado_1/eldorado_02.jpg" />
+              <img src="assets/images/portfolio_pieces/eldorado_1/eldorado_03.jpg" />
+              <img src="assets/images/portfolio_pieces/eldorado_1/eldorado_04.jpg" />
 
 
               
@@ -1330,11 +1325,17 @@ and (orientation : landscape )
                 <p>Annual Report 2009</p>
 
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_01.jpg" />
-
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_02.jpg" />
-
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_03.jpg" />
-
+              <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_04.jpg" />
+              <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_05.jpg" />
+              </div>
+              
+              
+              <div class="portfolio-contents-content-section">
+              <p>Advertising</p>
+               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_06.jpg" />
+               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_07.jpg" />
               
               </div>
       
@@ -1354,9 +1355,7 @@ and (orientation : landscape )
                 <p>Sustainability Reports 2007</p>
 
               <img src="assets/images/portfolio_pieces/teck_1/teck_01.jpg" />
-
               <img src="assets/images/portfolio_pieces/teck_1/teck_02.jpg" />
-
               <img src="assets/images/portfolio_pieces/teck_1/teck_03.jpg" />
 
               <img src="assets/images/portfolio_pieces/teck_1/teck_04.jpg" />
@@ -1372,6 +1371,36 @@ and (orientation : landscape )
       
             </div>
           </div>
+          
+  <!--Teck2 ####################################################-->
+
+          <div id="portfolio_contents_teck2" >
+            <div class="portfolio-contents-header">
+              <h1>Teck</h1>
+              <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+            </div>
+            <div class="portfolio-contents-content">
+              <div>
+                <p>Sustainability Reports 2007</p>
+
+              <img src="assets/images/portfolio_pieces/teck_2/teck_01.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_02.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_03.jpg" />
+
+              <img src="assets/images/portfolio_pieces/teck_2/teck_04.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_05.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_06.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_07.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_08.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_09.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_10.jpg" />
+              <img src="assets/images/portfolio_pieces/teck_2/teck_11.jpg" />
+              
+              </div>
+      
+            </div>
+          </div>         
 
 
       <!-- END Portfolio Contents -->
@@ -1400,6 +1429,8 @@ and (orientation : landscape )
           portfolio[13] = 'portfolio_contents_premier_marine';
           portfolio[14] = 'portfolio_contents_silver_wheaton';
           portfolio[15] = 'portfolio_contents_teck';
+          portfolio[16] = 'portfolio_contents_teck2';
+		  
 
           var current_portfolio_item = null;
         </script>
@@ -1423,8 +1454,11 @@ and (orientation : landscape )
               <li id="portfolio_grid_pacific_northern_gas" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_pacific_northern_gas');">Pacific Northern Gas</a><br /><br /></li>
               <li  id="portfolio_grid_premier_marine" onclick="show_portfolio_target('portfolio_contents_premier_marine');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_premier_marine');">Premier Marine</a><br /><br /></li>
               <li id="portfolio_grid_silver_wheaton" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_silver_wheaton');">Silver Wheaton</a><br /><br /></li>
+              
               <li id="portfolio_grid_teck" onclick="show_portfolio_target('portfolio_contents_teck');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck');">Teck</a><br /><br /></li>
-            
+ 
+               <li id="portfolio_grid_teck2" onclick="show_portfolio_target('portfolio_contents_teck2');"><a href="#portfolios" onclick="show_portfolio_target('portfolio_contents_teck2');">Teck2</a><br /><br /></li>
+                          
             </ul>
           </div>
         </center>
