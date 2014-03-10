@@ -175,6 +175,10 @@ a:focus {
 	margin-bottom: 50px;
 	*/
 }
+#portfolio_wrapper.page-unit {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 /* line 145, ../sass/screen.scss */
 .page-unit .inner-container {
   padding-bottom: 80px;
@@ -1240,6 +1244,26 @@ article .awards ul li {
         }
       }
 
+      @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 568px) 
+        and (orientation : portrait) {
+
+	#main_row {
+		padding-top: 15px;
+	}	 
+	#portfolio_wrapper.page-unit {
+          padding-left: 15px;
+          padding-right: 15px;
+        } 	
+ 
+        #portfolios ul li {
+          margin-right:10px;
+          margin-left:10px;
+        }
+
+      }
+
       @media screen and (min-width: 768px)  {
         .desktop {display: none;}
         .mobile {display:none;}
@@ -1429,4 +1453,564 @@ article .awards ul li {
 	  
 	  #portfolio_grid_teck2 { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-2.jpg); }
 
+
+	.portfolio-images img {
+		padding-bottom:39px;
+	}
+	.portfolio-images {
+		padding-bottom: 31px;
+	}
+
+	.people-padding p {	padding-right: 30px; }
+
+
+
+#recognition-form,
+#recognition-success
+{
+  position: absolute;
+  top: 6%;
+  left: 35%;
+}
+.recognition p
+{
+  font-size: 24px;
+  color: #e7132f;
+  margin: 0;
+  line-height: 0.9em;
+}
+.recognition p.congrats,
+.recognition p.best
+{
+  margin-bottom: 30px;
+}
+.recognition p small
+{
+  font-size: 18px;
+}
+.recognition input[type="text"] 
+{
+  border: none;
+  background: none;
+  border-bottom: 1px solid #4b4b4b;
+  font-size: 12px;
+  margin: 0 3px;
+  vertical-align: bottom;
+  color: rgb(165,165,165);
+  border-radius: 0;
+}
+input:focus {outline: none; }
+
+.recognition input.congrats
+{
+  width: 230px;
+}
+.recognition input.message
+{
+  width: 263px;
+}
+.recognition input.from
+{
+  width: 175px;
+}
+
+.recognition div.action
+{
+  position: absolute;
+  right: 9px;
+}
+.recognition div.action div.from
+{
+  margin-bottom: 12px;
+}
+.recognition div.action div.from p
+{
+  margin-bottom: 10px;
+}
+.recognition button
+{
+  font-family: Georgia;
+  font-size: 12px;
+  color: #FFF;
+  border-radius: 5px;
+  background-color: #e7132f;
+  border: none;
+  padding: 8px;
+  float: right;
+}
+
+
+#recognition-success
+{
+  display: none;
+}
+#recognition-success p {
+  padding-top: 70px;
+  padding-left: 140px;
+}
+
+
+
+@media only screen 
+   and (min-width : 768px) 
+   and (max-width : 1024px)  {
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 6%;
+	  left: 35%;
+	}
+
+	.recognition p
+	{
+	  font-size: 24px;
+	}
+	.recognition p small
+	{
+	  font-size: 20px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 204px;
+	}
+	.recognition input.message
+	{
+	  width: 218px;
+	}
+	.recognition input.from
+	{
+	  width: 160px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 25px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 8px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 8px;
+          font-size: 20px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+        
+    #recognition-success p {
+      padding-top: 50px;
+      padding-left: 110px;
+    }
+}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) {
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 4%; 
+	  left: 35%;
+          font-size: 10px;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 30px;
+          padding-left: 50px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 1em;
+	}
+	.recognition p small
+	{
+	  font-size: 0.8em;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 0.7em;
+	}
+	.recognition input.congrats
+	{
+	  width: 70px;
+	}
+	.recognition input.message
+	{
+	  width: 80px;
+	}
+	.recognition input.from
+	{
+	  width: 60px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 2px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 4px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 0px;
+          font-size: 0.8em;
+	}
+
+	.recognition button
+	{
+	  font-size: 0.7em;
+	  border-radius: 5px;
+	  padding: 3px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape )
+{ 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 5%;
+	  left: 35%;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 6px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 4px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+}
+
+@media screen and (min-width : 767px) and (max-width : 989px) 
+{ 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 5%;
+	  left: 35%;
+	}
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 8px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 8px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+        
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+}
+
+@media screen and (min-width: 560px) and (max-width : 767px) 
+{ 
+
+	#recognition-form,
+	#recognition-success
+	{
+	  position: absolute;
+	  top: 6%;
+	  left: 35%;
+	}
+
+ 
+        #recognition-success p {
+          padding-top: 50px;
+          padding-left: 110px;
+        }
+
+
+	.recognition p
+	{
+	  font-size: 18px;
+	}
+	.recognition p small
+	{
+	  font-size: 14px;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 10px;
+	}
+	.recognition input.congrats
+	{
+	  width: 134px;
+	}
+	.recognition input.message
+	{
+	  width: 154px;
+	}
+	.recognition input.from
+	{
+	  width: 120px;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 15px;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 6px;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 4px;
+          font-size: 14px;
+	}
+
+	.recognition button
+	{
+	  font-size: 9px;
+	  border-radius: 5px;
+	  padding: 6px;
+	}
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+	#recognition-form,
+	#recognition-success
+        {
+		top: 3%;
+               	left: 30%;
+	}
+ 
+        #recognition-success p 
+	{
+          padding-top: 30px;
+          padding-left: 50px;
+        }
+
+	.recognition p
+	{
+	  font-size: 1.4em;
+	}
+	.recognition p small
+	{
+	  font-size: 1.2em;
+	}
+	.recognition p.best small
+	{
+	  font-size: 0.9em;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 0.8em;
+	}
+	.recognition input.congrats,
+	.recognition input.message,
+	.recognition input.from
+	{
+	  width: 12.5em;
+	}
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 0.6em;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 0.4em;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 0px;
+          font-size: 1.2em;
+	}
+
+	.recognition button
+	{
+	  font-size: 1.1em;
+	  border-radius: 5px;
+	  padding: 3px;
+	}
+
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+	#recognition-form,
+	#recognition-success
+        {
+		top: 2%;
+               	left: 30%;
+	}
+ 
+        #recognition-success p 
+	{
+          padding-top: 0.2em;
+          padding-left: 50px;
+        }
+
+	.recognition p
+	{
+	  font-size: 0.9em;
+	}
+	.recognition p small,
+	.recognition p.best small
+	{
+	  font-size: 0.8em;
+	}
+	.recognition input[type="text"] 
+	{
+	  font-size: 0.7em;
+	}
+	.recognition input.congrats
+	{
+	  width: 11em;
+	}
+	.recognition input.message
+	{
+	  width: 12em;
+	}
+	.recognition input.from
+	{
+	  width: 11em;
+	}
+
+	.recognition p.congrats,
+	.recognition p.best
+	{
+	  margin-bottom: 0.4em;
+	}
+	.recognition div.action div.from
+	{
+	  margin-bottom: 0.3em;
+	}
+	.recognition div.action div.from p
+	{
+	  margin-bottom: 0px;
+	  font-size: 0.8em;
+	}
+
+	.recognition button
+	{
+	  font-size: 0.8em;
+	  border-radius: 0.4em;
+	  padding: 0.1em 0.3em;
+	}
+
+
+	
+}
 

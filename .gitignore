@@ -1,1 +1,5 @@
 theme/.sass-cache/
+.DS_Store
+*/.DS_Store
+dwsync.xml
+*/dwsync.xml

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Porcaro Communications</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -156,429 +157,6 @@
             </div>
           </div>
 
-<style type="text/css">
-#recognition-form,
-#recognition-success
-{
-  position: absolute;
-  top: 6%;
-  left: 35%;
-}
-.recognition p
-{
-  font-size: 24px;
-  color: #e7132f;
-  margin: 0;
-  line-height: 0.9em;
-}
-.recognition p.congrats,
-.recognition p.best
-{
-  margin-bottom: 30px;
-}
-.recognition p small
-{
-  font-size: 18px;
-}
-.recognition input[type="text"] 
-{
-  border: none;
-  background: none;
-  border-bottom: 1px solid #4b4b4b;
-  font-size: 12px;
-  margin: 0 3px;
-  vertical-align: bottom;
-  color: rgb(165,165,165);
-  border-radius: 0;
-}
-input:focus {outline: none; }
-
-.recognition input.congrats
-{
-  width: 230px;
-}
-.recognition input.message
-{
-  width: 263px;
-}
-.recognition input.from
-{
-  width: 175px;
-}
-
-.recognition div.action
-{
-  position: absolute;
-  right: 9px;
-}
-.recognition div.action div.from
-{
-  margin-bottom: 12px;
-}
-.recognition div.action div.from p
-{
-  margin-bottom: 10px;
-}
-.recognition button
-{
-  font-family: Georgia;
-  font-size: 12px;
-  color: #FFF;
-  border-radius: 5px;
-  background-color: #e7132f;
-  border: none;
-  padding: 8px;
-  float: right;
-}
-
-
-#recognition-success
-{
-  display: none;
-}
-#recognition-success p {
-  padding-top: 70px;
-  padding-left: 140px;
-}
-
-
-
-@media only screen 
-   and (min-width : 768px) 
-   and (max-width : 1024px)  {
-
-	#recognition-form,
-	#recognition-success
-	{
-	  position: absolute;
-	  top: 6%;
-	  left: 35%;
-	}
-
-	.recognition p
-	{
-	  font-size: 24px;
-	}
-	.recognition p small
-	{
-	  font-size: 20px;
-	}
-	.recognition input[type="text"] 
-	{
-	  font-size: 10px;
-	}
-	.recognition input.congrats
-	{
-	  width: 204px;
-	}
-	.recognition input.message
-	{
-	  width: 218px;
-	}
-	.recognition input.from
-	{
-	  width: 160px;
-	}
-	.recognition p.congrats,
-	.recognition p.best
-	{
-	  margin-bottom: 25px;
-	}
-	.recognition div.action div.from
-	{
-	  margin-bottom: 8px;
-	}
-	.recognition div.action div.from p
-	{
-	  margin-bottom: 8px;
-          font-size: 20px;
-	}
-
-	.recognition button
-	{
-	  font-size: 9px;
-	  border-radius: 5px;
-	  padding: 6px;
-	}
-        
-    #recognition-success p {
-      padding-top: 50px;
-      padding-left: 110px;
-    }
-}
-
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 568px) {
-
-	#recognition-form,
-	#recognition-success
-	{
-	  position: absolute;
-	  top: 4%; 
-	  left: 35%;
-          font-size: 10px;
-	}
-
- 
-        #recognition-success p {
-          padding-top: 30px;
-          padding-left: 50px;
-        }
-
-
-	.recognition p
-	{
-	  font-size: 1em;
-	}
-	.recognition p small
-	{
-	  font-size: 0.8em;
-	}
-	.recognition input[type="text"] 
-	{
-	  font-size: 0.7em;
-	}
-	.recognition input.congrats
-	{
-	  width: 70px;
-	}
-	.recognition input.message
-	{
-	  width: 80px;
-	}
-	.recognition input.from
-	{
-	  width: 60px;
-	}
-	.recognition p.congrats,
-	.recognition p.best
-	{
-	  margin-bottom: 2px;
-	}
-	.recognition div.action div.from
-	{
-	  margin-bottom: 4px;
-	}
-	.recognition div.action div.from p
-	{
-	  margin-bottom: 0px;
-          font-size: 0.8em;
-	}
-
-	.recognition button
-	{
-	  font-size: 0.7em;
-	  border-radius: 5px;
-	  padding: 3px;
-	}
-}
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape )
-{ 
-
-	#recognition-form,
-	#recognition-success
-	{
-	  position: absolute;
-	  top: 5%;
-	  left: 35%;
-	}
-
- 
-        #recognition-success p {
-          padding-top: 50px;
-          padding-left: 110px;
-        }
-
-
-	.recognition p
-	{
-	  font-size: 18px;
-	}
-	.recognition p small
-	{
-	  font-size: 14px;
-	}
-	.recognition input[type="text"] 
-	{
-	  font-size: 10px;
-	}
-	.recognition input.congrats
-	{
-	  width: 134px;
-	}
-	.recognition input.message
-	{
-	  width: 154px;
-	}
-	.recognition input.from
-	{
-	  width: 120px;
-	}
-	.recognition p.congrats,
-	.recognition p.best
-	{
-	  margin-bottom: 15px;
-	}
-	.recognition div.action div.from
-	{
-	  margin-bottom: 6px;
-	}
-	.recognition div.action div.from p
-	{
-	  margin-bottom: 4px;
-          font-size: 14px;
-	}
-
-	.recognition button
-	{
-	  font-size: 9px;
-	  border-radius: 5px;
-	  padding: 6px;
-	}
-}
-
-@media screen and (min-width : 767px) and (max-width : 989px) 
-{ 
-
-	#recognition-form,
-	#recognition-success
-	{
-	  position: absolute;
-	  top: 5%;
-	  left: 35%;
-	}
-
-	.recognition p
-	{
-	  font-size: 18px;
-	}
-	.recognition p small
-	{
-	  font-size: 14px;
-	}
-	.recognition input[type="text"] 
-	{
-	  font-size: 10px;
-	}
-	.recognition input.congrats
-	{
-	  width: 134px;
-	}
-	.recognition input.message
-	{
-	  width: 154px;
-	}
-	.recognition input.from
-	{
-	  width: 120px;
-	}
-	.recognition p.congrats,
-	.recognition p.best
-	{
-	  margin-bottom: 15px;
-	}
-	.recognition div.action div.from
-	{
-	  margin-bottom: 8px;
-	}
-	.recognition div.action div.from p
-	{
-	  margin-bottom: 8px;
-          font-size: 14px;
-	}
-
-	.recognition button
-	{
-	  font-size: 9px;
-	  border-radius: 5px;
-	  padding: 6px;
-	}
-        
-        #recognition-success p {
-          padding-top: 50px;
-          padding-left: 110px;
-        }
-
-
-}
-
-@media screen and (min-width: 560px) and (max-width : 767px) 
-{ 
-
-	#recognition-form,
-	#recognition-success
-	{
-	  position: absolute;
-	  top: 6%;
-	  left: 35%;
-	}
-
- 
-        #recognition-success p {
-          padding-top: 50px;
-          padding-left: 110px;
-        }
-
-
-	.recognition p
-	{
-	  font-size: 18px;
-	}
-	.recognition p small
-	{
-	  font-size: 14px;
-	}
-	.recognition input[type="text"] 
-	{
-	  font-size: 10px;
-	}
-	.recognition input.congrats
-	{
-	  width: 134px;
-	}
-	.recognition input.message
-	{
-	  width: 154px;
-	}
-	.recognition input.from
-	{
-	  width: 120px;
-	}
-	.recognition p.congrats,
-	.recognition p.best
-	{
-	  margin-bottom: 15px;
-	}
-	.recognition div.action div.from
-	{
-	  margin-bottom: 6px;
-	}
-	.recognition div.action div.from p
-	{
-	  margin-bottom: 4px;
-          font-size: 14px;
-	}
-
-	.recognition button
-	{
-	  font-size: 9px;
-	  border-radius: 5px;
-	  padding: 6px;
-	}
-
-}
-
-
-
-	.people-padding p {	padding-right: 30px; }
-
-
-</style>
           <div class="page-unit" id="awards">
             <div class="inner-container" style="position:relative;">
               <img src="assets/images/index/porcaro_index_awards.jpg" class="feature">
@@ -935,7 +513,9 @@ and (orientation : landscape )
               
               <div>
                 <p>Logo</p>
-                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_logo_01.png" />
+	                <div class="portfolio-images">
+		                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_logo_01.png" />
+	    			</div>
               </div>
               
               <div class="portfolio-contents-content-section">
@@ -945,16 +525,21 @@ and (orientation : landscape )
 
               <div class="portfolio-contents-content-section">
               <p>Presentation Folder</p>
-                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_02.jpg" />
-                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_03.jpg" />
+	              <div class="portfolio-images">  
+		                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_02.jpg" />
+		                <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_03.jpg" />
+	              </div>  
               </div>
 
               <div class="portfolio-contents-content-section">
                 <p>Annual Report 2010</p>
+		<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_04.jpg" />
                 <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_05.jpg" />
                 <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_06.jpg" />
                 <img src="assets/images/portfolio_pieces/baja_mining_1/baja_mining_07.jpg" />
+		</div>
+                
               </div>
               
               <div class="portfolio-contents-content-section">
@@ -977,7 +562,9 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Logo</p>
+                	<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/baywest_1/Baywest_Introimage.jpg" />
+                	</div>
               </div>
               
               <div class="portfolio-contents-content-section">
@@ -1051,6 +638,7 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Annual Report 2011/2012</p>
+                	<div class="portfolio-images">
 				<img src="assets/images/portfolio_pieces/canada_place_1/canada_place_08.jpg" />
                 <img src="assets/images/portfolio_pieces/canada_place_1/canada_place_01.jpg" />
                 <img src="assets/images/portfolio_pieces/canada_place_1/canada_place_02.jpg" />
@@ -1058,6 +646,7 @@ and (orientation : landscape )
                 <img src="assets/images/portfolio_pieces/canada_place_1/canada_place_04.jpg" />
                 <img src="assets/images/portfolio_pieces/canada_place_1/canada_place_05.jpg" />
                 <img src="assets/images/portfolio_pieces/canada_place_1/canada_place_06.jpg" />
+		            </div>
                 
               </div>
             </div>
@@ -1082,6 +671,7 @@ and (orientation : landscape )
                 
                 <div class="portfolio-contents-content-section">
                 <p>Annual Report 2011/2012</p>
+                	<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_ar_03.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_ar_01.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_01.jpg" />
@@ -1090,23 +680,28 @@ and (orientation : landscape )
 <!--                <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_04.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_05.jpg" />
 -->
+		            </div>
                 </div>
 
                 <div class="portfolio-contents-content-section">
                 <p>Annual Report 2010/2011</p>
+                	<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_06.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_07.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_08.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_09.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_10.jpg" />
+		            </div>
                 </div>
 
                 <div class="portfolio-contents-content-section">
                 <p>Calendar 2013/2014</p>
                   
+                	<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/cos_calendar_01.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_11.jpg" />
                 <img src="assets/images/portfolio_pieces/children_of_the_street_1/children_of_the_street_12.jpg" />
+		            </div>
                     
                 </div>
 
@@ -1125,14 +720,16 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Logo</p>
-
-                <img src="assets/images/portfolio_pieces/couverdon_1/couverdon_01.png" />
+                	<div class="portfolio-images">
+                		<img src="assets/images/portfolio_pieces/couverdon_1/couverdon_01.png" />
+                	</div>
               </div>
 
                 <div class="portfolio-contents-content-section">
                   <p>Logo</p>
-
-                    <img src="assets/images/portfolio_pieces/couverdon_1/couverdon_02.png" />                    
+                  	<div class="portfolio-images">
+	                    <img src="assets/images/portfolio_pieces/couverdon_1/couverdon_02.png" />                    
+    				</div>
                 </div>
                 
                 <div class="portfolio-contents-content-section">
@@ -1191,36 +788,46 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
               <p>Annual Report 2012</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/finning_1/finning_2012_AR.gif" />
+               </div>
               </div>
               
               <div class="portfolio-contents-content">
               <p>Annual Report 2008</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/finning_1/finning_global_connections_01.gif" />
               <img src="assets/images/portfolio_pieces/finning_1/finning_global_connections_02.gif" />
+               </div>
               </div>
               
               <div class="portfolio-contents-content">
               <p>Annual Report 2008</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/finning_1/FIN2008_01.jpg" />
               <img src="assets/images/portfolio_pieces/finning_1/finning_01.jpg" />
               <img src="assets/images/portfolio_pieces/finning_1/finning_08.jpg" />
+               </div>
               </div>
               
               <div class="portfolio-contents-content-section">
               <p>Annual Report 2006</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/finning_1/finning_02.jpg" />
                <img src="assets/images/portfolio_pieces/finning_1/finning_04.jpg" />
+               </div>
 
                </div>
                
                <div class="portfolio-contents-content-section">
                <p>Annual Report 2005</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/finning_1/finning_03.jpg" />
                <img src="assets/images/portfolio_pieces/finning_1/finning_05.jpg" />
                <img src="assets/images/portfolio_pieces/finning_1/finning_06.jpg" />
                <img src="assets/images/portfolio_pieces/finning_1/finning_07.jpg" />
                <img src="assets/images/portfolio_pieces/finning_1/finning_09.jpg" />
+               </div>
                </div>
 
             </div>
@@ -1256,6 +863,7 @@ and (orientation : landscape )
               
               <div class="portfolio-contents-content-section">
                 <p>Annual Report 2007</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_01.jpg" />
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_02.jpg" />
 <!--           
@@ -1264,10 +872,12 @@ and (orientation : landscape )
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_03.jpg" />
                 <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_financials.jpg" />
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_04.jpg" />
+		            </div>
               </div>
               
               <div class="portfolio-contents-content-section">
               <p>Sustainability Report 2006</p>
+                	<div class="portfolio-images">
  <!--
               <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_cover_inside_spread.jpg" />
 -->
@@ -1277,12 +887,15 @@ and (orientation : landscape )
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_08.jpg" />
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_creative_closeup.jpg" />
                </div>
+               </div>
                
                <div class="portfolio-contents-content-section">
                <p>Adverstising</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_ad_01.jpg" />
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_ad_02.jpg" />
                <img src="assets/images/portfolio_pieces/goldcorp_1/goldcorp_ad_03.jpg" />
+               </div>
              
               </div>
 
@@ -1417,26 +1030,34 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Logo</p>
+                	<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_01.png" />
+	              	</div>
               </div>
               
             <div class="portfolio-contents-content-section">
               <p>Stationery</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/minefinders_1/MFStationery_Lrg_02.jpg" />
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_02.jpg" />
+	              	</div>
             </div>
             <div class="portfolio-contents-content-section">
                <p>Sustainability Report 2010</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_03.jpg" />
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_04.jpg" />
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_05.jpg" />
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_06.jpg" />
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_07.jpg" />
+	              	</div>
              </div>
 
                <div class="portfolio-contents-content-section">
                <p>Advertising</p>
+                	<div class="portfolio-images">
                <img src="assets/images/portfolio_pieces/minefinders_1/minefinders_08.jpg" />
+	              	</div>
              
             </div>
 
@@ -1456,45 +1077,57 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Logo</p>
+			<div class="portfolio-images">
 
               <img src="assets/images/portfolio_pieces/new_gold_1/NewgoldID_Intro.jpg" />
+              </div>
               </div>
               
             <div class="portfolio-contents-content-section">
               <p>Stationary and Newsletter</p>
+			<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_inside_closeup.jpg">
               <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_08.jpg" />
               <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_09.jpg" />
             </div>
+            </div>
             
             <div class="portfolio-contents-content-section">
                 <p>Annual Report 2009</p>
+			<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_01.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/NG2009AR_image_02.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_02.jpg" />
+            </div>
 
             </div>
             <div class="portfolio-contents-content-section">
             <p>Sustainability Report 2008</p>
+			<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_03.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_04.jpg" />
 <!--                <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_05.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_06.jpg" />
 -->
+            </div>
               </div>
 <!--
             <div class="portfolio-contents-content-section">
 
             <p>Stationery</p>
+			<div class="portfolio-images">
             	<img src="assets/images/portfolio_pieces/new_gold_1/new_gold_07.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_08.jpg" />
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_09.jpg" />
+            </div>
              
             </div>
 
             <div class="portfolio-contents-content-section">
             <p>Newsletter 2008</p>
+			<div class="portfolio-images">
                 <img src="assets/images/portfolio_pieces/new_gold_1/new_gold_10.jpg" />
+            </div>
        
             </div>
 -->
@@ -1514,14 +1147,17 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Logo</p>
-
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/nova_gold_1/nova_gold_01.png" />
+              		</div>
               </div>
               <div class="portfolio-contents-content-section">
               <p>Website</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/nova_gold_1/nova_gold_website-01.jpg" />
               <img src="assets/images/portfolio_pieces/nova_gold_1/nova_gold_website-02.jpg" />
               <img src="assets/images/portfolio_pieces/nova_gold_1/nova_gold_website-03.jpg" />
+              		</div>
               
               </div>
     
@@ -1540,11 +1176,13 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Annual Report 2008</p>
+		<div class="portfolio-images">    
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_01.jpg" />
 			  <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/PNG2009_image_02.jpg" />
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_02.jpg" />
               <img src="assets/images/portfolio_pieces/pacific_northern_gas_1/pacific_northern_gas_03.jpg" />
               
+              </div>
               </div>
     
             </div>
@@ -1561,12 +1199,11 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Brochure</p>
-
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/premier_1/premier_01.jpg" />
               <img src="assets/images/portfolio_pieces/premier_1/premier_02.jpg" />
               <img src="assets/images/portfolio_pieces/premier_1/premier_03.jpg" />
-
-
+			         </div>
               
               </div>
     
@@ -1585,26 +1222,32 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Annual Report 2012</p>
+               	<div class="portfolio-images">
 
 <!--              <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_01.jpg" />
 -->
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_08.jpg" />
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_09.jpg" />
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_10.jpg" />
+	        </div>
               </div>
               
               <div class="portfolio-contents-content-section">
               <p>Annual Report 2010</p>
+               	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_02.jpg" />
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_03.jpg" />
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_04.jpg" />
               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_05.jpg" />
+	        </div>
               </div>
               
               <div class="portfolio-contents-content-section">
-              <p>Advertising</p>
-               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_06.jpg" />
-               <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_07.jpg" />
+                <p>Advertising</p>
+               	<div class="portfolio-images">
+                <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_06.jpg" />
+                <img src="assets/images/portfolio_pieces/silver_wheaton_1/silver_wheaton_07.jpg" />
+	        </div>
               
               </div>
               
@@ -1635,15 +1278,19 @@ and (orientation : landscape )
             <div class="portfolio-contents-content">
               <div>
                 <p>Sustainability Reports 2007</p>
+<<<<<<< HEAD
+                	<div class="portfolio-images">
 
               <img src="assets/images/portfolio_pieces/teck_1/teck_01.jpg" />
               <img src="assets/images/portfolio_pieces/teck_1/teck_02.jpg" />
               <img src="assets/images/portfolio_pieces/teck_1/teck_03.jpg" />
               <img src="assets/images/portfolio_pieces/teck_1/teck_04.jpg" />
+              		</div>
               </div>
               
               <div class="portfolio-contents-content-section">
               <p>Sustainability Summary 2007</p>
+                	<div class="portfolio-images">
               <img src="assets/images/portfolio_pieces/teck_1/TeckSus_01.jpg" />
 <!--          <img src="assets/images/portfolio_pieces/teck_1/teck_05.jpg" />
 -->
@@ -1655,6 +1302,7 @@ and (orientation : landscape )
               <img src="assets/images/portfolio_pieces/teck_1/teck_07.jpg" />
               <img src="assets/images/portfolio_pieces/teck_1/teck_08.jpg" />
               <img src="assets/images/portfolio_pieces/teck_1/teck_09.jpg" />
+              		</div>
               
               </div>
       
