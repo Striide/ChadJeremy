@@ -49,6 +49,7 @@
           
           show_portfolio();
         } else {
+	  $("#main_nav").removeClass("nav-list-portfolio");
           that.scroller(id);
           evt.stopPropagation();
         }
@@ -198,6 +199,7 @@
       
 
       function show_portfolio() {
+	$("#main_nav").addClass("nav-list-portfolio");
 
         document.getElementById('homepage').style.opacity = 0;
         setTimeout(function() {

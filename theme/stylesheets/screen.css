@@ -393,6 +393,13 @@ article .awards ul li {
 .modal-backdrop {
   background-color: #FFF;
 }
+ul#main_nav.nav-list-portfolio a {
+	text-decoration: none;
+}
+ul#main_nav.nav-list-portfolio a#portfolio_menu_item {
+	text-decoration: line-through;
+}
+
 
 /* /TB reset/overrides */
 /* RESPONSIVE */
