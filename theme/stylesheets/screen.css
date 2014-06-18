@@ -1413,45 +1413,47 @@ article .awards ul li {
     }
 
       
-      #portfolio_grid_bc_ferries { background-image: url(../../assets/images/grid/Porcaro-SCG-BCFerries-1.jpg); }
+      #portfolio_grid_bc_ferries { background-image: url(../../assets/images/grid/Wian-SCG-BCFerries-1.jpg); }
 
-      #portfolio_grid_baja_mining { background-image: url(../../assets/images/grid/Porcaro-SCG-BajaMining-1.jpg); }
+      #portfolio_grid_baja_mining { background-image: url(../../assets/images/grid/Wian-SCG-BajaMining-1.jpg); }
 
-      #portfolio_grid_baywest_management { background-image: url(../../assets/images/grid/Porcaro-SCG-Baywest-1.jpg); }
+      #portfolio_grid_baywest_management { background-image: url(../../assets/images/grid/Wian-SCG-Baywest-1.jpg); }
 
-      #portfolio_grid_canada_place{ background-image: url(../../assets/images/grid/Porcaro-SCG-CanadaPlace-1.jpg); }
+      #portfolio_grid_canada_place{ background-image: url(../../assets/images/grid/Wian-SCG-CanadaPlace-1.jpg); }
 
-      #portfolio_grid_children_of_the_street_society { background-image: url(../../assets/images/grid/Porcaro-SCG-ChildrenStreet-1.jpg); }
+      #portfolio_grid_children_of_the_street_society { background-image: url(../../assets/images/grid/Wian-SCG-ChildrenStreet-1.jpg); }
 
-      #portfolio_grid_couverdon { background-image: url(../../assets/images/grid/Porcaro-SCG-Couverdon-1.jpg); }
+      #portfolio_grid_couverdon { background-image: url(../../assets/images/grid/Wian-SCG-Couverdon-1.jpg); }
 
-      #portfolio_grid_eldorado_gold { background-image: url(../../assets/images/grid/Porcaro-SCG-EldoradoGold-1.jpg); }
+      #portfolio_grid_eldorado_gold { background-image: url(../../assets/images/grid/Wian-SCG-EldoradoGold-1.jpg); }
 
-      #portfolio_grid_finning_international { background-image: url(../../assets/images/grid/Porcaro-SCG-Finning-1.jpg); }
+      #portfolio_grid_finning_international { background-image: url(../../assets/images/grid/Wian-SCG-Finning-1.jpg); }
 
-      #portfolio_grid_goldcorp { background-image: url(../../assets/images/grid/Porcaro-SCG-Goldcorp-1.jpg); }
+      #portfolio_grid_goldcorp { background-image: url(../../assets/images/grid/Wian-SCG-Goldcorp-1.jpg); }
 
-      #portfolio_grid_hsbc { background-image: url(../../assets/images/grid/Porcaro-SCG-HSBC-1.jpg); }
+      #portfolio_grid_hsbc { background-image: url(../../assets/images/grid/Wian-SCG-HSBC-1.jpg); }
 
-      #portfolio_grid_kodak { background-image: url(../../assets/images/grid/Porcaro-SCG-Kodak-1.jpg); }
+      #portfolio_grid_kodak { background-image: url(../../assets/images/grid/Wian-SCG-Kodak-1.jpg); }
 
-      #portfolio_grid_minefinders { background-image: url(../../assets/images/grid/Porcaro-SCG-Minefinders-1.jpg); }
+      #portfolio_grid_minefinders { background-image: url(../../assets/images/grid/Wian-SCG-Minefinders-1.jpg); }
 
-      #portfolio_grid_new_gold { background-image: url(../../assets/images/grid/Porcaro-SCG-NewGold-1.jpg); }
+      #portfolio_grid_new_gold { background-image: url(../../assets/images/grid/Wian-SCG-NewGold-1.jpg); }
 
-      #portfolio_grid_novagold { background-image: url(../../assets/images/grid/Porcaro-SCG-NovaGold-1.jpg); }
+      #portfolio_grid_novagold { background-image: url(../../assets/images/grid/Wian-SCG-NovaGold-1.jpg); }
 
-      #portfolio_grid_pacific_northern_gas { background-image: url(../../assets/images/grid/Porcaro-SCG-PacificNorthernGas-1.jpg); }
+      #portfolio_grid_pacific_northern_gas { background-image: url(../../assets/images/grid/Wian-SCG-PacificNorthernGas-1.jpg); }
 
-      #portfolio_grid_premier_marine { background-image: url(../../assets/images/grid/Porcaro-SCG-PremierMarine-1.jpg); }
+      #portfolio_grid_premier_marine { background-image: url(../../assets/images/grid/Wian-SCG-PremierMarine-1.jpg); }
 
-      #portfolio_grid_silver_wheaton { background-image: url(../../assets/images/grid/Porcaro-SCG-SilverWheaton-1.jpg); }
+      #portfolio_grid_silver_wheaton { background-image: url(../../assets/images/grid/Wian-SCG-SilverWheaton-1.jpg); }
 
-      #portfolio_grid_teck { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-1.jpg); }
+      #portfolio_grid_teck { background-image: url(../../assets/images/grid/Wian-SCG-Teck-1.jpg); }
 
-      #portfolio_grid_tourism_bc { background-image: url(../../assets/images/grid/Porcaro-SCG-TourismBC-1.jpg); }
+      #portfolio_grid_tourism_bc { background-image: url(../../assets/images/grid/Wian-SCG-TourismBC-1.jpg); }
 	  
-	  #portfolio_grid_teck2 { background-image: url(../../assets/images/grid/Porcaro-SCG-Teck-2.jpg); }
+	  #portfolio_grid_teck2 { background-image: url(../../assets/images/grid/Wian-SCG-Teck-2.jpg); }
+	  
+	  #portfolio_grid_porcaro { background-image: url(../../assets/images/grid/Wian-SCG-Porcaro-1.jpg); }
 
 
 	.portfolio-images img {
@@ -1469,7 +1471,7 @@ article .awards ul li {
 #recognition-success
 {
   position: absolute;
-  top: 6%;
+  top: 8%;
   left: 35%;
 }
 .recognition p
@@ -1477,7 +1479,7 @@ article .awards ul li {
   font-size: 24px;
   color: #e7132f;
   margin: 0;
-  line-height: 0.9em;
+  line-height: 0.7em;
 }
 .recognition p.congrats,
 .recognition p.best
@@ -1493,8 +1495,9 @@ article .awards ul li {
   border: none;
   background: none;
   border-bottom: 1px solid #4b4b4b;
-  font-size: 12px;
-  margin: 0 3px;
+  font-family: Georgia;
+  font-size: 16px;
+  margin: 0 0px;
   vertical-align: bottom;
   color: rgb(165,165,165);
   border-radius: 0;
@@ -1503,15 +1506,15 @@ input:focus {outline: none; }
 
 .recognition input.congrats
 {
-  width: 230px;
+  width: 200px;
 }
 .recognition input.message
 {
-  width: 263px;
+  width: 200px;
 }
 .recognition input.from
 {
-  width: 175px;
+  width: 170px;
 }
 
 .recognition div.action
@@ -1536,7 +1539,7 @@ input:focus {outline: none; }
   background-color: #e7132f;
   border: none;
   padding: 8px;
-  float: right;
+  float: center;
 }
 
 
@@ -1546,7 +1549,7 @@ input:focus {outline: none; }
 }
 #recognition-success p {
   padding-top: 70px;
-  padding-left: 140px;
+  padding-left: 130px;
 }
 
 
@@ -1559,7 +1562,7 @@ input:focus {outline: none; }
 	#recognition-success
 	{
 	  position: absolute;
-	  top: 6%;
+	  top: 8%;
 	  left: 35%;
 	}
 
@@ -1577,15 +1580,15 @@ input:focus {outline: none; }
 	}
 	.recognition input.congrats
 	{
-	  width: 204px;
+	  width: 200px;
 	}
 	.recognition input.message
 	{
-	  width: 218px;
+	  width: 200px;
 	}
 	.recognition input.from
 	{
-	  width: 160px;
+	  width: 150px;
 	}
 	.recognition p.congrats,
 	.recognition p.best
@@ -1641,7 +1644,7 @@ and (max-width : 568px) {
 	}
 	.recognition p small
 	{
-	  font-size: 0.8em;
+	  font-size: 0.7em;
 	}
 	.recognition input[type="text"] 
 	{
