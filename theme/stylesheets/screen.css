@@ -846,6 +846,7 @@ ul#main_nav.nav-list-portfolio a#portfolio_menu_item {
   #our_people h1 {font-size:24px;padding:0px 0px 10px 0px;line-height:20px;}
   #our_people h2 {font-family:serif;padding:0px; font-size:20px; font-weight:200; line-height:26px; margin:0px;}
   #our_people p {font-size:14px; line-height:20px;padding-right:20px;}
+  #our_people ul {font-size:14px; line-height:20px;padding-right:20px;}
   
   .span9 {width:528px;}
   .span6 {width:342px;}
@@ -1008,6 +1009,7 @@ ul#main_nav.nav-list-portfolio a#portfolio_menu_item {
   #our_people h1 {font-size:24px;padding:0px 0px 10px 0px;line-height:20px;}
   #our_people h2 {font-family:serif;padding:0px; font-size:20px; font-weight:200; line-height:26px; margin:0px;margin-bottom:20px;}
   #our_people p {font-size:16px; line-height:22px;padding-right:20px;padding-left:20px;}
+  #our_people ul {font-size:16px; line-height:22px;padding-right:20px;padding-left:20px;}
 
   
   
