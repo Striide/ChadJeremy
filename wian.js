@@ -1,6 +1,6 @@
 (function( $, undefined ) {
 
-  $.widget("porcaro.adaptivemenu", {
+  $.widget("wian.adaptivemenu", {
     _create: function(){
       $("#mobile_nav").html($("#main_nav").html());
 
@@ -34,7 +34,7 @@
     }
   });
 
-  $.widget("porcaro.scrollmenu", {
+  $.widget("wian.scrollmenu", {
     options: { height_fix: 110 }, // todo: this should match the scrollspy number, which I think is 120
     _create: function()
     {
@@ -89,7 +89,7 @@
     }
   });
 
-  $.widget("porcaro.fixheight", {
+  $.widget("wian.fixheight", {
     _create: function(){
       var wgt = this;
 
